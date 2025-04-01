@@ -20,15 +20,15 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string }
+  params: Props['params']
 }): Promise<Metadata> {
   try {
     // Type assertion to handle the locale parameter correctly
-    const paramsLocal = await locale
+    const { locale } = await params
     return generateSiteMetadata({
-      locale: paramsLocal as Locale,
+      locale: locale as Locale,
       params: { locale },
     })
   } catch (error) {

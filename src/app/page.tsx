@@ -4,7 +4,7 @@ import { headers } from 'next/headers'
 
 export default async function Home() {
   // Get the Accept-Language header
-  const headersList = headers()
+  const headersList = await headers()
   const acceptLanguage = (await headersList).get('accept-language') || ''
 
   // Parse the Accept-Language header to find the best match

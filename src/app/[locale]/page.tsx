@@ -8,11 +8,17 @@ import ContactSection from '@/components/home/contact-section'
 import { Locale } from '../../i18n/locales'
 import ServicesSection from '../../components/home/services-section'
 
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string }
-}): Promise<Metadata> {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ locale: string }>
+  }
+): Promise<Metadata> {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   try {
     // Type assertion to handle the locale parameter correctly
     return generateSiteMetadata({
