@@ -1,0 +1,118 @@
+{
+  "home": {
+    "title": "S&L Management en Consulting GmbH",
+    "description": "Premium Family Office Diensten in Zwitserland",
+
+    "hero": {
+      "title": "Welkom bij S & L Management",
+      "subtitle": "En Consulting GmbH",
+      "description": "Bij SLMC bieden we hoogwaardige Family Office Diensten via een holistische en op maat gemaakte aanpak om u te helpen uw unieke levensstijldoelen te bereiken.",
+      "viewMore": "Meer Bekijken"
+    },
+
+    "about": {
+      "title": "Over SLMC",
+      "description1": "Uw Vertrouwde Levensstijl Oplossingspartner S & L Management en Consulting GmbH (SLMC) is een toonaangevend Zwitsers multi-family office, dat ultravermogende individuen en families bedient vanuit ons hoofdkantoor in Kanton Schwyz, Zwitserland. We bieden een uitgebreid pakket van op maat gemaakte adviesdiensten, waaronder vermogensbeheer, familieopvolgingsplanning en privé levensstijloplossingen.",
+      "description2": "Door diepgaande expertise te combineren met een gepersonaliseerde aanpak, zorgen we ervoor dat de evoluerende behoeften van uw familie naadloos worden verzorgd, zodat u zich kunt concentreren op wat echt belangrijk is. Ervaar uitmuntendheid met SLMC en ontdek een nieuwe standaard in family office diensten."
+    },
+
+    "services": {
+      "title": "Onze Kerndiensten",
+      "description": "Bij SLMC begrijpen we dat het beheren van persoonlijke en financiële zaken een werkelijk holistische aanpak vereist. We bieden een uitgebreid pakket van premium diensten - van verzekeringen en gezondheidszorgbeheer tot verblijfsplanning en vermogensplanning - ontworpen om u gemoedsrust te bieden in elke fase.",
+      "viewAll": "Bekijk Alle Diensten",
+      "items": {
+        "1": {
+          "title": "Verzekeringen",
+          "description": "Uitgebreide verzekeringsoplossingen op maat om uw vermogen en levensstijl te beschermen."
+        },
+        "2": {
+          "title": "Gezondheidszorgbeheer",
+          "description": "Premium gezondheidszorgcoördinatie die ervoor zorgt dat u wereldwijd de beste medische zorg ontvangt."
+        },
+        "3": {
+          "title": "Verblijfsplanning",
+          "description": "Deskundige begeleiding bij wereldwijde mobiliteit, verblijfsopties en burgerschapsprogramma's."
+        },
+        "4": {
+          "title": "Vermogensplanning",
+          "description": "Strategische vermogensbeheeroplossingen ontworpen om uw vermogen te behouden en te laten groeien."
+        },
+        "5": {
+          "title": "Op Maat Gemaakte Diensten",
+          "description": "Aangepaste oplossingen voor uw unieke persoonlijke en familievereisten."
+        },
+        "6": {
+          "title": "Juridisch & Fiscaal Advies",
+          "description": "Gespecialiseerd juridisch en fiscaal advies om uw wereldwijde positie te optimaliseren."
+        }
+      }
+    },
+
+    "whyChoose": {
+      "title": "Waarom U Voor SLMC Zou Moeten Kiezen",
+      "description": "We combineren expertise, vertrouwen en een klantgerichte aanpak om uitzonderlijke family office diensten te leveren.",
+      "items": {
+        "1": {
+          "title": "Expert Team",
+          "description": "Ons team van professionals brengt ongeëvenaarde expertise in hun respectieve vakgebieden, waardoor u de hoogste kwaliteit service ontvangt."
+        },
+        "2": {
+          "title": "Vertrouwd Partnerschap",
+          "description": "We werken samen met vertrouwde partners om gespecialiseerde diensten te leveren, waardoor naleving en betrouwbaarheid in elk aspect van uw ervaring wordt gegarandeerd."
+        },
+        "3": {
+          "title": "Klantgerichte Aanpak",
+          "description": "Uw unieke behoeften en verwachtingen vormen de basis van onze adviesdiensten. We zijn toegewijd aan het opbouwen van langetermijnrelaties gebaseerd op vertrouwen en begrip."
+        }
+      }
+    },
+
+    "contact": {
+      "title": "Neem Contact Op",
+      "description": "Neem contact op met ons team om meer te weten te komen over hoe we u kunnen helpen uw levensstijl- en vermogensbeheerdoelen te bereiken.",
+      "switzerland": "Zwitsers Kantoor",
+      "phone": "Telefoon",
+      "email": "E-mail",
+      "getInTouch": "Stuur Ons een Bericht",
+      "form": {
+        "firstName": "Voornaam",
+        "lastName": "Achternaam",
+        "email": "E-mailadres",
+        "message": "Uw Bericht",
+        "submit": "Versturen"
+      }
+    }
+  },
+  "footer": {
+    "description": "Uw pad begeleiden met op maat gemaakte oplossingen en onwankelbare ondersteuning, zodat uw gemoedsrust tijdens uw reis naar succes wordt gegarandeerd.",
+    "services": "Diensten",
+    "insurance": "Verzekeringen",
+    "wealthPlanning": "Vermogensplanning",
+    "residencyPlanning": "Verblijfsplanning",
+    "taxAdvice": "Fiscaal & Juridisch Advies",
+    "realEstate": "Vastgoeddiensten",
+    "quickLinks": "Snelle Links",
+    "about": "Over Ons",
+    "familyServices": "Familiediensten",
+    "news": "Nieuws & Evenementen",
+    "careers": "Carrières",
+    "privacy": "Privacybeleid",
+    "contact": "Contact",
+    "address": "Kanton Schwyz, Zwitserland",
+    "phone": "+41 78 813 30 09",
+    "email": "info@slmc.ch",
+    "socialLinkedIn": "LinkedIn",
+    "copyright": "© {year} S&L Management en Consulting LLC. Alle rechten voorbehouden."
+  },
+  "menu": {
+    "home": "Home",
+    "about": "Over Ons",
+    "services": "Familiediensten",
+    "news": "Nieuws & Evenementen",
+    "contact": "Contact",
+    "contactUs": "Neem Contact Op"
+  },
+  "logo": {
+    "alt": "S&L Management Logo"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "home": {
+    "title": "S&L Management and Consulting GmbH",
+    "description": "Premium Family Office Services in Switzerland",
+
+    "hero": {
+      "title": "Welcome to S & L Management",
+      "subtitle": "And Consulting GmbH",
+      "description": "At SLMC, we provide high-end Family Office Services delivered through a holistic and tailored approach to help you achieve your unique lifestyle goals.",
+      "viewMore": "View More"
+    },
+
+    "about": {
+      "title": "About SLMC",
+      "description1": "Your Trusted Lifestyle Solution Partner S & L Management and Consulting GmbH (SLMC) is a leading Swiss multi-family office, serving ultra-high-net-worth individuals and families from our headquarters in Canton Schwyz, Switzerland. We offer a comprehensive suite of tailor-made advisory services, including wealth management, family succession planning, and private lifestyle solutions.",
+      "description2": "By combining in-depth expertise with a personalized approach, we ensure your family's evolving needs are seamlessly taken care of, letting you focus on what truly matters. Experience excellence with SLMC and discover a new standard in family office services."
+    },
+
+    "services": {
+      "title": "Our Core Services",
+      "description": "At SLMC, we understand that managing personal and financial matters requires a truly holistic approach. We provide a comprehensive suite of premium services—from insurance and healthcare management to residency planning and wealth planning—designed to offer you peace of mind at every stage.",
+      "viewAll": "View All Services",
+      "items": {
+        "1": {
+          "title": "Insurance",
+          "description": "Comprehensive insurance solutions tailored to protect your assets and lifestyle."
+        },
+        "2": {
+          "title": "Health Care Management",
+          "description": "Premium healthcare coordination ensuring you receive the best medical attention worldwide."
+        },
+        "3": {
+          "title": "Residency Planning",
+          "description": "Expert guidance on global mobility, residency options, and citizenship programs."
+        },
+        "4": {
+          "title": "Wealth Planning",
+          "description": "Strategic wealth management solutions designed to preserve and grow your assets."
+        },
+        "5": {
+          "title": "Bespoke Services",
+          "description": "Customized solutions for your unique personal and family requirements."
+        },
+        "6": {
+          "title": "Legal & Tax Advice",
+          "description": "Specialized legal and tax consultation to optimize your global position."
+        }
+      }
+    },
+
+    "whyChoose": {
+      "title": "Why You Should Choose SLMC",
+      "description": "We combine expertise, trust, and a client-first approach to deliver exceptional family office services.",
+      "items": {
+        "1": {
+          "title": "Expert Team",
+          "description": "Our team of professionals brings unparalleled expertise in their respective fields, ensuring you receive the highest quality service."
+        },
+        "2": {
+          "title": "Trusted Partnership",
+          "description": "We collaborate with trusted partners to deliver specialized services, ensuring compliance and reliability in every aspect of your experience."
+        },
+        "3": {
+          "title": "Client-Centric Approach",
+          "description": "Your unique needs and expectations are the foundation of our advisory services. We are committed to building long-term relationships based on trust and understanding."
+        }
+      }
+    },
+
+    "contact": {
+      "title": "Get in Touch",
+      "description": "Contact our team to learn more about how we can help you achieve your lifestyle and wealth management goals.",
+      "switzerland": "Switzerland Office",
+      "phone": "Phone",
+      "email": "Email",
+      "getInTouch": "Send Us a Message",
+      "form": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email Address",
+        "message": "Your Message",
+        "submit": "Submit"
+      }
+    }
+  },
+  "footer": {
+    "description": "Guiding your path with tailored solutions and unwavering support, ensuring your peace of mind throughout your journey towards success.",
+    "services": "Services",
+    "insurance": "Insurance",
+    "wealthPlanning": "Wealth Planning",
+    "residencyPlanning": "Residency Planning",
+    "taxAdvice": "Tax & Legal Advice",
+    "realEstate": "Real Estate Services",
+    "quickLinks": "Quick Links",
+    "about": "About Us",
+    "familyServices": "Family Services",
+    "news": "News & Events",
+    "careers": "Careers",
+    "privacy": "Privacy Policy",
+    "contact": "Contact",
+    "address": "Canton Schwyz, Switzerland",
+    "phone": "+41 78 813 30 09",
+    "email": "info@slmc.ch",
+    "socialLinkedIn": "LinkedIn",
+    "copyright": "© {year} S&L Management and Consulting LLC. All rights reserved."
+  },
+  "menu": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Family Services",
+    "news": "News & Events",
+    "contact": "Contact",
+    "contactUs": "Contact Us"
+  },
+  "logo": {
+    "alt": "S&L Management Logo"
+  }
+}
