@@ -31,16 +31,14 @@ export default function Header() {
         <div className='flex items-center'>
           <Link href='/' className='flex items-center'>
             <Image
-              src='/images/logo.svg'
+              src='/images/logo_with_text.svg'
               alt='S&L Management Logo'
-              width={50}
-              height={50}
-              className='mr-2'
+              width={0}
+              height={0}
+              sizes='100vw'
+              className='w-auto h-[62px]'
               priority
             />
-            <span className='text-yellow-500 font-bold hidden sm:inline-block'>
-              S&L MANAGEMENT
-            </span>
           </Link>
         </div>
 

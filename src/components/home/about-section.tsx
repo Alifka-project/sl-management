@@ -19,11 +19,12 @@ export default function AboutSection() {
 
           <FadeIn className='md:w-1/2' direction='right' delay={0.4}>
             <Image
-              src='/images/about-image.jpg'
+              src='/images/content_homepage.png'
               alt='About SLMC'
-              width={600}
-              height={400}
-              className='rounded-lg shadow-md w-full h-auto'
+              width={0}
+              height={0}
+              sizes='100vw'
+              className='w-full h-auto'
             />
           </FadeIn>
         </div>

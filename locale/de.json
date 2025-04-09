@@ -5,7 +5,8 @@
 
     "hero": {
       "title": "Willkommen bei S & L Management",
-      "subtitle": "Und Consulting GmbH",
+      "and": "Und",
+      "subtitle": "Consulting GmbH",
       "description": "Bei SLMC bieten wir hochwertige Family Office Dienstleistungen durch einen ganzheitlichen und maßgeschneiderten Ansatz, um Ihnen zu helfen, Ihre einzigartigen Lifestyle-Ziele zu erreichen.",
       "viewMore": "Mehr erfahren"
     },

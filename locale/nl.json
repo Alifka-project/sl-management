@@ -5,7 +5,8 @@
 
     "hero": {
       "title": "Welkom bij S & L Management",
-      "subtitle": "En Consulting GmbH",
+      "and": "En",
+      "subtitle": "Consulting GmbH",
       "description": "Bij SLMC bieden we hoogwaardige Family Office Diensten via een holistische en op maat gemaakte aanpak om u te helpen uw unieke levensstijldoelen te bereiken.",
       "viewMore": "Meer Bekijken"
     },
