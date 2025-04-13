@@ -2,21 +2,23 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import { Menu, X } from 'lucide-react'
 import { AnimatePresence } from 'framer-motion'
 
 import { Button } from '@/components/ui/button'
 import LanguageSwitcher from './language-switcher'
 import MobileMenu from './mobile-menu'
+import { Link } from '@/i18n/routing' // Import the Link from your routing config
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const pathname = usePathname()
   const t = useTranslations('menu')
+  const locale = useLocale()
 
+  // Define navigation items
   const navItems = [
     { name: t('home'), href: '/' },
     { name: t('about'), href: '/about' },
@@ -44,17 +46,24 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className='hidden md:flex items-center space-x-6'>
-          {navItems.map(item => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={`text-gray-700 hover:text-yellow-500 transition-colors ${
-                pathname === item.href ? 'font-semibold text-yellow-500' : ''
-              }`}
-            >
-              {item.name}
-            </Link>
-          ))}
+          {navItems.map(item => {
+            // Check if the current path matches this nav item's path
+            const isActive =
+              pathname.endsWith(item.href) ||
+              (item.href === '/' && pathname === `/${locale}`)
+
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`text-gray-700 hover:text-yellow-500 transition-colors ${
+                  isActive ? 'font-semibold text-yellow-500' : ''
+                }`}
+              >
+                {item.name}
+              </Link>
+            )
+          })}
 
           <LanguageSwitcher />
 

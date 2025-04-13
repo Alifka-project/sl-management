@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import FadeIn from '@/components/animations/fade-in'
 
@@ -8,24 +7,21 @@ export default function AboutSection() {
   const t = useTranslations('home')
 
   return (
-    <section className='py-16 bg-gray-50'>
+    <section className='py-8'>
       <div className='max-w-7xl mx-auto px-6'>
-        <div className='flex flex-col md:flex-row gap-12'>
-          <FadeIn className='md:w-1/2' direction='left' delay={0.2}>
-            <h2 className='text-3xl font-bold mb-6'>{t('about.title')}</h2>
-            <p className='text-gray-700 mb-4'>{t('about.description1')}</p>
-            <p className='text-gray-700 mb-4'>{t('about.description2')}</p>
+        <div className='flex flex-col gap-10 max-lg:gap-5'>
+          <FadeIn
+            className='flex-row max-lg:flex-col flex gap-10 max-lg:gap-5'
+            direction='left'
+            delay={0.2}
+          >
+            <h2 className='text-4xl max-lg:text-2xl font-bold'>
+              {t('about.title')}
+            </h2>
+            <p className='text-gray-700 flex-1'>{t('about.description1')}</p>
           </FadeIn>
-
-          <FadeIn className='md:w-1/2' direction='right' delay={0.4}>
-            <Image
-              src='/images/content_homepage.png'
-              alt='About SLMC'
-              width={0}
-              height={0}
-              sizes='100vw'
-              className='w-full h-auto'
-            />
+          <FadeIn direction='left' delay={0.2}>
+            <p className='text-gray-700 '>{t('about.description2')}</p>
           </FadeIn>
         </div>
       </div>
