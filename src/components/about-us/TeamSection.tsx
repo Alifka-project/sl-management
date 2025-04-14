@@ -52,7 +52,6 @@ const TeamSection: React.FC = () => {
 
   return (
     <motion.div
-      className='mb-16'
       initial='hidden'
       whileInView='visible'
       viewport={{ once: true, margin: '-100px' }}
@@ -93,7 +92,7 @@ const TeamSection: React.FC = () => {
         seamless global experience.
       </motion.p>
 
-      <div className='space-y-8'>
+      <div className='space-y-8 flex flex-row gap-12 max-lg:flex-col max-lg:gap-0'>
         {teamMembers.map((member, index) => (
           <TeamMemberCard
             key={index}

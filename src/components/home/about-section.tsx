@@ -7,7 +7,7 @@ export default function AboutSection() {
   const t = useTranslations('home')
 
   return (
-    <section className='py-8'>
+    <section>
       <div className='max-w-7xl mx-auto px-6'>
         <div className='flex flex-col gap-10 max-lg:gap-5'>
           <FadeIn

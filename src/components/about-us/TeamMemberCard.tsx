@@ -39,7 +39,12 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({
         }`}
       >
         <div className='relative w-full lg:w-1/3 h-72 lg:h-auto'>
-          <Image src={imageSrc} alt={name} fill className='object-cover' />
+          <Image
+            src={imageSrc}
+            alt={name}
+            fill
+            className='object-cover max-lg:object-contain'
+          />
         </div>
         <div className='p-6 lg:w-2/3'>
           <h3 className='text-xl font-bold mb-2'>{name}</h3>
