@@ -1,5 +1,5 @@
-import AboutIntroduction from '@/components/about-us/Introduction'
-import TeamSection from '@/components/about-us/TeamSection'
+import AboutIntroduction from '@/components/about-us/introduction'
+import TeamSection from '@/components/about-us/team-section'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {

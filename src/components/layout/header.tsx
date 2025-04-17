@@ -24,7 +24,7 @@ export default function Header() {
     { name: t('about'), href: '/about' },
     { name: t('services'), href: '/services' },
     { name: t('news'), href: '/news' },
-    { name: t('contact'), href: '/contact' },
+    { name: 'ART45 VAG', href: '/art-45' },
   ]
 
   return (
@@ -56,7 +56,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-gray-700 hover:text-yellow-500 transition-colors ${
+                className={`text-gray-700 hover:text-yellow-500 transition-colors text-xs ${
                   isActive ? 'font-semibold text-yellow-500' : ''
                 }`}
               >
@@ -67,9 +67,11 @@ export default function Header() {
 
           <LanguageSwitcher />
 
-          <Button className='bg-yellow-500 hover:bg-yellow-600 text-white ml-2'>
-            {t('contactUs')}
-          </Button>
+          <Link href='/contact-us'>
+            <Button className='bg-yellow-500 hover:bg-yellow-600 text-white ml-2'>
+              {t('contactUs')}
+            </Button>
+          </Link>
         </nav>
 
         {/* Mobile Menu Button */}
