@@ -13,19 +13,22 @@ export default function Footer() {
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
           <div>
             <Image
-              src='/images/logo.svg'
+              src='/images/logo_only.svg'
               alt='S&L Management Logo'
-              width={120}
-              height={40}
-              className='mb-4 invert'
+              width={45}
+              height={45}
             />
-            <p className='text-gray-400'>{t('description')}</p>
+            <Image
+              src='/images/logo_text.svg'
+              alt='S&L Management Logo'
+              width={200}
+              height={90}
+            />
+            <p className='text-white text-sm'>{t('description')}</p>
           </div>
 
           <div>
-            <h4 className='text-lg font-semibold mb-4'>
-              {t('services')}
-            </h4>
+            <h4 className='text-lg font-semibold mb-4'>{t('services')}</h4>
             <ul className='space-y-2'>
               <li>
                 <Link
@@ -71,9 +74,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className='text-lg font-semibold mb-4'>
-              {t('quickLinks')}
-            </h4>
+            <h4 className='text-lg font-semibold mb-4'>{t('quickLinks')}</h4>
             <ul className='space-y-2'>
               <li>
                 <Link
@@ -119,9 +120,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className='text-lg font-semibold mb-4'>
-              {t('contact')}
-            </h4>
+            <h4 className='text-lg font-semibold mb-4'>{t('contact')}</h4>
             <address className='not-italic'>
               <p className='mb-2 text-gray-400'>Canton Schwyz, Switzerland</p>
               <p className='mb-2'>
