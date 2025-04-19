@@ -84,6 +84,160 @@
       }
     }
   },
+  "aboutUs": {
+    "title": "About Us",
+    "subTitle": "SLMC - Your Lifestyle Solutions Expert.",
+    "description1": "At S & L Management and Consulting LLC (SLMC), we are proud to be your trusted partner for comprehensive lifestyle solutions and family office services. Our commitment to excellence is grounded in a broad spectrum of industry experience, a dedication to personalized service, and a global network of esteemed partners.",
+    "description2": "Headquartered in Canton Schwyz, Switzerland—an innovative hub for finance, blockchain, and health tech—SLMC also maintains a presence in Beijing (PRC). By partnering with select premium firms in Switzerland and Asia, we tailor solutions for individuals and families pursuing business or personal interests in both regions.",
+
+    "team": {
+      "title": "Team",
+      "description1": "SLMC is powered by a diverse team focused on excellence and personal attention. Led by Prof. Dr. Andreas Svoboda, we collaborate with top-tier partners in finance, banking, insurance, and family office services to offer bespoke solutions for UHNW clients at the highest standards.",
+      "description2": "To meet growing Asian demand, SLMC proudly introduces its Beijing Desk, headed by Ms. Lingnan Ren, providing specialized Mandarin support for a seamless global experience.",
+      "teams": {
+        "1": {
+          "name": "Prof. Dr. Andreas Svoboda",
+          "description": "With over two decades in the global financial services industry, Prof. Dr. Svoboda is also a mentor, coach, and respected academic at Swiss universities. He leads our team in delivering comprehensive private and family lifestyle solutions, tailored to your unique goals."
+        },
+        "2": {
+          "name": "Ms. Lingnan Ren",
+          "description": "Equipped with a strong academic background in Economics from Hebei University of Technology, Ms. Ren brings invaluable experience from Mingya Insurance and the media/publishing sectors. Fluent in English and Mandarin, she heads SLMC’s Beijing Desk—offering personalized assistance and world-class service to a diverse clientele."
+        }
+      }
+    }
+  },
+  "familyService": {
+    "1": {
+      "title": "Insurance",
+      "description": "Safeguard your assets and loved ones with our comprehensive insurance solutions. Our expert advisors conduct thorough reviews and offer personalized strategies to cover all aspects of your life.",
+      "items": {
+        "1": "Comprehensive Insurance Review",
+        "2": "Tailored Insurance Solutions",
+        "3": "Risk Management",
+        "4": "Strategic Planning",
+        "5": "Claims Management",
+        "6": "Regular Reviews and Adjustments",
+        "7": "Compliance and Regulation"
+      }
+    },
+    "2": {
+      "title": "Relocation Services",
+      "description": "Seamlessly transition to a new chapter of your life with our specialized relocation services. From destination research to settling-in support, we take care of every detail to make your move smooth and stress-free.",
+      "items": {
+        "1": "Personalized Relocation Planning",
+        "2": "Destination Research and Analysis",
+        "3": "Legal and Compliance Assistance",
+        "4": "School Search and Educational Consultation",
+        "5": "Cultural Integration",
+        "6": "Networking and Community Integration",
+        "7": "Logistics Coordination",
+        "8": "Real Estate Services",
+        "9": "Settling-in Support",
+        "10": "Continuous Communication"
+      }
+    },
+    "3": {
+      "title": "Wealth Planning",
+      "description": "Secure your financial future with our wealth planning services. Our experienced team works closely with you to develop customized strategies, ensuring your wealth aligns with your unique goals and aspirations.",
+      "items": {
+        "1": "Generational Wealth Transfer",
+        "2": "Philanthropic advice & planning",
+        "3": "Luxury assets",
+        "4": "Real estate advice",
+        "5": "Retirement Planning",
+        "6": "Strategic Wealth Management",
+        "7": "Holistic Financial Assessment"
+      }
+    },
+    "4": {
+      "title": "Tax & Legal Advice",
+      "description": "Navigate the complexities of legal and tax landscapes with confidence. Our advisors provide strategic guidance to optimize your financial position and ensure compliance with relevant regulations.",
+      "items": {
+        "1": "Swiss and international tax planning",
+        "2": "Corporate structuring",
+        "3": "Personal tax compliance",
+        "4": "Financial planning",
+        "5": "Trust management"
+      }
+    },
+    "5": {
+      "title": "Healthcare Management",
+      "description": "We collaborate closely with external premium Healthcare providers to ensure the first-class and prompt healthcare service. Please contact with us directly for Details.",
+      "items": {}
+    },
+    "6": {
+      "title": "Real Estate Services",
+      "description": "Find your perfect home or investment property with our real estate services. Our team assists in property searches, negotiations, and seamless transactions, making your real estate journey enjoyable and efficient.",
+      "items": {}
+    },
+    "7": {
+      "title": "Bespoke Services",
+      "description": "Tailored to your individual needs, our bespoke services offer a unique and personalized approach to address your specific requirements, ensuring an unparalleled level of service and satisfaction. You are welcomed to contact us directly.",
+      "items": {}
+    },
+    "contactUs": "Contact Us"
+  },
+  "newsEvent": {
+    "title": "Family Business Management",
+    "subTitle": "By Dr. Andreas Svoboda",
+    "description1": "Running a family business is a balancing act—blending tradition with innovation, family ties with financial responsibility. Family Business Management explores the unique challenges and opportunities of family enterprises, offering insights for success.",
+    "description2": "Family businesses thrive on relationships—both their greatest strength and challenge. Family Business Management explores ownership, governance, succession, and family dynamics while addressing fiscal responsibilities and global influences. Through real-life case studies, it highlights successes, common pitfalls, and strategies for sustainable growth. Whether you're passing the torch or stepping into leadership, this guide ensures business longevity without compromising family bonds.",
+    "button": "Read More Here"
+  },
+  "ART45VAG": {
+    "title": "ART45 VAG",
+    "1": {
+      "title": "INFORMATION ART. 45 VAG ON INSURANCE BROKERAGE SERVICES.",
+      "description": ""
+    },
+    "2": {
+      "title": "INFORMATION ABOUT THE SERVICES",
+      "description": "The customer commissions SLMC in the sense of a business relationship based on mutual trust through a separate broker agreement with the ongoing support of its insurance companies. The ones hereafter The information listed forms an integral part of a broker agreement, which only may be modified or supplemented by a document signed by both contracting parties. SLMC is commissioned to negotiate with insurers on behalf of the customer, obtain offers and, after approval by the customer, to place and manage the insurance policies. SLMC advises and assists the customer in all insurance matters that form part of the broker agreement; d. h. especially in risk and insurance analysis, when formulating a risk and Insurance policy, in concepts for risk financing solutions, in determining the Insurance requirements, placement and ongoing support of insurance companies and Support and assistance in the event of a claim with insurers. The information from Customer advisors and specialists from SLMC are based on many years of experience as an insurance broker. You have legal or Tax advice from e.g. E.g. lawyers, banks, tax experts or any other Authorities cannot be replaced in specific individual cases."
+    },
+    "3": {
+      "title": "COMPENSATION INFORMATION",
+      "description": ""
+    },
+    "4": {
+      "title": "INFORMATION ON COOPERATION WITH INSURERS",
+      "description": ""
+    },
+    "5": {
+      "title": "INFORMATION ON PRIVACY, DATA SECURITY AND CONFIDENTIALITY",
+      "description": ""
+    },
+    "6": {
+      "title": "INFORMATION ON TRAINING AND FURTHER TRAINING OF EMPLOYEES",
+      "description": ""
+    },
+    "7": {
+      "title": "LIABILITY INFORMATION",
+      "description": ""
+    }
+  },
+  "contactUs": {
+    "title": "Let’s Get In Touch.",
+    "subTitle": "You may send it manually to info@slmc.ch.",
+    "form": {
+      "1": {
+        "title": "Fullname",
+        "field": "Enter your fullname..."
+      },
+      "2": {
+        "title": "Email",
+        "field": "Enter your email..."
+      },
+      "3": {
+        "title": "Subject",
+        "field": "Enter your subject..."
+      },
+      "4": {
+        "title": "Message",
+        "field": "Enter your message..."
+      }
+    },
+    "button": "Send Message Now"
+  },
   "footer": {
     "description": "Guiding your path with tailored solutions and unwavering support, ensuring your peace of mind throughout your journey towards success.",
     "services": "Services",

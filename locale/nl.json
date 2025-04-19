@@ -84,6 +84,160 @@
       }
     }
   },
+  "aboutUs": {
+    "title": "Over Ons",
+    "subTitle": "SLMC - Uw Levensstijl Oplossingsexpert.",
+    "description1": "Bij S & L Management en Consulting LLC (SLMC) zijn we er trots op uw vertrouwde partner te zijn voor uitgebreide levensstijloplossingen en family office diensten. Onze toewijding aan uitmuntendheid is gebaseerd op een breed spectrum van branche-ervaring, toewijding aan gepersonaliseerde service, en een wereldwijd netwerk van gewaardeerde partners.",
+    "description2": "Met het hoofdkantoor in Kanton Schwyz, Zwitserland—een innovatieve hub voor financiën, blockchain, en gezondheidstechnologie—heeft SLMC ook een aanwezigheid in Beijing (VRC). Door samen te werken met geselecteerde premium bedrijven in Zwitserland en Azië, maken we oplossingen op maat voor individuen en families die zakelijke of persoonlijke belangen in beide regio's nastreven.",
+
+    "team": {
+      "title": "Team",
+      "description1": "SLMC wordt aangedreven door een divers team gericht op uitmuntendheid en persoonlijke aandacht. Onder leiding van Prof. Dr. Andreas Svoboda werken we samen met eersteklas partners in financiën, bankwezen, verzekeringen, en family office diensten om op maat gemaakte oplossingen aan te bieden voor UHNW-klanten volgens de hoogste standaarden.",
+      "description2": "Om aan de groeiende Aziatische vraag te voldoen, introduceert SLMC met trots zijn Beijing Desk, geleid door mevrouw Lingnan Ren, die gespecialiseerde Mandarijn ondersteuning biedt voor een naadloze wereldwijde ervaring.",
+      "teams": {
+        "1": {
+          "name": "Prof. Dr. Andreas Svoboda",
+          "description": "Met meer dan twee decennia in de wereldwijde financiële dienstverlening, is Prof. Dr. Svoboda ook mentor, coach, en gerespecteerd academicus aan Zwitserse universiteiten. Hij leidt ons team bij het leveren van uitgebreide privé- en familie levensstijloplossingen, op maat gemaakt voor uw unieke doelen."
+        },
+        "2": {
+          "name": "Mevr. Lingnan Ren",
+          "description": "Uitgerust met een sterke academische achtergrond in Economie van de Hebei Universiteit voor Technologie, brengt mevr. Ren waardevolle ervaring van Mingya Insurance en de media/uitgeverij sectoren. Vloeiend in Engels en Mandarijn, leidt zij SLMC's Beijing Desk—met het aanbieden van gepersonaliseerde assistentie en wereldklasse service aan een divers cliënteel."
+        }
+      }
+    }
+  },
+  "familyService": {
+    "1": {
+      "title": "Verzekeringen",
+      "description": "Bescherm uw bezittingen en dierbaren met onze uitgebreide verzekeringsoplossingen. Onze deskundige adviseurs voeren grondige beoordelingen uit en bieden gepersonaliseerde strategieën om alle aspecten van uw leven te dekken.",
+      "items": {
+        "1": "Uitgebreide Verzekeringsbeoordeling",
+        "2": "Op Maat Gemaakte Verzekeringsoplossingen",
+        "3": "Risicobeheer",
+        "4": "Strategische Planning",
+        "5": "Claimbeheer",
+        "6": "Regelmatige Beoordelingen en Aanpassingen",
+        "7": "Naleving en Regelgeving"
+      }
+    },
+    "2": {
+      "title": "Relocatiediensten",
+      "description": "Maak naadloos de overgang naar een nieuw hoofdstuk in uw leven met onze gespecialiseerde relocatiediensten. Van bestemmingsonderzoek tot vestigingsondersteuning, we zorgen voor elk detail om uw verhuizing soepel en stressvrij te maken.",
+      "items": {
+        "1": "Gepersonaliseerde Relocatieplanning",
+        "2": "Bestemmingsonderzoek en -analyse",
+        "3": "Juridische en Nalevingsondersteuning",
+        "4": "Schoolzoeken en Onderwijsconsultatie",
+        "5": "Culturele Integratie",
+        "6": "Netwerken en Gemeenschapsintegratie",
+        "7": "Logistieke Coördinatie",
+        "8": "Vastgoeddiensten",
+        "9": "Vestigingsondersteuning",
+        "10": "Continue Communicatie"
+      }
+    },
+    "3": {
+      "title": "Vermogensplanning",
+      "description": "Beveilig uw financiële toekomst met onze vermogensplanningsdiensten. Ons ervaren team werkt nauw met u samen om aangepaste strategieën te ontwikkelen, waarbij we ervoor zorgen dat uw vermogen in lijn is met uw unieke doelen en ambities.",
+      "items": {
+        "1": "Generationele Vermogensoverdracht",
+        "2": "Filantropisch advies & planning",
+        "3": "Luxe bezittingen",
+        "4": "Vastgoedadvies",
+        "5": "Pensioenplanning",
+        "6": "Strategisch Vermogensbeheer",
+        "7": "Holistische Financiële Beoordeling"
+      }
+    },
+    "4": {
+      "title": "Fiscaal & Juridisch Advies",
+      "description": "Navigeer met vertrouwen door de complexiteit van juridische en fiscale landschappen. Onze adviseurs bieden strategische begeleiding om uw financiële positie te optimaliseren en naleving van relevante regelgeving te waarborgen.",
+      "items": {
+        "1": "Zwitserse en internationale fiscale planning",
+        "2": "Bedrijfsstructurering",
+        "3": "Persoonlijke fiscale compliance",
+        "4": "Financiële planning",
+        "5": "Trustbeheer"
+      }
+    },
+    "5": {
+      "title": "Gezondheidszorgbeheer",
+      "description": "We werken nauw samen met externe premium gezondheidszorgaanbieders om eersteklas en snelle gezondheidszorgdiensten te garanderen. Neem rechtstreeks contact met ons op voor details.",
+      "items": {}
+    },
+    "6": {
+      "title": "Vastgoeddiensten",
+      "description": "Vind uw perfecte woning of investeringseigendom met onze vastgoeddiensten. Ons team assisteert bij het zoeken naar eigendom, onderhandelingen, en naadloze transacties, waardoor uw vastgoedtraject plezierig en efficiënt wordt.",
+      "items": {}
+    },
+    "7": {
+      "title": "Op Maat Gemaakte Diensten",
+      "description": "Op maat gemaakt voor uw individuele behoeften, bieden onze op maat gemaakte diensten een unieke en gepersonaliseerde aanpak om aan uw specifieke vereisten te voldoen, wat zorgt voor een ongeëvenaard niveau van service en tevredenheid. U bent welkom om rechtstreeks contact met ons op te nemen.",
+      "items": {}
+    },
+    "contactUs": "Neem Contact Op"
+  },
+  "newsEvent": {
+    "title": "Familiebedrijf Management",
+    "subTitle": "Door Dr. Andreas Svoboda",
+    "description1": "Een familiebedrijf runnen is een balanceeract—traditie combineren met innovatie, familiebanden met financiële verantwoordelijkheid. Familiebedrijf Management verkent de unieke uitdagingen en kansen van familieondernemingen en biedt inzichten voor succes.",
+    "description2": "Familiebedrijven floreren op relaties—zowel hun grootste kracht als uitdaging. Familiebedrijf Management onderzoekt eigendom, bestuur, opvolging, en familiedynamiek terwijl het fiscale verantwoordelijkheden en mondiale invloeden behandelt. Door middel van realistische casestudies belicht het successen, veelvoorkomende valkuilen, en strategieën voor duurzame groei. Of u nu de fakkel doorgeeft of in een leiderschapsrol stapt, deze gids zorgt voor bedrijfslongeviteit zonder familiale banden in gevaar te brengen.",
+    "button": "Lees Hier Meer"
+  },
+  "ART45VAG": {
+    "title": "ART45 VAG",
+    "1": {
+      "title": "INFORMATIE ART. 45 VAG OVER VERZEKERINGSBEMIDDELINGSDIENSTEN.",
+      "description": ""
+    },
+    "2": {
+      "title": "INFORMATIE OVER DE DIENSTEN",
+      "description": "De klant geeft SLMC opdracht in de zin van een zakenrelatie gebaseerd op wederzijds vertrouwen via een afzonderlijke bemiddelingsovereenkomst met de doorlopende ondersteuning van zijn verzekeringsmaatschappijen. De hieronder vermelde informatie vormt een integraal onderdeel van een bemiddelingsovereenkomst, die alleen mag worden gewijzigd of aangevuld door een door beide contractpartijen ondertekend document. SLMC is gemachtigd om namens de klant te onderhandelen met verzekeraars, offertes in te winnen en, na goedkeuring door de klant, de verzekeringspolis te plaatsen en te beheren. SLMC adviseert en ondersteunt de klant in alle verzekeringszaken die deel uitmaken van de bemiddelingsovereenkomst; d.w.z. vooral bij risico- en verzekeringsanalyse, bij het formuleren van een risico- en verzekeringsbeleid, bij concepten voor risicofinancieringsoplossingen, bij het bepalen van de verzekeringsbehoeften, plaatsing en doorlopende ondersteuning van verzekeringsmaatschappijen en ondersteuning en bijstand bij schadegevallen met verzekeraars. De informatie van klantadviseurs en specialisten van SLMC is gebaseerd op jarenlange ervaring als verzekeringsmakelaar. Ze kunnen juridisch of fiscaal advies van bijv. advocaten, banken, fiscale experts of andere autoriteiten in specifieke individuele gevallen niet vervangen."
+    },
+    "3": {
+      "title": "VERGOEDINGSINFORMATIE",
+      "description": ""
+    },
+    "4": {
+      "title": "INFORMATIE OVER SAMENWERKING MET VERZEKERAARS",
+      "description": ""
+    },
+    "5": {
+      "title": "INFORMATIE OVER PRIVACY, GEGEVENSBEVEILIGING EN VERTROUWELIJKHEID",
+      "description": ""
+    },
+    "6": {
+      "title": "INFORMATIE OVER TRAINING EN VERDERE OPLEIDING VAN MEDEWERKERS",
+      "description": ""
+    },
+    "7": {
+      "title": "AANSPRAKELIJKHEIDSINFORMATIE",
+      "description": ""
+    }
+  },
+  "contactUs": {
+    "title": "Laten We Contact Opnemen.",
+    "subTitle": "U kunt het handmatig versturen naar info@slmc.ch.",
+    "form": {
+      "1": {
+        "title": "Volledige Naam",
+        "field": "Voer uw volledige naam in..."
+      },
+      "2": {
+        "title": "E-mail",
+        "field": "Voer uw e-mailadres in..."
+      },
+      "3": {
+        "title": "Onderwerp",
+        "field": "Voer uw onderwerp in..."
+      },
+      "4": {
+        "title": "Bericht",
+        "field": "Voer uw bericht in..."
+      }
+    },
+    "button": "Verstuur Bericht Nu"
+  },
   "footer": {
     "description": "Uw pad begeleiden met op maat gemaakte oplossingen en onwankelbare ondersteuning, zodat uw gemoedsrust tijdens uw reis naar succes wordt gegarandeerd.",
     "services": "Diensten",

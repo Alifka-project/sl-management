@@ -84,6 +84,160 @@
       }
     }
   },
+  "aboutUs": {
+    "title": "Über Uns",
+    "subTitle": "SLMC - Ihr Lifestyle-Lösungsexperte.",
+    "description1": "Bei S & L Management und Consulting LLC (SLMC) sind wir stolz darauf, Ihr vertrauenswürdiger Partner für umfassende Lifestyle-Lösungen und Family Office-Dienstleistungen zu sein. Unser Engagement für Exzellenz gründet sich auf ein breites Spektrum an Branchenerfahrung, ein Bekenntnis zu persönlichem Service und ein globales Netzwerk geschätzter Partner.",
+    "description2": "Mit Hauptsitz im Kanton Schwyz, Schweiz - einem innovativen Zentrum für Finanzen, Blockchain und Gesundheitstechnologie - unterhält SLMC auch eine Präsenz in Peking (VR China). Durch die Zusammenarbeit mit ausgewählten Premium-Unternehmen in der Schweiz und Asien schneiden wir Lösungen für Einzelpersonen und Familien zu, die geschäftliche oder persönliche Interessen in beiden Regionen verfolgen.",
+
+    "team": {
+      "title": "Team",
+      "description1": "SLMC wird von einem vielfältigen Team angetrieben, das sich auf Exzellenz und persönliche Aufmerksamkeit konzentriert. Unter der Leitung von Prof. Dr. Andreas Svoboda arbeiten wir mit erstklassigen Partnern in den Bereichen Finanzen, Banking, Versicherungen und Family Office-Dienstleistungen zusammen, um maßgeschneiderte Lösungen für UHNW-Kunden nach höchsten Standards anzubieten.",
+      "description2": "Um der wachsenden asiatischen Nachfrage gerecht zu werden, präsentiert SLMC stolz seinen Peking-Desk unter der Leitung von Frau Lingnan Ren, der spezialisierte Mandarin-Unterstützung für ein nahtloses globales Erlebnis bietet.",
+      "teams": {
+        "1": {
+          "name": "Prof. Dr. Andreas Svoboda",
+          "description": "Mit über zwei Jahrzehnten in der globalen Finanzdienstleistungsbranche ist Prof. Dr. Svoboda auch Mentor, Coach und respektierter Akademiker an Schweizer Universitäten. Er leitet unser Team bei der Bereitstellung umfassender privater und familiärer Lifestyle-Lösungen, die auf Ihre einzigartigen Ziele zugeschnitten sind."
+        },
+        "2": {
+          "name": "Frau Lingnan Ren",
+          "description": "Ausgestattet mit einem starken akademischen Hintergrund in Wirtschaftswissenschaften von der Technischen Universität Hebei bringt Frau Ren unschätzbare Erfahrung von Mingya Insurance und den Medien-/Verlagssektoren mit. Fließend in Englisch und Mandarin leitet sie den Peking-Desk von SLMC – und bietet personalisierte Unterstützung und erstklassigen Service für eine vielfältige Kundschaft."
+        }
+      }
+    }
+  },
+  "familyService": {
+    "1": {
+      "title": "Versicherung",
+      "description": "Schützen Sie Ihre Vermögenswerte und Lieben mit unseren umfassenden Versicherungslösungen. Unsere Expertenberater führen gründliche Überprüfungen durch und bieten personalisierte Strategien, um alle Aspekte Ihres Lebens abzudecken.",
+      "items": {
+        "1": "Umfassende Versicherungsüberprüfung",
+        "2": "Maßgeschneiderte Versicherungslösungen",
+        "3": "Risikomanagement",
+        "4": "Strategische Planung",
+        "5": "Schadensmanagement",
+        "6": "Regelmäßige Überprüfungen und Anpassungen",
+        "7": "Compliance und Regulierung"
+      }
+    },
+    "2": {
+      "title": "Umzugsdienstleistungen",
+      "description": "Wechseln Sie nahtlos zu einem neuen Kapitel Ihres Lebens mit unseren spezialisierten Umzugsdienstleistungen. Von der Zielforschung bis zur Eingewöhnungsunterstützung kümmern wir uns um jedes Detail, um Ihren Umzug reibungslos und stressfrei zu gestalten.",
+      "items": {
+        "1": "Personalisierte Umzugsplanung",
+        "2": "Zielforschung und -analyse",
+        "3": "Rechts- und Compliance-Unterstützung",
+        "4": "Schulsuche und Bildungsberatung",
+        "5": "Kulturelle Integration",
+        "6": "Netzwerken und Gemeinschaftsintegration",
+        "7": "Logistikkoordination",
+        "8": "Immobiliendienstleistungen",
+        "9": "Eingewöhnungsunterstützung",
+        "10": "Kontinuierliche Kommunikation"
+      }
+    },
+    "3": {
+      "title": "Vermögensplanung",
+      "description": "Sichern Sie Ihre finanzielle Zukunft mit unseren Vermögensplanungsdiensten. Unser erfahrenes Team arbeitet eng mit Ihnen zusammen, um maßgeschneiderte Strategien zu entwickeln und sicherzustellen, dass Ihr Vermögen mit Ihren einzigartigen Zielen und Bestrebungen übereinstimmt.",
+      "items": {
+        "1": "Generationsübergreifender Vermögenstransfer",
+        "2": "Philanthropische Beratung & Planung",
+        "3": "Luxusgüter",
+        "4": "Immobilienberatung",
+        "5": "Ruhestandsplanung",
+        "6": "Strategisches Vermögensmanagement",
+        "7": "Ganzheitliche Finanzbeurteilung"
+      }
+    },
+    "4": {
+      "title": "Steuer- & Rechtsberatung",
+      "description": "Navigieren Sie mit Zuversicht durch die Komplexitäten der rechtlichen und steuerlichen Landschaften. Unsere Berater bieten strategische Anleitung zur Optimierung Ihrer finanziellen Position und zur Sicherstellung der Einhaltung relevanter Vorschriften.",
+      "items": {
+        "1": "Schweizer und internationale Steuerplanung",
+        "2": "Unternehmensstrukturierung",
+        "3": "Persönliche Steuerkonformität",
+        "4": "Finanzplanung",
+        "5": "Treuhandverwaltung"
+      }
+    },
+    "5": {
+      "title": "Gesundheitsmanagement",
+      "description": "Wir arbeiten eng mit externen Premium-Gesundheitsdienstleistern zusammen, um erstklassige und prompte Gesundheitsversorgung zu gewährleisten. Bitte kontaktieren Sie uns direkt für Details.",
+      "items": {}
+    },
+    "6": {
+      "title": "Immobiliendienstleistungen",
+      "description": "Finden Sie Ihr perfektes Zuhause oder Anlageobjekt mit unseren Immobiliendienstleistungen. Unser Team unterstützt bei der Immobiliensuche, Verhandlungen und reibungslosen Transaktionen, um Ihre Immobilienreise angenehm und effizient zu gestalten.",
+      "items": {}
+    },
+    "7": {
+      "title": "Maßgeschneiderte Dienstleistungen",
+      "description": "Auf Ihre individuellen Bedürfnisse zugeschnitten bieten unsere maßgeschneiderten Dienstleistungen einen einzigartigen und personalisierten Ansatz, um Ihre spezifischen Anforderungen zu erfüllen und ein unvergleichliches Maß an Service und Zufriedenheit zu gewährleisten. Sie sind herzlich eingeladen, uns direkt zu kontaktieren.",
+      "items": {}
+    },
+    "contactUs": "Kontaktieren Sie uns"
+  },
+  "newsEvent": {
+    "title": "Familienunternehmensmanagement",
+    "subTitle": "Von Dr. Andreas Svoboda",
+    "description1": "Ein Familienunternehmen zu führen ist ein Balanceakt – Tradition mit Innovation zu verbinden, Familienbande mit finanzieller Verantwortung. Familienunternehmensmanagement untersucht die einzigartigen Herausforderungen und Chancen von Familienunternehmen und bietet Einblicke für den Erfolg.",
+    "description2": "Familienunternehmen gedeihen durch Beziehungen – sowohl ihre größte Stärke als auch Herausforderung. Familienunternehmensmanagement erforscht Eigentum, Unternehmensführung, Nachfolge und Familiendynamik, während es gleichzeitig fiskalische Verantwortlichkeiten und globale Einflüsse behandelt. Durch reale Fallstudien werden Erfolge, häufige Fallstricke und Strategien für nachhaltiges Wachstum hervorgehoben. Ob Sie die Fackel weitergeben oder in eine Führungsposition treten, dieser Leitfaden gewährleistet die Langlebigkeit des Unternehmens, ohne familiäre Bindungen zu beeinträchtigen.",
+    "button": "Hier mehr lesen"
+  },
+  "ART45VAG": {
+    "title": "ART45 VAG",
+    "1": {
+      "title": "INFORMATION ART. 45 VAG ZU VERSICHERUNGSVERMITTLUNGSDIENSTEN.",
+      "description": ""
+    },
+    "2": {
+      "title": "INFORMATIONEN ZU DEN DIENSTLEISTUNGEN",
+      "description": "Der Kunde beauftragt SLMC im Sinne einer auf gegenseitigem Vertrauen basierenden Geschäftsbeziehung durch einen separaten Maklervertrag mit der laufenden Betreuung seiner Versicherungsgesellschaften. Die nachfolgend aufgeführten Informationen bilden einen integralen Bestandteil eines Maklervertrags, der nur durch ein von beiden Vertragsparteien unterzeichnetes Dokument geändert oder ergänzt werden darf. SLMC ist beauftragt, im Namen des Kunden mit Versicherern zu verhandeln, Angebote einzuholen und nach Genehmigung durch den Kunden die Versicherungspolicen zu platzieren und zu verwalten. SLMC berät und unterstützt den Kunden in allen Versicherungsangelegenheiten, die Teil des Maklervertrags sind; d. h. insbesondere bei der Risiko- und Versicherungsanalyse, bei der Formulierung einer Risiko- und Versicherungspolitik, bei Konzepten für Risikofinanzierungslösungen, bei der Bestimmung des Versicherungsbedarfs, der Platzierung und laufenden Betreuung von Versicherungsgesellschaften und Unterstützung und Hilfe im Schadensfall bei Versicherern. Die Informationen von Kundenberatern und Spezialisten von SLMC basieren auf langjähriger Erfahrung als Versicherungsmakler. Sie können rechtliche oder steuerliche Beratung von z.B. Anwälten, Banken, Steuerexperten oder anderen Behörden in spezifischen Einzelfällen nicht ersetzen."
+    },
+    "3": {
+      "title": "VERGÜTUNGSINFORMATIONEN",
+      "description": ""
+    },
+    "4": {
+      "title": "INFORMATIONEN ZUR ZUSAMMENARBEIT MIT VERSICHERERN",
+      "description": ""
+    },
+    "5": {
+      "title": "INFORMATIONEN ZU DATENSCHUTZ, DATENSICHERHEIT UND VERTRAULICHKEIT",
+      "description": ""
+    },
+    "6": {
+      "title": "INFORMATIONEN ZUR AUS- UND WEITERBILDUNG VON MITARBEITERN",
+      "description": ""
+    },
+    "7": {
+      "title": "HAFTUNGSINFORMATIONEN",
+      "description": ""
+    }
+  },
+  "contactUs": {
+    "title": "Nehmen wir Kontakt auf.",
+    "subTitle": "Sie können es auch manuell an info@slmc.ch senden.",
+    "form": {
+      "1": {
+        "title": "Vollständiger Name",
+        "field": "Geben Sie Ihren vollständigen Namen ein..."
+      },
+      "2": {
+        "title": "E-Mail",
+        "field": "Geben Sie Ihre E-Mail-Adresse ein..."
+      },
+      "3": {
+        "title": "Betreff",
+        "field": "Geben Sie Ihren Betreff ein..."
+      },
+      "4": {
+        "title": "Nachricht",
+        "field": "Geben Sie Ihre Nachricht ein..."
+      }
+    },
+    "button": "Nachricht jetzt senden"
+  },
   "footer": {
     "description": "Wir begleiten Ihren Weg mit maßgeschneiderten Lösungen und unerschütterlicher Unterstützung und sorgen für Ihre Gemütsruhe auf Ihrem Weg zum Erfolg.",
     "services": "Dienstleistungen",

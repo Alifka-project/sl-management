@@ -84,6 +84,160 @@
       }
     }
   },
+  "aboutUs": {
+    "title": "Sobre Nosotros",
+    "subTitle": "SLMC - Su Experto en Soluciones de Estilo de Vida.",
+    "description1": "En S & L Management y Consulting LLC (SLMC), nos enorgullece ser su socio de confianza para soluciones integrales de estilo de vida y servicios de oficina familiar. Nuestro compromiso con la excelencia se basa en un amplio espectro de experiencia en la industria, una dedicación al servicio personalizado y una red global de socios estimados.",
+    "description2": "Con sede en el Cantón de Schwyz, Suiza —un centro innovador para finanzas, blockchain y tecnología de la salud— SLMC también mantiene presencia en Beijing (RPC). Al asociarnos con firmas premium seleccionadas en Suiza y Asia, adaptamos soluciones para individuos y familias que persiguen intereses comerciales o personales en ambas regiones.",
+
+    "team": {
+      "title": "Equipo",
+      "description1": "SLMC está impulsado por un equipo diverso centrado en la excelencia y la atención personal. Dirigido por el Prof. Dr. Andreas Svoboda, colaboramos con socios de primer nivel en finanzas, banca, seguros y servicios de oficina familiar para ofrecer soluciones a medida para clientes UHNW con los más altos estándares.",
+      "description2": "Para satisfacer la creciente demanda asiática, SLMC presenta con orgullo su Escritorio de Beijing, dirigido por la Sra. Lingnan Ren, proporcionando soporte especializado en mandarín para una experiencia global sin fisuras.",
+      "teams": {
+        "1": {
+          "name": "Prof. Dr. Andreas Svoboda",
+          "description": "Con más de dos décadas en la industria global de servicios financieros, el Prof. Dr. Svoboda también es mentor, coach y académico respetado en universidades suizas. Lidera nuestro equipo en la entrega de soluciones integrales de estilo de vida privado y familiar, adaptadas a sus objetivos únicos."
+        },
+        "2": {
+          "name": "Sra. Lingnan Ren",
+          "description": "Equipada con una sólida formación académica en Economía de la Universidad Tecnológica de Hebei, la Sra. Ren aporta una experiencia invaluable de Mingya Insurance y los sectores de medios/publicación. Con fluidez en inglés y mandarín, dirige el Escritorio de Beijing de SLMC, ofreciendo asistencia personalizada y servicio de clase mundial a una clientela diversa."
+        }
+      }
+    }
+  },
+  "familyService": {
+    "1": {
+      "title": "Seguros",
+      "description": "Proteja sus activos y seres queridos con nuestras soluciones integrales de seguros. Nuestros asesores expertos realizan revisiones exhaustivas y ofrecen estrategias personalizadas para cubrir todos los aspectos de su vida.",
+      "items": {
+        "1": "Revisión Integral de Seguros",
+        "2": "Soluciones de Seguros a Medida",
+        "3": "Gestión de Riesgos",
+        "4": "Planificación Estratégica",
+        "5": "Gestión de Reclamaciones",
+        "6": "Revisiones y Ajustes Regulares",
+        "7": "Cumplimiento y Regulación"
+      }
+    },
+    "2": {
+      "title": "Servicios de Reubicación",
+      "description": "Transición sin problemas a un nuevo capítulo de su vida con nuestros servicios especializados de reubicación. Desde la investigación del destino hasta el apoyo para establecerse, nos ocupamos de cada detalle para que su mudanza sea fluida y libre de estrés.",
+      "items": {
+        "1": "Planificación de Reubicación Personalizada",
+        "2": "Investigación y Análisis de Destino",
+        "3": "Asistencia Legal y de Cumplimiento",
+        "4": "Búsqueda de Escuelas y Consulta Educativa",
+        "5": "Integración Cultural",
+        "6": "Networking e Integración Comunitaria",
+        "7": "Coordinación Logística",
+        "8": "Servicios Inmobiliarios",
+        "9": "Apoyo para Establecerse",
+        "10": "Comunicación Continua"
+      }
+    },
+    "3": {
+      "title": "Planificación Patrimonial",
+      "description": "Asegure su futuro financiero con nuestros servicios de planificación patrimonial. Nuestro experimentado equipo trabaja estrechamente con usted para desarrollar estrategias personalizadas, asegurando que su patrimonio se alinee con sus objetivos y aspiraciones únicas.",
+      "items": {
+        "1": "Transferencia Generacional de Patrimonio",
+        "2": "Asesoramiento y planificación filantrópica",
+        "3": "Activos de lujo",
+        "4": "Asesoramiento inmobiliario",
+        "5": "Planificación de Jubilación",
+        "6": "Gestión Estratégica de Patrimonio",
+        "7": "Evaluación Financiera Holística"
+      }
+    },
+    "4": {
+      "title": "Asesoramiento Fiscal y Legal",
+      "description": "Navegue por las complejidades de los paisajes legales y fiscales con confianza. Nuestros asesores proporcionan orientación estratégica para optimizar su posición financiera y garantizar el cumplimiento de las regulaciones relevantes.",
+      "items": {
+        "1": "Planificación fiscal suiza e internacional",
+        "2": "Estructuración corporativa",
+        "3": "Cumplimiento fiscal personal",
+        "4": "Planificación financiera",
+        "5": "Gestión de fideicomisos"
+      }
+    },
+    "5": {
+      "title": "Gestión de Atención Médica",
+      "description": "Colaboramos estrechamente con proveedores externos de atención médica premium para garantizar un servicio de atención médica de primera clase y rápido. Por favor, contáctenos directamente para obtener más detalles.",
+      "items": {}
+    },
+    "6": {
+      "title": "Servicios Inmobiliarios",
+      "description": "Encuentre su hogar o propiedad de inversión perfecta con nuestros servicios inmobiliarios. Nuestro equipo le asiste en la búsqueda de propiedades, negociaciones y transacciones sin problemas, haciendo que su experiencia inmobiliaria sea agradable y eficiente.",
+      "items": {}
+    },
+    "7": {
+      "title": "Servicios a Medida",
+      "description": "Adaptados a sus necesidades individuales, nuestros servicios a medida ofrecen un enfoque único y personalizado para abordar sus requisitos específicos, garantizando un nivel incomparable de servicio y satisfacción. Le invitamos a contactarnos directamente.",
+      "items": {}
+    },
+    "contactUs": "Contáctenos"
+  },
+  "newsEvent": {
+    "title": "Gestión de Empresas Familiares",
+    "subTitle": "Por el Dr. Andreas Svoboda",
+    "description1": "Dirigir una empresa familiar es un acto de equilibrio—combinando tradición con innovación, lazos familiares con responsabilidad financiera. Gestión de Empresas Familiares explora los desafíos y oportunidades únicas de las empresas familiares, ofreciendo perspectivas para el éxito.",
+    "description2": "Las empresas familiares prosperan en las relaciones—tanto su mayor fortaleza como desafío. Gestión de Empresas Familiares explora la propiedad, la gobernanza, la sucesión y la dinámica familiar mientras aborda las responsabilidades fiscales y las influencias globales. A través de estudios de casos de la vida real, destaca éxitos, escollos comunes y estrategias para un crecimiento sostenible. Ya sea que esté pasando la antorcha o asumiendo el liderazgo, esta guía asegura la longevidad del negocio sin comprometer los lazos familiares.",
+    "button": "Leer Más Aquí"
+  },
+  "ART45VAG": {
+    "title": "ART45 VAG",
+    "1": {
+      "title": "INFORMACIÓN ART. 45 VAG SOBRE SERVICIOS DE INTERMEDIACIÓN DE SEGUROS.",
+      "description": ""
+    },
+    "2": {
+      "title": "INFORMACIÓN SOBRE LOS SERVICIOS",
+      "description": "El cliente encarga a SLMC en el sentido de una relación comercial basada en la confianza mutua a través de un acuerdo de corretaje separado con el apoyo continuo de sus compañías de seguros. La información que se enumera a continuación forma parte integral de un acuerdo de corretaje, que solo puede ser modificado o complementado por un documento firmado por ambas partes contratantes. SLMC está encargado de negociar con aseguradoras en nombre del cliente, obtener ofertas y, después de la aprobación por parte del cliente, colocar y gestionar las pólizas de seguro. SLMC asesora y asiste al cliente en todos los asuntos de seguros que forman parte del acuerdo de corretaje; es decir, especialmente en análisis de riesgos y seguros, al formular una política de riesgo y seguro, en conceptos para soluciones de financiación de riesgos, en la determinación de los requisitos de seguro, la colocación y el apoyo continuo de compañías de seguros y apoyo y asistencia en caso de reclamación con aseguradoras. La información de los asesores de clientes y especialistas de SLMC se basa en muchos años de experiencia como corredor de seguros. No pueden reemplazar el asesoramiento legal o fiscal de, por ejemplo, abogados, bancos, expertos fiscales o cualquier otra autoridad en casos individuales específicos."
+    },
+    "3": {
+      "title": "INFORMACIÓN SOBRE COMPENSACIÓN",
+      "description": ""
+    },
+    "4": {
+      "title": "INFORMACIÓN SOBRE COOPERACIÓN CON ASEGURADORAS",
+      "description": ""
+    },
+    "5": {
+      "title": "INFORMACIÓN SOBRE PRIVACIDAD, SEGURIDAD DE DATOS Y CONFIDENCIALIDAD",
+      "description": ""
+    },
+    "6": {
+      "title": "INFORMACIÓN SOBRE FORMACIÓN Y CAPACITACIÓN DE EMPLEADOS",
+      "description": ""
+    },
+    "7": {
+      "title": "INFORMACIÓN SOBRE RESPONSABILIDAD",
+      "description": ""
+    }
+  },
+  "contactUs": {
+    "title": "Pongámonos en Contacto.",
+    "subTitle": "Puede enviarlo manualmente a info@slmc.ch.",
+    "form": {
+      "1": {
+        "title": "Nombre Completo",
+        "field": "Ingrese su nombre completo..."
+      },
+      "2": {
+        "title": "Correo Electrónico",
+        "field": "Ingrese su correo electrónico..."
+      },
+      "3": {
+        "title": "Asunto",
+        "field": "Ingrese su asunto..."
+      },
+      "4": {
+        "title": "Mensaje",
+        "field": "Ingrese su mensaje..."
+      }
+    },
+    "button": "Enviar Mensaje Ahora"
+  },
   "footer": {
     "description": "Guiando su camino con soluciones a medida y apoyo inquebrantable, asegurando su tranquilidad a lo largo de su viaje hacia el éxito.",
     "services": "Servicios",
