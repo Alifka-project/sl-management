@@ -1,5 +1,6 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import React, { useState } from 'react'
 
 const ContactUs = () => {
@@ -33,6 +34,7 @@ const ContactUs = () => {
     })
     alert('Message sent successfully!')
   }
+  const t = useTranslations('contactUs')
 
   return (
     <div className='max-w-7xl mx-auto px-6 max-lg:px-4 py-12 max-lg:py-8 flex flex-col md:flex-row rounded-lg overflow-hidden'>
@@ -45,11 +47,12 @@ const ContactUs = () => {
             width='100%'
             height='100%'
             style={{ border: 0 }}
-            allowFullScreen={true}
+            allowFullScreen={false}
             loading='lazy'
             referrerPolicy='no-referrer-when-downgrade'
-            // Set the map to be draggable
-            draggable={true}
+            // Disable user interactions
+            draggable={false}
+            pointerEvents='none'
           ></iframe>
         </div>
 
@@ -96,12 +99,10 @@ const ContactUs = () => {
 
       {/* Right side - Contact Form */}
       <div className='w-full md:w-1/2 p-8 bg-white'>
-        <h2 className='text-3xl font-bold text-gray-800 mb-6'>
-          Let`&apos;`s Get In Touch.
-        </h2>
+        <h2 className='text-3xl font-bold text-gray-800 mb-6'>{t('title')}</h2>
 
         <p className='mb-6 text-gray-600'>
-          You may send it manually to{' '}
+          {t('subTitle')}
           <a
             href='mailto:info@slmc.ch'
             className='text-yellow-500 hover:underline'
@@ -117,7 +118,7 @@ const ContactUs = () => {
               htmlFor='fullName'
               className='block text-sm font-medium text-gray-700 mb-1'
             >
-              Fullname
+              {t('form.1.title')}
             </label>
             <input
               type='text'
@@ -136,7 +137,7 @@ const ContactUs = () => {
               htmlFor='email'
               className='block text-sm font-medium text-gray-700 mb-1'
             >
-              Email
+              {t('form.2.title')}
             </label>
             <input
               type='email'
@@ -155,7 +156,7 @@ const ContactUs = () => {
               htmlFor='subject'
               className='block text-sm font-medium text-gray-700 mb-1'
             >
-              Subject
+              {t('form.3.title')}
             </label>
             <input
               type='text'
@@ -174,7 +175,7 @@ const ContactUs = () => {
               htmlFor='message'
               className='block text-sm font-medium text-gray-700 mb-1'
             >
-              Message
+              {t('form.4.title')}
             </label>
             <textarea
               id='message'
@@ -192,7 +193,7 @@ const ContactUs = () => {
             type='submit'
             className='w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-4 rounded transition duration-300'
           >
-            Send Message Now
+            {t('button')}
           </button>
         </form>
       </div>

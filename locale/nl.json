@@ -185,39 +185,39 @@
     "button": "Lees Hier Meer"
   },
   "ART45VAG": {
-    "title": "ART45 VAG",
+    "title": "Informatie over Verzekeringsbemiddeling",
     "1": {
-      "title": "INFORMATIE ART. 45 VAG OVER VERZEKERINGSBEMIDDELINGSDIENSTEN.",
-      "description": ""
+      "title": "Verzekeringsbemiddelingsdiensten",
+      "description": "SLMC opereert als onafhankelijke verzekeringsmakelaar voor zowel levens- als schadeverzekeringen, in overeenstemming met Art. 40 Para. 2 VAG. Bij aanstelling krijgt u een persoonlijke adviseur toegewezen die bij FINMA is geregistreerd (nr. F01470698) om gespecialiseerde verzekeringsondersteuning te bieden."
     },
     "2": {
-      "title": "INFORMATIE OVER DE DIENSTEN",
-      "description": "De klant geeft SLMC opdracht in de zin van een zakenrelatie gebaseerd op wederzijds vertrouwen via een afzonderlijke bemiddelingsovereenkomst met de doorlopende ondersteuning van zijn verzekeringsmaatschappijen. De hieronder vermelde informatie vormt een integraal onderdeel van een bemiddelingsovereenkomst, die alleen mag worden gewijzigd of aangevuld door een door beide contractpartijen ondertekend document. SLMC is gemachtigd om namens de klant te onderhandelen met verzekeraars, offertes in te winnen en, na goedkeuring door de klant, de verzekeringspolis te plaatsen en te beheren. SLMC adviseert en ondersteunt de klant in alle verzekeringszaken die deel uitmaken van de bemiddelingsovereenkomst; d.w.z. vooral bij risico- en verzekeringsanalyse, bij het formuleren van een risico- en verzekeringsbeleid, bij concepten voor risicofinancieringsoplossingen, bij het bepalen van de verzekeringsbehoeften, plaatsing en doorlopende ondersteuning van verzekeringsmaatschappijen en ondersteuning en bijstand bij schadegevallen met verzekeraars. De informatie van klantadviseurs en specialisten van SLMC is gebaseerd op jarenlange ervaring als verzekeringsmakelaar. Ze kunnen juridisch of fiscaal advies van bijv. advocaten, banken, fiscale experts of andere autoriteiten in specifieke individuele gevallen niet vervangen."
+      "title": "Dienstomvang & Overeenkomst",
+      "description": "Onze relatie wordt geformaliseerd via een makelaarovereenkomst gebaseerd op wederzijds vertrouwen. SLMC onderhandelt namens u met verzekeraars, analyseert risico's, formuleert polissen, bepaalt verzekeringsbehoeften, biedt doorlopende ondersteuning en helpt bij claims. Hoewel onze adviseurs expertise bieden uit uitgebreide ervaring, raden we gespecialiseerde juridische of fiscale professionals aan voor zaken buiten onze reikwijdte."
     },
     "3": {
-      "title": "VERGOEDINGSINFORMATIE",
-      "description": ""
+      "title": "Transparante Vergoeding",
+      "description": "SLMC ontvangt standaard makelaarsvergoedingen van verzekeraars als percentage van uw verzekeringspremies, reeds inbegrepen in de geoffreerde premies. We onthullen de berekeningsbasis vóór aanvang van de overeenkomst en verstrekken werkelijke bedragen op verzoek. We zien uitdrukkelijk af van volume-, groei- of schadeafhankelijke vergoedingen, en behouden volledige transparantie."
     },
     "4": {
-      "title": "INFORMATIE OVER SAMENWERKING MET VERZEKERAARS",
-      "description": ""
+      "title": "Verzekeringsrelaties",
+      "description": "We onderhouden samenwerkingsovereenkomsten met alle belangrijke in Zwitserland gelicentieerde verzekeraars, terwijl we juridisch en economisch onafhankelijk blijven. SLMC beheert uw verzekeringscontracten in overeenstemming met verzekeraars om administratieve lasten te verminderen, terwijl we uitsluitend uw belangen met volledige loyaliteit vertegenwoordigen."
     },
     "5": {
-      "title": "INFORMATIE OVER PRIVACY, GEGEVENSBEVEILIGING EN VERTROUWELIJKHEID",
-      "description": ""
+      "title": "Gegevensbescherming",
+      "description": "SLMC houdt zich aan de principes van de Zwitserse wetgeving voor gegevensbescherming. Klantgegevens worden vertrouwelijk behandeld, met fysieke documenten veilig opgeslagen met beperkte toegang. We kunnen gegevens delen met dienstverleners indien nodig voor makelaarsdiensten, met name met verzekeraars voor het aanvragen van offertes, verlenging of claimverwerking. Onze huidige gegevensbeschermingsverklaring is beschikbaar op www.slmc.ch."
     },
     "6": {
-      "title": "INFORMATIE OVER TRAINING EN VERDERE OPLEIDING VAN MEDEWERKERS",
-      "description": ""
+      "title": "Professionele Kwalificaties",
+      "description": "Alle SLMC-adviseurs behouden de wettelijk vereiste kwalificaties en voltooien verplichte training in overeenstemming met Art. 43 VAG, waarbij naleving wordt gecontroleerd door door FINMA erkende brancheorganisaties. Informatie over individuele adviseurskwalificaties is op aanvraag beschikbaar."
     },
     "7": {
-      "title": "AANSPRAKELIJKHEIDSINFORMATIE",
-      "description": ""
+      "title": "Aansprakelijkheidskader",
+      "description": "SLMC levert diensten met gepaste zorg en aandacht. Wij zijn alleen aansprakelijk voor opzettelijke of grof nalatige contractbreuk, en alleen voor directe causale schade, met aansprakelijkheid beperkt tot tweemaal de jaarlijkse vergoeding onder de makelaarovereenkomst (maximum CHF 2.000.000). S&L Management and Consulting GmbH in Lachen dient als uw contractuele partner."
     }
   },
   "contactUs": {
     "title": "Laten We Contact Opnemen.",
-    "subTitle": "U kunt het handmatig versturen naar info@slmc.ch.",
+    "subTitle": "U kunt het handmatig versturen naar",
     "form": {
       "1": {
         "title": "Volledige Naam",

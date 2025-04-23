@@ -56,7 +56,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-gray-700 hover:text-yellow-500 transition-colors text-xs ${
+                className={`text-gray-700 hover:text-yellow-500 transition-colors text-sm max-w-[130px] break-word ${
                   isActive ? 'font-semibold text-yellow-500' : ''
                 }`}
               >

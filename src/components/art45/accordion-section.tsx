@@ -1,7 +1,9 @@
 'use client'
 
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence } from 'framer-motion'
+import FadeIn from '@/components/animations/fade-in'
 import Image from 'next/image'
 
 const AccordionItem = ({
@@ -60,96 +62,40 @@ const AccordionItem = ({
   )
 }
 
-const Art45Accordion = () => {
-  return (
-    <div className='max-w-7xl mx-auto px-6 max-lg:px-4 py-12 max-lg:py-8'>
-      {/* Hero Image */}
-      <div className='relative w-full h-48 bg-gray-900 rounded-lg overflow-hidden mb-4'>
-        <Image
-          src='/images/content-art-45.png'
-          alt='content-art-45'
-          fill
-          className='object-cover'
-          priority
-        />
-      </div>
+export default function Art45Page() {
+  const t = useTranslations('ART45VAG')
 
-      {/* Title */}
-      <h1 className='text-3xl font-bold text-gray-900 mb-6'>ART45 VAG</h1>
+  return (
+    <div className='max-w-7xl mx-auto px-4 py-12'>
+      {/* Hero Section */}
+      <FadeIn className='mb-4'>
+        {/* Hero Image */}
+        <div className='relative w-full h-64 bg-gray-900 rounded-lg overflow-hidden'>
+          <Image
+            src='/images/content-art-45.png'
+            alt='ART45 VAG Information'
+            fill
+            className='object-cover'
+            priority
+          />
+        </div>
+        <div className='text-left mt-4'>
+          <h1 className='text-4xl font-bold mt-4'>ART45 VAG</h1>
+        </div>
+      </FadeIn>
 
       {/* Accordion Items */}
-      <div className='divide-y divide-gray-200'>
-        <AccordionItem
-          title='INFORMATION ART. 45 VAG ON INSURANCE BROKERAGE SERVICES.'
-          defaultOpen={false}
-        >
-          <p>
-            Detailed information about Art. 45 VAG regulations on insurance
-            brokerage services would be displayed here.
-          </p>
-        </AccordionItem>
-
-        <AccordionItem title='INFORMATION ABOUT THE SERVICES'>
-          <p>
-            The customer commences in the sense of a business relationship based
-            on mutual trust through a separate broker agreement with the ongoing
-            support of its insurance companies. The name hereafter `&quot;`The
-            Information listed forms an integral part of a broker agreement,
-            which only may be concluded in writing, and which the customer
-            concludes with SLMC. Through this, SLMC is commissioned to negotiate
-            with insurers on behalf of the customer, obtain offers and, after
-            approval by the customer, to place and manage the insurance
-            policies. SLMC advises and assists the customer in all insurance
-            matters that form part of the broker agreement; e. h. especially in
-            risk and insurance analysis, when formulating a risk and insurance
-            policy, in concepts for risk evaluation and assessment, in creating
-            a risk cost calculation, in the collaboration with insurance
-            companies and Support and assistance in the event of a claim with
-            insurers. The information from Customer advisors and specialists
-            from SLMC are based on many years of experience as an insurance
-            broker. You have legal Tax advice from e.g. E.g. lawyers, banks, tax
-            experts or any other Authorities cannot be replaced in specific
-            individual cases.
-          </p>
-        </AccordionItem>
-
-        <AccordionItem title='COMPENSATION INFORMATION'>
-          <p>
-            Details about compensation structures and payment information would
-            be displayed here.
-          </p>
-        </AccordionItem>
-
-        <AccordionItem title='INFORMATION ON COOPERATION WITH INSURERS'>
-          <p>
-            Information regarding how cooperation with insurance providers works
-            would be displayed here.
-          </p>
-        </AccordionItem>
-
-        <AccordionItem title='INFORMATION ON PRIVACY, DATA SECURITY AND CONFIDENTIALITY'>
-          <p>
-            Details about privacy policies, data security practices and
-            confidentiality agreements would be displayed here.
-          </p>
-        </AccordionItem>
-
-        <AccordionItem title='INFORMATION ON TRAINING AND FURTHER TRAINING OF EMPLOYEES'>
-          <p>
-            Information about employee training programs and continuing
-            education would be displayed here.
-          </p>
-        </AccordionItem>
-
-        <AccordionItem title='LIABILITY INFORMATION'>
-          <p>
-            Details about liability policies and related information would be
-            displayed here.
-          </p>
-        </AccordionItem>
+      <div className='divide-y divide-gray-200 mb-16'>
+        {Array.from({ length: 7 }).map((_, i) => (
+          <AccordionItem
+            key={i}
+            title={t(`${i + 1}.title`)}
+            defaultOpen={i === 0}
+          >
+            <p className='text-gray-600'>{t(`${i + 1}.description`)}</p>
+          </AccordionItem>
+        ))}
       </div>
     </div>
   )
 }
-
-export default Art45Accordion

@@ -185,39 +185,39 @@
     "button": "Leer Más Aquí"
   },
   "ART45VAG": {
-    "title": "ART45 VAG",
+    "title": "Información de Correduría de Seguros",
     "1": {
-      "title": "INFORMACIÓN ART. 45 VAG SOBRE SERVICIOS DE INTERMEDIACIÓN DE SEGUROS.",
-      "description": ""
+      "title": "Servicios de Correduría de Seguros",
+      "description": "SLMC opera como corredor de seguros independiente tanto para seguros de vida como de propiedad, en cumplimiento con el Art. 40 Párr. 2 VAG. Al contratarnos, se le asignará un asesor dedicado registrado en FINMA (No. F01470698) para brindarle apoyo especializado en seguros."
     },
     "2": {
-      "title": "INFORMACIÓN SOBRE LOS SERVICIOS",
-      "description": "El cliente encarga a SLMC en el sentido de una relación comercial basada en la confianza mutua a través de un acuerdo de corretaje separado con el apoyo continuo de sus compañías de seguros. La información que se enumera a continuación forma parte integral de un acuerdo de corretaje, que solo puede ser modificado o complementado por un documento firmado por ambas partes contratantes. SLMC está encargado de negociar con aseguradoras en nombre del cliente, obtener ofertas y, después de la aprobación por parte del cliente, colocar y gestionar las pólizas de seguro. SLMC asesora y asiste al cliente en todos los asuntos de seguros que forman parte del acuerdo de corretaje; es decir, especialmente en análisis de riesgos y seguros, al formular una política de riesgo y seguro, en conceptos para soluciones de financiación de riesgos, en la determinación de los requisitos de seguro, la colocación y el apoyo continuo de compañías de seguros y apoyo y asistencia en caso de reclamación con aseguradoras. La información de los asesores de clientes y especialistas de SLMC se basa en muchos años de experiencia como corredor de seguros. No pueden reemplazar el asesoramiento legal o fiscal de, por ejemplo, abogados, bancos, expertos fiscales o cualquier otra autoridad en casos individuales específicos."
+      "title": "Alcance del Servicio y Acuerdo",
+      "description": "Nuestra relación se formaliza mediante un acuerdo de corretaje basado en la confianza mutua. SLMC negocia con aseguradoras en su nombre, analiza riesgos, formula pólizas, determina requisitos de seguros, proporciona apoyo continuo y asiste con reclamaciones. Si bien nuestros asesores ofrecen experiencia de amplia trayectoria, recomendamos profesionales legales o fiscales especializados para asuntos fuera de nuestro ámbito."
     },
     "3": {
-      "title": "INFORMACIÓN SOBRE COMPENSACIÓN",
-      "description": ""
+      "title": "Compensación Transparente",
+      "description": "SLMC recibe honorarios de corretaje estándar de las aseguradoras como porcentaje de sus primas de seguro, ya incluidos en las primas cotizadas. Revelamos la base de cálculo antes del inicio del acuerdo y proporcionamos montos reales bajo petición. Renunciamos expresamente a cualquier compensación dependiente de volumen, crecimiento o daños, manteniendo completa transparencia."
     },
     "4": {
-      "title": "INFORMACIÓN SOBRE COOPERACIÓN CON ASEGURADORAS",
-      "description": ""
+      "title": "Relaciones con Aseguradoras",
+      "description": "Mantenemos acuerdos de cooperación con todas las principales aseguradoras con licencia suiza mientras permanecemos legal y económicamente independientes. SLMC gestiona sus contratos de seguro en acuerdo con las aseguradoras para reducir la carga administrativa, representando exclusivamente sus intereses con completa lealtad."
     },
     "5": {
-      "title": "INFORMACIÓN SOBRE PRIVACIDAD, SEGURIDAD DE DATOS Y CONFIDENCIALIDAD",
-      "description": ""
+      "title": "Protección de Datos",
+      "description": "SLMC se adhiere a los principios de la ley suiza de protección de datos. Los datos de los clientes se tratan confidencialmente, con registros físicos almacenados de forma segura con acceso restringido. Podemos compartir datos con proveedores de servicios según sea necesario para servicios de corretaje, particularmente con aseguradoras para licitación de pólizas, renovación o procesamiento de reclamaciones. Nuestra declaración de protección de datos actual está disponible en www.slmc.ch."
     },
     "6": {
-      "title": "INFORMACIÓN SOBRE FORMACIÓN Y CAPACITACIÓN DE EMPLEADOS",
-      "description": ""
+      "title": "Cualificaciones Profesionales",
+      "description": "Todos los asesores de SLMC mantienen las cualificaciones legalmente requeridas y completan la formación obligatoria de acuerdo con el Art. 43 VAG, con cumplimiento monitoreado por organizaciones de la industria reconocidas por FINMA. La información sobre las cualificaciones de los asesores individuales está disponible bajo petición."
     },
     "7": {
-      "title": "INFORMACIÓN SOBRE RESPONSABILIDAD",
-      "description": ""
+      "title": "Marco de Responsabilidad",
+      "description": "SLMC proporciona servicios con el debido cuidado y atención. Somos responsables solo por incumplimientos de contrato intencionales o gravemente negligentes, y solo por daños causales directos, con responsabilidad limitada al doble de la compensación anual bajo el acuerdo de corretaje (máximo CHF 2.000.000). S&L Management and Consulting GmbH en Lachen sirve como su socio contractual."
     }
   },
   "contactUs": {
     "title": "Pongámonos en Contacto.",
-    "subTitle": "Puede enviarlo manualmente a info@slmc.ch.",
+    "subTitle": "Puede enviarlo manualmente a",
     "form": {
       "1": {
         "title": "Nombre Completo",

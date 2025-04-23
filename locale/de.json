@@ -185,39 +185,39 @@
     "button": "Hier mehr lesen"
   },
   "ART45VAG": {
-    "title": "ART45 VAG",
+    "title": "Informationen zur Versicherungsvermittlung",
     "1": {
-      "title": "INFORMATION ART. 45 VAG ZU VERSICHERUNGSVERMITTLUNGSDIENSTEN.",
-      "description": ""
+      "title": "Versicherungsmaklerdienstleistungen",
+      "description": "SLMC fungiert als unabhängiger Versicherungsmakler für Lebens- und Sachversicherungen gemäß Art. 40 Abs. 2 VAG. Bei Beauftragung wird Ihnen ein persönlicher Berater zugewiesen, der bei der FINMA registriert ist (Nr. F01470698), um spezialisierten Versicherungssupport zu bieten."
     },
     "2": {
-      "title": "INFORMATIONEN ZU DEN DIENSTLEISTUNGEN",
-      "description": "Der Kunde beauftragt SLMC im Sinne einer auf gegenseitigem Vertrauen basierenden Geschäftsbeziehung durch einen separaten Maklervertrag mit der laufenden Betreuung seiner Versicherungsgesellschaften. Die nachfolgend aufgeführten Informationen bilden einen integralen Bestandteil eines Maklervertrags, der nur durch ein von beiden Vertragsparteien unterzeichnetes Dokument geändert oder ergänzt werden darf. SLMC ist beauftragt, im Namen des Kunden mit Versicherern zu verhandeln, Angebote einzuholen und nach Genehmigung durch den Kunden die Versicherungspolicen zu platzieren und zu verwalten. SLMC berät und unterstützt den Kunden in allen Versicherungsangelegenheiten, die Teil des Maklervertrags sind; d. h. insbesondere bei der Risiko- und Versicherungsanalyse, bei der Formulierung einer Risiko- und Versicherungspolitik, bei Konzepten für Risikofinanzierungslösungen, bei der Bestimmung des Versicherungsbedarfs, der Platzierung und laufenden Betreuung von Versicherungsgesellschaften und Unterstützung und Hilfe im Schadensfall bei Versicherern. Die Informationen von Kundenberatern und Spezialisten von SLMC basieren auf langjähriger Erfahrung als Versicherungsmakler. Sie können rechtliche oder steuerliche Beratung von z.B. Anwälten, Banken, Steuerexperten oder anderen Behörden in spezifischen Einzelfällen nicht ersetzen."
+      "title": "Leistungsumfang & Vereinbarung",
+      "description": "Unsere Beziehung wird durch eine Maklervollmacht auf Basis gegenseitigen Vertrauens formalisiert. SLMC verhandelt in Ihrem Namen mit Versicherern, analysiert Risiken, erarbeitet Versicherungslösungen, ermittelt Versicherungsbedarf, bietet laufende Unterstützung und hilft bei Schadensfällen. Während unsere Berater Fachwissen aus umfangreicher Erfahrung anbieten, empfehlen wir für Angelegenheiten außerhalb unseres Fachgebiets spezialisierte Rechts- oder Steuerexperten."
     },
     "3": {
-      "title": "VERGÜTUNGSINFORMATIONEN",
-      "description": ""
+      "title": "Transparente Vergütung",
+      "description": "SLMC erhält standardmäßige Maklervergütungen von Versicherern als Prozentsatz Ihrer Versicherungsprämien, die bereits in den angebotenen Prämien enthalten sind. Wir legen die Berechnungsgrundlage vor Vertragsabschluss offen und stellen auf Anfrage die tatsächlichen Beträge zur Verfügung. Wir verzichten ausdrücklich auf volumen-, wachstums- oder schadensabhängige Vergütungen und wahren vollständige Transparenz."
     },
     "4": {
-      "title": "INFORMATIONEN ZUR ZUSAMMENARBEIT MIT VERSICHERERN",
-      "description": ""
+      "title": "Versichererbeziehungen",
+      "description": "Wir unterhalten Kooperationsvereinbarungen mit allen großen in der Schweiz zugelassenen Versicherern, während wir rechtlich und wirtschaftlich unabhängig bleiben. SLMC verwaltet Ihre Versicherungsverträge in Abstimmung mit Versicherern, um den Verwaltungsaufwand zu reduzieren, während wir ausschließlich Ihre Interessen mit vollständiger Loyalität vertreten."
     },
     "5": {
-      "title": "INFORMATIONEN ZU DATENSCHUTZ, DATENSICHERHEIT UND VERTRAULICHKEIT",
-      "description": ""
+      "title": "Datenschutz",
+      "description": "SLMC hält sich an die Grundsätze des schweizerischen Datenschutzgesetzes. Kundendaten werden vertraulich behandelt, physische Aufzeichnungen sicher mit eingeschränktem Zugang aufbewahrt. Wir können Daten mit Dienstleistern teilen, soweit dies für Maklerdienste erforderlich ist, insbesondere mit Versicherern für Angebotseinholung, Vertragsverlängerung oder Schadensbearbeitung. Unsere aktuelle Datenschutzerklärung ist unter www.slmc.ch verfügbar."
     },
     "6": {
-      "title": "INFORMATIONEN ZUR AUS- UND WEITERBILDUNG VON MITARBEITERN",
-      "description": ""
+      "title": "Berufliche Qualifikationen",
+      "description": "Alle SLMC-Berater verfügen über die gesetzlich erforderlichen Qualifikationen und absolvieren obligatorische Schulungen gemäß Art. 43 VAG, wobei die Einhaltung von FINMA-anerkannten Branchenorganisationen überwacht wird. Informationen zu den Qualifikationen einzelner Berater sind auf Anfrage erhältlich."
     },
     "7": {
-      "title": "HAFTUNGSINFORMATIONEN",
-      "description": ""
+      "title": "Haftungsrahmen",
+      "description": "SLMC erbringt Dienstleistungen mit der gebotenen Sorgfalt. Wir haften nur für vorsätzliche oder grob fahrlässige Vertragsverletzungen und nur für direkte kausale Schäden, wobei die Haftung auf das Zweifache der jährlichen Vergütung gemäß Maklervertrag (maximal CHF 2.000.000) begrenzt ist. S&L Management and Consulting GmbH in Lachen dient als Ihr Vertragspartner."
     }
   },
   "contactUs": {
     "title": "Nehmen wir Kontakt auf.",
-    "subTitle": "Sie können es auch manuell an info@slmc.ch senden.",
+    "subTitle": "Sie können es auch manuell an senden.",
     "form": {
       "1": {
         "title": "Vollständiger Name",

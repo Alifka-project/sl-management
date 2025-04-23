@@ -3,6 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -24,6 +25,8 @@ const staggerChildren = {
 }
 
 const AboutIntroduction: React.FC = () => {
+  const t = useTranslations('aboutUs')
+
   return (
     <motion.div
       className='mb-16'
@@ -35,7 +38,7 @@ const AboutIntroduction: React.FC = () => {
         className='text-3xl font-bold mb-8 text-gray-800 relative border-b pb-4 flex items-center gap-3'
         variants={fadeIn}
       >
-        <span className=' text-yellow-500'>
+        <span className='text-yellow-500'>
           <svg
             width='50'
             height='50'
@@ -49,14 +52,14 @@ const AboutIntroduction: React.FC = () => {
             />
           </svg>
         </span>
-        About Us
+        {t('title')}
       </motion.h2>
 
       <motion.h2
         className='text-xl md:text-2xl font-semibold mb-6 text-gray-800'
         variants={fadeIn}
       >
-        SLMC - Your Lifestyle Solutions Expert.
+        {t('subTitle')}
       </motion.h2>
 
       <motion.div
@@ -73,23 +76,11 @@ const AboutIntroduction: React.FC = () => {
 
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
         <motion.div variants={fadeIn}>
-          <p className='text-gray-700 mb-4'>
-            At S & L Management and Consulting LLC (SLMC), we are proud to be
-            your trusted partner for personalized wealth management and family
-            office services. Our competitive advantage is founded in a broad
-            spectrum of industry experience, a dedication to personalized
-            service, and a global network of esteemed partners.
-          </p>
+          <p className='text-gray-700 mb-4'>{t('description1')}</p>
         </motion.div>
 
         <motion.div variants={fadeIn}>
-          <p className='text-gray-700 mb-4'>
-            Headquartered in Canton Schwyz, Switzerland—an innovative hub for
-            finance, blockchain, and health tech—SLMC also maintains a presence
-            in Beijing (PRC). By partnering with select specialists in both
-            Switzerland and Asia, we tailor solutions for individuals and
-            families pursuing business or personal interests in both regions.
-          </p>
+          <p className='text-gray-700 mb-4'>{t('description2')}</p>
         </motion.div>
       </div>
     </motion.div>

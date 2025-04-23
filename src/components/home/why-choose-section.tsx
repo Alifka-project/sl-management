@@ -3,6 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 
 interface WhyChooseCardProps {
   icon: string
@@ -49,31 +50,33 @@ const WhyChooseCard: React.FC<WhyChooseCardProps> = ({
   )
 }
 
-interface WhyChooseItem {
-  icon: string
-  title: string
-  description: string
-}
-
 const WhyChooseSection: React.FC = () => {
-  const whyChooseItems: WhyChooseItem[] = [
+  const t = useTranslations('home.whyChoose')
+  const items = useTranslations('home.whyChoose.items')
+
+  // Map the icons to use with the translated content
+  const iconsMap = {
+    '1': '/images/medal.svg', // Expert Team
+    '2': '/images/friendship.svg', // Trusted Partnership
+    '3': '/images/gift.svg', // Client-Centric Approach
+  }
+
+  // Convert the translated items into the format needed for WhyChooseCard
+  const whyChooseItems = [
     {
-      icon: '/images/medal.svg',
-      title: 'Expertise',
-      description:
-        'Our team of professionals brings unparalleled expertise in their respective fields, ensuring you receive the highest quality service.',
+      icon: iconsMap['1'],
+      title: items('1.title'),
+      description: items('1.description'),
     },
     {
-      icon: '/images/friendship.svg',
-      title: 'Trusted Partnerships',
-      description:
-        'We collaborate with trusted partners to deliver specialized services, ensuring compliance and reliability in every aspect of your experience.',
+      icon: iconsMap['2'],
+      title: items('2.title'),
+      description: items('2.description'),
     },
     {
-      icon: '/images/gift.svg',
-      title: 'Client-Centric Approach',
-      description:
-        'Your unique needs and aspirations are at the forefront of our service delivery. We are committed to building long-term relationships based on trust and understanding.',
+      icon: iconsMap['3'],
+      title: items('3.title'),
+      description: items('3.description'),
     },
   ]
 
@@ -87,7 +90,7 @@ const WhyChooseSection: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Why You Should Choose SLMC
+          {t('title')}
         </motion.h2>
 
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>

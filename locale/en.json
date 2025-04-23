@@ -185,39 +185,39 @@
     "button": "Read More Here"
   },
   "ART45VAG": {
-    "title": "ART45 VAG",
+    "title": "Insurance Brokerage Information",
     "1": {
-      "title": "INFORMATION ART. 45 VAG ON INSURANCE BROKERAGE SERVICES.",
-      "description": ""
+      "title": "Insurance Brokerage Services",
+      "description": "SLMC operates as an independent insurance broker for both life and property insurance, in compliance with Art. 40 Para. 2 VAG. Upon engagement, you'll be assigned a dedicated advisor registered with FINMA (No. F01470698) to provide specialized insurance support."
     },
     "2": {
-      "title": "INFORMATION ABOUT THE SERVICES",
-      "description": "The customer commissions SLMC in the sense of a business relationship based on mutual trust through a separate broker agreement with the ongoing support of its insurance companies. The ones hereafter The information listed forms an integral part of a broker agreement, which only may be modified or supplemented by a document signed by both contracting parties. SLMC is commissioned to negotiate with insurers on behalf of the customer, obtain offers and, after approval by the customer, to place and manage the insurance policies. SLMC advises and assists the customer in all insurance matters that form part of the broker agreement; d. h. especially in risk and insurance analysis, when formulating a risk and Insurance policy, in concepts for risk financing solutions, in determining the Insurance requirements, placement and ongoing support of insurance companies and Support and assistance in the event of a claim with insurers. The information from Customer advisors and specialists from SLMC are based on many years of experience as an insurance broker. You have legal or Tax advice from e.g. E.g. lawyers, banks, tax experts or any other Authorities cannot be replaced in specific individual cases."
+      "title": "Service Scope & Agreement",
+      "description": "Our relationship is formalized through a broker agreement based on mutual trust. SLMC negotiates with insurers on your behalf, analyzes risks, formulates policies, determines insurance requirements, provides ongoing support, and assists with claims. While our advisors offer expertise from extensive experience, we recommend specialized legal or tax professionals for matters outside our scope."
     },
     "3": {
-      "title": "COMPENSATION INFORMATION",
-      "description": ""
+      "title": "Transparent Compensation",
+      "description": "SLMC receives standard brokerage fees from insurers as a percentage of your insurance premiums, already included in quoted premiums. We disclose the calculation basis before agreement commencement and provide actual amounts upon request. We expressly waive any volume, growth, or damage-dependent compensation, maintaining complete transparency."
     },
     "4": {
-      "title": "INFORMATION ON COOPERATION WITH INSURERS",
-      "description": ""
+      "title": "Insurer Relationships",
+      "description": "We maintain cooperation agreements with all major Swiss-licensed insurers while remaining legally and economically independent. SLMC manages your insurance contracts in agreement with insurers to reduce administrative burden, while exclusively representing your interests with complete loyalty."
     },
     "5": {
-      "title": "INFORMATION ON PRIVACY, DATA SECURITY AND CONFIDENTIALITY",
-      "description": ""
+      "title": "Data Protection",
+      "description": "SLMC adheres to Swiss data protection law principles. Client data is treated confidentially, with physical records securely stored with restricted access. We may share data with service providers as necessary for broker services, particularly with insurers for policy tendering, renewal, or claims processing. Our current data protection declaration is available at www.slmc.ch."
     },
     "6": {
-      "title": "INFORMATION ON TRAINING AND FURTHER TRAINING OF EMPLOYEES",
-      "description": ""
+      "title": "Professional Qualifications",
+      "description": "All SLMC advisors maintain legally required qualifications and complete mandatory training in accordance with Art. 43 VAG, with compliance monitored by FINMA-recognized industry organizations. Information regarding individual advisor qualifications is available upon request."
     },
     "7": {
-      "title": "LIABILITY INFORMATION",
-      "description": ""
+      "title": "Liability Framework",
+      "description": "SLMC provides services with due care and attention. We are liable only for intentional or grossly negligent breaches of contract, and only for direct causal damages, with liability limited to twice the annual compensation under the brokerage agreement (maximum CHF 2,000,000). S&L Management and Consulting GmbH in Lachen serves as your contractual partner."
     }
   },
   "contactUs": {
     "title": "Let’s Get In Touch.",
-    "subTitle": "You may send it manually to info@slmc.ch.",
+    "subTitle": "You may send it manually to ",
     "form": {
       "1": {
         "title": "Fullname",

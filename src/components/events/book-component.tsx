@@ -1,15 +1,36 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
+import { motion } from 'framer-motion'
 
-const FamilyBusinessCard = () => {
+const fadeIn = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: 'easeOut' },
+  },
+}
+
+const NewsEvent = () => {
+  const t = useTranslations('newsEvent')
+
   return (
-    <div className='max-w-7xl mx-auto px-6 max-lg:px-4 py-12 max-lg:py-8 flex flex-col md:flex-row rounded-lg overflow-hidden '>
+    <motion.div
+      initial='hidden'
+      whileInView='visible'
+      viewport={{ once: true }}
+      variants={fadeIn}
+      className='max-w-7xl mx-auto px-6 max-lg:px-4 py-12 max-lg:py-8 flex flex-col md:flex-row rounded-lg overflow-hidden bg-white'
+    >
       {/* Left side with image */}
       <div className='w-full md:w-1/3 p-6'>
         <div className='flex flex-col items-center'>
           <Image
             src='/images/book-1.png'
-            alt='Lightbulb icon'
+            alt='Family Business Management book'
             width={0}
             height={0}
             sizes='100vw'
@@ -20,39 +41,23 @@ const FamilyBusinessCard = () => {
 
       {/* Right side with content */}
       <div className='w-full md:w-2/3 p-6'>
-        <h1 className='text-3xl font-bold text-gray-800 mb-2'>
-          Family Business Management
-        </h1>
-        <p className='text-sm text-gray-700 mb-4'>By Dr. Andreas Svoboda</p>
+        <h1 className='text-3xl font-bold text-gray-800 mb-2'>{t('title')}</h1>
+        <p className='text-sm text-gray-700 mb-4'>{t('subTitle')}</p>
 
-        <p className='text-sm text-gray-700 mb-4'>
-          Running a family business is a balancing act—blending tradition with
-          innovation, family ties with financial responsibility. Family Business
-          Management explores the unique challenges and opportunities of family
-          enterprises, offering insights for success.
-        </p>
+        <p className='text-sm text-gray-700 mb-4'>{t('description1')}</p>
 
-        <p className='text-sm text-gray-700 mb-6'>
-          Family businesses thrive on relationships—both their greatest strength
-          and challenge. Family Business Management explores ownership,
-          governance, succession, and family dynamics while addressing fiscal
-          responsibilities and global influences. Through real-life case
-          studies, it highlights successes, common pitfalls, and strategies for
-          sustainable growth. Whether you`&apos;`re passing the torch or
-          stepping into leadership, this guide ensures business longevity
-          without compromising family bonds.
-        </p>
+        <p className='text-sm text-gray-700 mb-6'>{t('description2')}</p>
 
         <div className='mt-4'>
           <a href='https://www.amazon.com/Family-Business-Management-Andreas-Svoboda/dp/B0CN5QJSDJ'>
             <button className='w-full bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-3 px-4 rounded transition duration-300'>
-              Read More Here
+              {t('button')}
             </button>
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
-export default FamilyBusinessCard
+export default NewsEvent
