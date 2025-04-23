@@ -52,7 +52,6 @@ const ContactUs = () => {
             referrerPolicy='no-referrer-when-downgrade'
             // Disable user interactions
             draggable={false}
-            pointerEvents='none'
           ></iframe>
         </div>
 
