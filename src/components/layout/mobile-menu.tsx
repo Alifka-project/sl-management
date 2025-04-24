@@ -1,7 +1,7 @@
 'use client'
 
-import Link from 'next/link'
-import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/routing' // Import the Link from your routing config
+import { useLocale, useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 
@@ -17,6 +17,7 @@ export default function MobileMenu({
   onClose,
 }: MobileMenuProps) {
   const t = useTranslations('menu')
+  const locale = useLocale()
 
   return (
     <motion.div
@@ -26,18 +27,23 @@ export default function MobileMenu({
       transition={{ duration: 0.3 }}
       className='md:hidden mt-4 py-4 px-4 space-y-4 bg-white border-t'
     >
-      {navItems.map(item => (
-        <Link
-          key={item.href}
-          href={item.href}
-          onClick={onClose}
-          className={`block py-2 text-gray-700 hover:text-yellow-500 transition-colors ${
-            pathname === item.href ? 'font-semibold text-yellow-500' : ''
-          }`}
-        >
-          {item.name}
-        </Link>
-      ))}
+      {navItems.map(item => {
+        const isActive =
+          pathname.endsWith(item.href) ||
+          (item.href === '/' && pathname === `/${locale}`)
+        return (
+          <Link
+            key={item.href}
+            href={item.href}
+            onClick={onClose}
+            className={`block py-2 text-gray-700 hover:text-yellow-500 transition-colors ${
+              isActive ? 'font-semibold text-yellow-500' : ''
+            }`}
+          >
+            {item.name}
+          </Link>
+        )
+      })}
 
       <div className='pt-4 border-t'>
         <Button
