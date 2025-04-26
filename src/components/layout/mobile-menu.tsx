@@ -46,12 +46,14 @@ export default function MobileMenu({
       })}
 
       <div className='pt-4 border-t'>
-        <Button
-          className='w-full bg-yellow-500 hover:bg-yellow-600 text-white'
-          onClick={onClose}
-        >
-          {t('contactUs')}
-        </Button>
+        <Link href='/contact-us' className='w-full'>
+          <Button
+            className='w-full bg-yellow-500 hover:bg-yellow-600 text-white'
+            onClick={onClose}
+          >
+            {t('contactUs')}
+          </Button>
+        </Link>
       </div>
     </motion.div>
   )

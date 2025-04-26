@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/routing'
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -84,10 +85,11 @@ const ServiceCard = ({
               ))}
             </div>
           )}
-
-          <Button className='bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-6 max-lg:px-6 max-lg:py-4 rounded-full'>
-            {contactText}
-          </Button>
+          <Link href='/contact-us'>
+            <Button className='bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-6 max-lg:px-6 max-lg:py-4 rounded-full'>
+              {contactText}
+            </Button>
+          </Link>
         </div>
       </div>
     </motion.div>
