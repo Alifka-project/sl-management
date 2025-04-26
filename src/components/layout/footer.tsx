@@ -1,74 +1,102 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/routing'
+import { useScrollToHash } from '@/lib/utils'
 
 export default function Footer() {
   const t = useTranslations('footer')
+  const { navigateToHash } = useScrollToHash()
+
+  // Handle service section navigation with smooth scrolling
+  const handleServiceClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    path: string,
+    hash: string,
+  ) => {
+    e.preventDefault()
+    navigateToHash(path, hash)
+  }
 
   return (
     <footer className='bg-gray-900 text-white py-12'>
       <div className='max-w-7xl mx-auto px-6'>
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
           <div>
-            <Image
-              src='/images/logo_only.svg'
-              alt='S&L Management Logo'
-              width={45}
-              height={45}
-            />
-            <Image
-              src='/images/logo_text.svg'
-              alt='S&L Management Logo'
-              width={200}
-              height={90}
-            />
-            <p className='text-white text-sm'>{t('description')}</p>
+            <div className='flex flex-col space-y-2'>
+              <Image
+                src='/images/logo_only.svg'
+                alt='S&L Management Logo'
+                width={45}
+                height={45}
+              />
+              <Image
+                src='/images/logo_text.svg'
+                alt='S&L Management Logo'
+                width={200}
+                height={90}
+              />
+            </div>
+            <p className='text-gray-400 mt-4'>{t('description')}</p>
           </div>
 
           <div>
             <h4 className='text-lg font-semibold mb-4'>{t('services')}</h4>
             <ul className='space-y-2'>
               <li>
-                <Link
-                  href='/services'
-                  className='text-gray-400 hover:text-white transition-colors'
+                <a
+                  href='/services#insurance'
+                  onClick={e => handleServiceClick(e, '/services', 'insurance')}
+                  className='text-gray-400 hover:text-white transition-colors cursor-pointer'
                 >
                   {t('insurance')}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  href='/services'
-                  className='text-gray-400 hover:text-white transition-colors'
+                <a
+                  href='/services#wealth-planning'
+                  onClick={e =>
+                    handleServiceClick(e, '/services', 'wealth-planning')
+                  }
+                  className='text-gray-400 hover:text-white transition-colors cursor-pointer'
                 >
                   {t('wealthPlanning')}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  href='/services'
-                  className='text-gray-400 hover:text-white transition-colors'
+                <a
+                  href='/services#residency-planning'
+                  onClick={e =>
+                    handleServiceClick(e, '/services', 'residency-planning')
+                  }
+                  className='text-gray-400 hover:text-white transition-colors cursor-pointer'
                 >
                   {t('residencyPlanning')}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  href='/services'
-                  className='text-gray-400 hover:text-white transition-colors'
+                <a
+                  href='/services#tax-planning'
+                  onClick={e =>
+                    handleServiceClick(e, '/services', 'tax-planning')
+                  }
+                  className='text-gray-400 hover:text-white transition-colors cursor-pointer'
                 >
                   {t('taxAdvice')}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  href='/services'
-                  className='text-gray-400 hover:text-white transition-colors'
+                <a
+                  href='/services#real-estate'
+                  onClick={e =>
+                    handleServiceClick(e, '/services', 'real-estate')
+                  }
+                  className='text-gray-400 hover:text-white transition-colors cursor-pointer'
                 >
                   {t('realEstate')}
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -100,35 +128,19 @@ export default function Footer() {
                   {t('news')}
                 </Link>
               </li>
-              <li>
-                <Link
-                  href='/careers'
-                  className='text-gray-400 hover:text-white transition-colors'
-                >
-                  {t('careers')}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/privacy'
-                  className='text-gray-400 hover:text-white transition-colors'
-                >
-                  {t('privacy')}
-                </Link>
-              </li>
             </ul>
           </div>
 
           <div>
             <h4 className='text-lg font-semibold mb-4'>{t('contact')}</h4>
             <address className='not-italic'>
-              <p className='mb-2 text-gray-400'>Canton Schwyz, Switzerland</p>
+              <p className='mb-2 text-gray-400'>{t('address')}</p>
               <p className='mb-2'>
                 <a
                   href='tel:+41788133009'
                   className='text-gray-400 hover:text-white transition-colors'
                 >
-                  +41 78 813 30 09
+                  {t('phone')}
                 </a>
               </p>
               <p>
@@ -136,7 +148,7 @@ export default function Footer() {
                   href='mailto:info@slmc.ch'
                   className='text-gray-400 hover:text-white transition-colors'
                 >
-                  info@slmc.ch
+                  {t('email')}
                 </a>
               </p>
             </address>
@@ -148,7 +160,7 @@ export default function Footer() {
                 rel='noopener noreferrer'
                 className='text-gray-400 hover:text-white transition-colors'
               >
-                <span className='sr-only'>LinkedIn</span>
+                <span className='sr-only'>{t('socialLinkedIn')}</span>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   width='24'

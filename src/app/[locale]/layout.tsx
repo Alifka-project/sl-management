@@ -52,7 +52,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages({ locale })
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className='scroll-smooth'>
       <body className='min-h-screen flex flex-col'>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />

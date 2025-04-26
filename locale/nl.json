@@ -218,6 +218,10 @@
   "contactUs": {
     "title": "Laten We Contact Opnemen.",
     "subTitle": "U kunt het handmatig versturen naar",
+    "successMessage": "Bedankt voor uw bericht! We nemen zo snel mogelijk contact met u op.",
+    "errorMessage": "Er was een probleem bij het verzenden van uw bericht. Probeer het opnieuw of neem direct contact met ons op.",
+    "sendAnother": "Stuur nog een bericht",
+    "submitting": "Versturen...",
     "form": {
       "1": {
         "title": "Volledige Naam",

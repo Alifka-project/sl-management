@@ -218,6 +218,10 @@
   "contactUs": {
     "title": "Nehmen wir Kontakt auf.",
     "subTitle": "Sie können es auch manuell an senden.",
+    "successMessage": "Vielen Dank f r Ihre Nachricht! Wir werden uns so bald wie m glich bei Ihnen melden.",
+    "errorMessage": "Es gab ein Problem bei der bersendung Ihrer Nachricht. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.",
+    "sendAnother": "Eine weitere Nachricht senden",
+    "submitting": "Senden...",
     "form": {
       "1": {
         "title": "Vollständiger Name",

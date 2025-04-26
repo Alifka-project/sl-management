@@ -218,6 +218,10 @@
   "contactUs": {
     "title": "Let’s Get In Touch.",
     "subTitle": "You may send it manually to ",
+    "successMessage": "Thank you for your message! We will get back to you as soon as possible.",
+    "errorMessage": "There was a problem sending your message. Please try again or contact us directly.",
+    "sendAnother": "Send another message",
+    "submitting": "Sending...",
     "form": {
       "1": {
         "title": "Fullname",

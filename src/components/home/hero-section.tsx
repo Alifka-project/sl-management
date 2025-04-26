@@ -29,7 +29,7 @@ export default function HeroSection() {
         <div className='relative'>
           <Button
             variant='default'
-            className=' text-white px-8 py-6 rounded-full absolute left-1/2 -translate-x-1/2 w-[20%] cursor-pointer top-0 max-lg:-top-3 max-md:-top-5 max-sm:-top-6'
+            className=' text-white px-8 py-6 max-sm:py-2 max-sm:px-4 max-sm:text-xs rounded-full absolute left-1/2 -translate-x-1/2 w-[20%] cursor-pointer top-0 max-lg:-top-3 max-md:-top-5 max-sm:-top-5'
           >
             {t('hero.viewMore')}
           </Button>

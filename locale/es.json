@@ -218,6 +218,10 @@
   "contactUs": {
     "title": "Pongámonos en Contacto.",
     "subTitle": "Puede enviarlo manualmente a",
+    "successMessage": "¡Gracias por su mensaje! Nos pondremos en contacto con usted lo antes posible.",
+    "errorMessage": "Hubo un problema al enviar su mensaje. Por favor, inténtelo de nuevo o contáctenos directamente.",
+    "sendAnother": "Enviar otro mensaje",
+    "submitting": "Enviando...",
     "form": {
       "1": {
         "title": "Nombre Completo",

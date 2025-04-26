@@ -218,6 +218,10 @@
   "contactUs": {
     "title": "让我们取得联系。",
     "subTitle": "您可以手动发送至",
+    "successMessage": "感谢您的留言！我们会尽快回复您。",
+    "errorMessage": "发送您的留言时出现问题。请重试或直接联系我们。",
+    "sendAnother": "发送另一条消息",
+    "submitting": "发送中...",
     "form": {
       "1": {
         "title": "全名",

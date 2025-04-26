@@ -18,6 +18,7 @@ const fadeIn = {
 // Define the structure of each service
 interface Service {
   id: number
+  sectionName: string
   title: string
   description: string
   items: string[]
@@ -25,6 +26,7 @@ interface Service {
 
 // Service card component for each service
 interface ServiceCardProps {
+  sectionName: string
   number: string
   title: string
   description: string
@@ -34,6 +36,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({
+  sectionName,
   number,
   title,
   description,
@@ -48,6 +51,7 @@ const ServiceCard = ({
       viewport={{ once: true }}
       variants={fadeIn}
       className='mb-16 max-lg:mb-24'
+      id={sectionName}
     >
       <div className='relative w-full h-64 max-lg:h-48 rounded-xl overflow-hidden mb-8'>
         <Image src={image} alt={title} fill className='object-cover' priority />
@@ -103,6 +107,7 @@ export default function FamilyServicesPage() {
   const services: Service[] = [
     {
       id: 1,
+      sectionName: 'insurance',
       title: t('1.title'),
       description: t('1.description'),
       items: Object.keys(t.raw('1.items') || {}).map(key =>
@@ -111,6 +116,7 @@ export default function FamilyServicesPage() {
     },
     {
       id: 2,
+      sectionName: 'relocation-service',
       title: t('2.title'),
       description: t('2.description'),
       items: Object.keys(t.raw('2.items') || {}).map(key =>
@@ -119,6 +125,7 @@ export default function FamilyServicesPage() {
     },
     {
       id: 3,
+      sectionName: 'wealth-planning',
       title: t('3.title'),
       description: t('3.description'),
       items: Object.keys(t.raw('3.items') || {}).map(key =>
@@ -127,6 +134,7 @@ export default function FamilyServicesPage() {
     },
     {
       id: 4,
+      sectionName: 'tax-planning',
       title: t('4.title'),
       description: t('4.description'),
       items: Object.keys(t.raw('4.items') || {}).map(key =>
@@ -135,6 +143,7 @@ export default function FamilyServicesPage() {
     },
     {
       id: 5,
+      sectionName: 'family-governance',
       title: t('5.title'),
       description: t('5.description'),
       items: Object.keys(t.raw('5.items') || {}).map(key =>
@@ -143,6 +152,7 @@ export default function FamilyServicesPage() {
     },
     {
       id: 6,
+      sectionName: 'real-estate',
       title: t('6.title'),
       description: t('6.description'),
       items: Object.keys(t.raw('6.items') || {}).map(key =>
@@ -151,6 +161,7 @@ export default function FamilyServicesPage() {
     },
     {
       id: 7,
+      sectionName: 'investment',
       title: t('7.title'),
       description: t('7.description'),
       items: Object.keys(t.raw('7.items') || {}).map(key =>
@@ -164,6 +175,7 @@ export default function FamilyServicesPage() {
       {services.map(service => (
         <ServiceCard
           key={service.id}
+          sectionName={service.sectionName}
           number={service.id.toString().padStart(2, '0')}
           title={service.title}
           description={service.description}
