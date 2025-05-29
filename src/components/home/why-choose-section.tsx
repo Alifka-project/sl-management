@@ -20,7 +20,7 @@ const WhyChooseCard: React.FC<WhyChooseCardProps> = ({
 }) => {
   return (
     <motion.div
-      className='border border-yellow-300 rounded-lg p-6 h-full'
+      className='bg-[#EABF49] rounded-lg px-4 py-8 sm:px-5 sm:py-9 md:px-6 md:py-10 lg:px-7 lg:py-11 xl:px-8 xl:py-12 h-full flex flex-col gap-3 sm:gap-4 md:gap-5 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl'
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -30,20 +30,17 @@ const WhyChooseCard: React.FC<WhyChooseCardProps> = ({
         ease: 'easeOut',
       }}
     >
-      <div className='mb-4'>
-        {/* Gray square background with rounded corners for icon */}
-        <div className='bg-gray-200 w-16 h-16 rounded-lg flex items-center justify-center'>
-          <Image
-            src={icon}
-            alt={title}
-            width={32}
-            height={32}
-            className='text-gray-700'
-          />
-        </div>
-      </div>
-      <h3 className='text-xl font-bold mb-2 text-left'>{title}</h3>
-      <p className='text-gray-700 text-sm leading-relaxed text-left'>
+      <Image
+        src={icon}
+        alt={title}
+        width={60}
+        height={20}
+        className='text-[#252525] w-10 h-auto sm:w-12 md:w-14 lg:w-16 xl:w-[60px] transition-transform duration-300 hover:scale-110'
+      />
+      <h3 className='text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[30px] font-bold leading-tight'>
+        {title}
+      </h3>
+      <p className='text-[#252525] text-sm sm:text-base md:text-lg lg:text-xl xl:text-[20px] leading-relaxed'>
         {description}
       </p>
     </motion.div>
@@ -56,9 +53,9 @@ const WhyChooseSection: React.FC = () => {
 
   // Map the icons to use with the translated content
   const iconsMap = {
-    '1': '/images/medal.svg', // Expert Team
-    '2': '/images/friendship.svg', // Trusted Partnership
-    '3': '/images/gift.svg', // Client-Centric Approach
+    '1': '/images/medal.png', // Expert Team
+    '2': '/images/friendship.png', // Trusted Partnership
+    '3': '/images/gift.png', // Client-Centric Approach
   }
 
   // Convert the translated items into the format needed for WhyChooseCard
@@ -81,10 +78,10 @@ const WhyChooseSection: React.FC = () => {
   ]
 
   return (
-    <section className='max-w-7xl mx-auto px-4 py-8'>
-      <div className='border-t border-black pt-12 mb-8'>
+    <section className='relative px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 bg-white py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24'>
+      <div className='container mx-auto flex flex-col gap-6 sm:gap-7 md:gap-8 lg:gap-9 xl:gap-8.5'>
         <motion.h2
-          className='text-4xl font-bold text-gray-800 text-center mb-12'
+          className='text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[50px] font-bold text-[#252525] text-center sm:text-center md:text-left leading-tight'
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -93,7 +90,7 @@ const WhyChooseSection: React.FC = () => {
           {t('title')}
         </motion.h2>
 
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-7 xl:gap-8'>
           {whyChooseItems.map((item, index) => (
             <WhyChooseCard
               key={index}

@@ -28,8 +28,8 @@ export default function Header() {
   ]
 
   return (
-    <header className='bg-white py-4 px-6 border-b shadow-sm sticky top-0 z-50'>
-      <div className='max-w-7xl mx-auto flex justify-between items-center gap-3'>
+    <header className='bg-white py-4 max-lg:px-4 border-b shadow-sm sticky top-0 z-50'>
+      <div className='container mx-auto flex justify-between items-center gap-3 relative'>
         <div className='flex items-center'>
           <Link href='/' className='flex items-center'>
             <Image
@@ -45,7 +45,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className='hidden md:flex items-center space-x-6'>
+        <nav className='hidden lg:flex items-center space-x-6'>
           {navItems.map(item => {
             // Check if the current path matches this nav item's path
             const isActive =
@@ -56,8 +56,8 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-gray-700 hover:text-yellow-500 transition-colors text-sm max-w-[130px] break-word ${
-                  isActive ? 'font-semibold text-yellow-500' : ''
+                className={`text-gray-700 font-bold hover:text-[#EABF49] transition-colors text-sm max-w-[130px] break-word ${
+                  isActive ? 'font-semibold text-[#EABF49]' : ''
                 }`}
               >
                 {item.name}
@@ -68,14 +68,14 @@ export default function Header() {
           <LanguageSwitcher />
 
           <Link href='/contact-us'>
-            <Button className='bg-yellow-500 hover:bg-yellow-600 text-white ml-2'>
+            <Button className='bg-[#EABF49] hover:bg-yellow-600 text-[#252525] rounded-full font-bold'>
               {t('contactUs')}
             </Button>
           </Link>
         </nav>
 
         {/* Mobile Menu Button */}
-        <div className='md:hidden flex items-center'>
+        <div className='lg:hidden flex items-center'>
           <LanguageSwitcher />
           <Button
             variant='ghost'

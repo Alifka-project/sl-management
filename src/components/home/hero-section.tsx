@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import FadeIn from '@/components/animations/fade-in'
@@ -9,42 +8,27 @@ export default function HeroSection() {
   const t = useTranslations('home')
 
   return (
-    <section className='relative bg-white py-16 max-lg:py-8' id='home'>
-      <div className='max-w-7xl mx-auto px-6'>
-        <FadeIn className='text-center mb-8'>
-          <h1 className='text-4xl max-lg:text-xl font-bold mb-4 max-lg:mb-2'>
-            {t('hero.title')}
+    <section
+      className='relative px-4 sm:px-6 lg:px-8 bg-white py-8 sm:py-12 md:py-16 lg:py-20'
+      id='hero'
+    >
+      <div className='container mx-auto flex flex-col items-center'>
+        <FadeIn className='text-center'>
+          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[80px] font-bold leading-tight'>
+            {t('hero.title')} {t('hero.and')} {t('hero.subtitle')}
           </h1>
-          <h1 className='text-4xl max-lg:text-xl font-bold mb-4 max-lg:mb-2'>
-            {t('hero.and')}
-          </h1>
-          <h2 className='text-3xl max-lg:text-xl font-semibold mb-6'>
-            {t('hero.subtitle')}
-          </h2>
-          <p className='text-lg max-lg:text-[16px] max-w-3xl mx-auto'>
+          <p className='text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-[30px] mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-12.5 max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto leading-relaxed'>
             {t('hero.description')}
           </p>
         </FadeIn>
-
-        <div className='relative'>
+        <FadeIn className='mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-12.5'>
           <Button
             variant='default'
-            className=' text-white px-8 py-6 max-sm:py-2 max-sm:px-4 max-sm:text-xs rounded-full absolute left-1/2 -translate-x-1/2 w-[20%] cursor-pointer top-0 max-lg:-top-3 max-md:-top-5 max-sm:-top-5'
+            className='text-[#252525] px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-4 lg:px-12 lg:py-5 xl:px-16 xl:py-6 font-bold rounded-[10px] cursor-pointer text-sm sm:text-base md:text-lg'
           >
             {t('hero.viewMore')}
           </Button>
-          <FadeIn delay={0.3} duration={0.8}>
-            <Image
-              src='/images/content_homepage.png'
-              alt='About SLMC'
-              width={0}
-              height={0}
-              sizes='100vw'
-              className='w-full h-auto'
-              priority
-            />
-          </FadeIn>
-        </div>
+        </FadeIn>
       </div>
     </section>
   )

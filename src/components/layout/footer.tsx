@@ -21,8 +21,8 @@ export default function Footer() {
   }
 
   return (
-    <footer className='bg-gray-900 text-white py-12'>
-      <div className='max-w-7xl mx-auto px-6'>
+    <footer className='bg-gray-900 max-lg:px-4 text-white py-12'>
+      <div className='container mx-auto '>
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
           <div>
             <div className='flex flex-col space-y-2'>

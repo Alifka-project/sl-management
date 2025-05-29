@@ -4,8 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @font-face {
-  font-family: 'proxima';
-  src: url('/fonts/Proxima-Nova-Regular.woff2') format('woff2');
+  font-family: 'outfit';
+  src: url('/fonts/Outfit-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -126,6 +126,6 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'proxima', sans-serif;
+    font-family: 'outfit', sans-serif;
   }
 }

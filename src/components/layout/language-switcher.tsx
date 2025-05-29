@@ -30,8 +30,10 @@ export default function LanguageSwitcher() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant='outline' className='flex items-center'>
-          <span className='mr-2'>{languageFlags[locale]}</span>
-          <span className='mr-1 hidden sm:inline'>{languageNames[locale]}</span>
+          <span className='mr-2 font-bold'>{languageFlags[locale]}</span>
+          <span className='mr-1 hidden sm:inline font-bold'>
+            {languageNames[locale]}
+          </span>
           <ChevronDown size={16} />
         </Button>
       </DropdownMenuTrigger>
@@ -40,10 +42,12 @@ export default function LanguageSwitcher() {
           <DropdownMenuItem
             key={code}
             onClick={() => changeLanguage(code as Locale)}
-            className={locale === code ? 'bg-yellow-50 font-medium' : ''}
+            className={locale === code ? 'bg-yellow-50 font-bold' : ''}
           >
             <span className='mr-2'>{languageFlags[code as Locale]}</span>
-            <span>{name}</span>
+            <span className={`${locale === code ? 'font-bold' : ''}`}>
+              {name}
+            </span>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>
