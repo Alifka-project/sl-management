@@ -108,9 +108,11 @@
     }
   },
   "familyService": {
+    "title": "Our Family Services",
+    "description": "Below is a brief overview of the specialized services we offer to ensure every aspect of your personal, financial, and professional life is optimally managed. Select any of the services to learn more or contact us directly for a personalized consultation.",
     "1": {
       "title": "Insurance",
-      "description": "Safeguard your assets and loved ones with our comprehensive insurance solutions. Our expert advisors conduct thorough reviews and offer personalized strategies to cover all aspects of your life.",
+      "description": "Protect your assets and loved ones with our comprehensive insurance solutions. Our advisors conduct in-depth reviews and craft personalized strategies, ensuring every aspect of your life is fully covered.",
       "items": {
         "1": "Comprehensive Insurance Review",
         "2": "Tailored Insurance Solutions",
@@ -123,7 +125,7 @@
     },
     "2": {
       "title": "Relocation Services",
-      "description": "Seamlessly transition to a new chapter of your life with our specialized relocation services. From destination research to settling-in support, we take care of every detail to make your move smooth and stress-free.",
+      "description": "Make your move stress-free with our specialized relocation services. From destination research to settling-in support, we handle every detail for a smooth transition—no matter where life takes you.",
       "items": {
         "1": "Personalized Relocation Planning",
         "2": "Destination Research and Analysis",
@@ -139,7 +141,7 @@
     },
     "3": {
       "title": "Wealth Planning",
-      "description": "Secure your financial future with our wealth planning services. Our experienced team works closely with you to develop customized strategies, ensuring your wealth aligns with your unique goals and aspirations.",
+      "description": "Secure your financial future with our expert wealth planning solutions. We develop customized strategies that align your assets with your personal goals and aspirations—ensuring long-term growth and stability.",
       "items": {
         "1": "Generational Wealth Transfer",
         "2": "Philanthropic advice & planning",
@@ -152,7 +154,7 @@
     },
     "4": {
       "title": "Tax & Legal Advice",
-      "description": "Navigate the complexities of legal and tax landscapes with confidence. Our advisors provide strategic guidance to optimize your financial position and ensure compliance with relevant regulations.",
+      "description": "Navigate complex tax and legal landscapes with confidence. Our advisors provide strategic guidance to optimize your financial position and ensure full compliance with relevant regulations.",
       "items": {
         "1": "Swiss and international tax planning",
         "2": "Corporate structuring",
@@ -163,17 +165,17 @@
     },
     "5": {
       "title": "Healthcare Management",
-      "description": "We collaborate closely with external premium Healthcare providers to ensure the first-class and prompt healthcare service. Please contact with us directly for Details.",
+      "description": "Enjoy first-class healthcare through our partnerships with leading providers. We coordinate everything from routine check-ups to specialized treatments, ensuring prompt and premium medical services.",
       "items": {}
     },
     "6": {
       "title": "Real Estate Services",
-      "description": "Find your perfect home or investment property with our real estate services. Our team assists in property searches, negotiations, and seamless transactions, making your real estate journey enjoyable and efficient.",
+      "description": "Find your perfect home or investment property with our real estate experts. From property searches and negotiations to seamless closings, we make your real estate journey both rewarding and efficient.",
       "items": {}
     },
     "7": {
       "title": "Bespoke Services",
-      "description": "Tailored to your individual needs, our bespoke services offer a unique and personalized approach to address your specific requirements, ensuring an unparalleled level of service and satisfaction. You are welcomed to contact us directly.",
+      "description": "Experience truly customized solutions with our exclusive Bespoke Services. We address your unique requirements with unparalleled attention to detail and service excellence.",
       "items": {}
     },
     "contactUs": "Contact Us"

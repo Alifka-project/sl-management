@@ -25,7 +25,7 @@ export default function MobileMenu({
       animate={{ height: 'auto', opacity: 1 }}
       exit={{ height: 0, opacity: 0 }}
       transition={{ duration: 0.3 }}
-      className='md:hidden mt-4 py-4 px-4 space-y-4 bg-white border-t'
+      className='lg:hidden mt-4 py-4 px-4 space-y-4 bg-white border-t'
     >
       {navItems.map(item => {
         const isActive =
@@ -48,7 +48,7 @@ export default function MobileMenu({
       <div className='pt-4 border-t'>
         <Link href='/contact-us' className='w-full'>
           <Button
-            className='w-full bg-yellow-500 hover:bg-yellow-600 text-white'
+            className='w-full bg-[#EABF49] hover:bg-yellow-600 text-[#252525]'
             onClick={onClose}
           >
             {t('contactUs')}

@@ -4,7 +4,6 @@ import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence } from 'framer-motion'
 import FadeIn from '@/components/animations/fade-in'
-import Image from 'next/image'
 
 const AccordionItem = ({
   title,
@@ -66,36 +65,31 @@ export default function Art45Page() {
   const t = useTranslations('ART45VAG')
 
   return (
-    <div className='max-w-7xl mx-auto px-4 py-12'>
-      {/* Hero Section */}
-      <FadeIn className='mb-4'>
-        {/* Hero Image */}
-        <div className='relative w-full h-64 bg-gray-900 rounded-lg overflow-hidden'>
-          <Image
-            src='/images/content-art-45.png'
-            alt='ART45 VAG Information'
-            fill
-            className='object-cover'
-            priority
-          />
-        </div>
-        <div className='text-left mt-4'>
-          <h1 className='text-4xl font-bold mt-4'>ART45 VAG</h1>
-        </div>
-      </FadeIn>
+    <section
+      className='relative px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 bg-white py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24'
+      id='art-45'
+    >
+      <div className='container mx-auto px-4 py-12'>
+        {/* Hero Section */}
+        <FadeIn className='mb-4'>
+          <div className='text-center mt-4'>
+            <h1 className='text-4xl font-bold mt-4'>ART45 VAG</h1>
+          </div>
+        </FadeIn>
 
-      {/* Accordion Items */}
-      <div className='divide-y divide-gray-200 mb-16'>
-        {Array.from({ length: 7 }).map((_, i) => (
-          <AccordionItem
-            key={i}
-            title={t(`${i + 1}.title`)}
-            defaultOpen={i === 0}
-          >
-            <p className='text-gray-600'>{t(`${i + 1}.description`)}</p>
-          </AccordionItem>
-        ))}
+        {/* Accordion Items */}
+        <div className='divide-y divide-gray-200 mb-16'>
+          {Array.from({ length: 7 }).map((_, i) => (
+            <AccordionItem
+              key={i}
+              title={t(`${i + 1}.title`)}
+              defaultOpen={i === 0}
+            >
+              <p className='text-gray-600'>{t(`${i + 1}.description`)}</p>
+            </AccordionItem>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   )
 }

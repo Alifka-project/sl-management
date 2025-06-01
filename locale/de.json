@@ -110,7 +110,7 @@
   "familyService": {
     "1": {
       "title": "Versicherung",
-      "description": "Schützen Sie Ihre Vermögenswerte und Lieben mit unseren umfassenden Versicherungslösungen. Unsere Expertenberater führen gründliche Überprüfungen durch und bieten personalisierte Strategien, um alle Aspekte Ihres Lebens abzudecken.",
+      "description": "Schützen Sie Ihre Vermögenswerte und Ihre Lieben mit unseren umfassenden Versicherungslösungen. Unsere Berater führen eingehende Überprüfungen durch und erstellen personalisierte Strategien, um sicherzustellen, dass jeder Aspekt Ihres Lebens vollständig abgedeckt ist.",
       "items": {
         "1": "Umfassende Versicherungsüberprüfung",
         "2": "Maßgeschneiderte Versicherungslösungen",
@@ -123,7 +123,7 @@
     },
     "2": {
       "title": "Umzugsdienstleistungen",
-      "description": "Wechseln Sie nahtlos zu einem neuen Kapitel Ihres Lebens mit unseren spezialisierten Umzugsdienstleistungen. Von der Zielforschung bis zur Eingewöhnungsunterstützung kümmern wir uns um jedes Detail, um Ihren Umzug reibungslos und stressfrei zu gestalten.",
+      "description": "Machen Sie Ihren Umzug stressfrei mit unseren speziell auf Relocation Services ausgerichteten Dienstleistungen. Von der Recherche nach Zielen bis hin zur Unterstützung bei der Eingliederung übernehmen wir jeden Detail, um einen reibungslosen Übergang zu gewährleisten - egal, wohin Sie sich aufmachen.",
       "items": {
         "1": "Personalisierte Umzugsplanung",
         "2": "Zielforschung und -analyse",
@@ -139,7 +139,7 @@
     },
     "3": {
       "title": "Vermögensplanung",
-      "description": "Sichern Sie Ihre finanzielle Zukunft mit unseren Vermögensplanungsdiensten. Unser erfahrenes Team arbeitet eng mit Ihnen zusammen, um maßgeschneiderte Strategien zu entwickeln und sicherzustellen, dass Ihr Vermögen mit Ihren einzigartigen Zielen und Bestrebungen übereinstimmt.",
+      "description": "Sicherung ihrer finanziellen Zukunft mit unseren Experten-L sungen f r Verm gensplanung. Wir entwickeln ma geschneiderte Strategien, die Ihre Verm genswerte mit Ihren pers nlichen Zielen und Ambitionen in Einklang bringen - und langfristiges Wachstum und Stabilit t gew hrleisten.",
       "items": {
         "1": "Generationsübergreifender Vermögenstransfer",
         "2": "Philanthropische Beratung & Planung",
@@ -152,7 +152,7 @@
     },
     "4": {
       "title": "Steuer- & Rechtsberatung",
-      "description": "Navigieren Sie mit Zuversicht durch die Komplexitäten der rechtlichen und steuerlichen Landschaften. Unsere Berater bieten strategische Anleitung zur Optimierung Ihrer finanziellen Position und zur Sicherstellung der Einhaltung relevanter Vorschriften.",
+      "description": "Navegue complexos cen rios tribut rio e jur dico com confian a. Nossos consultores oferecem orienta o estrat gica para otimizar sua posi o financeira e garantir conformidade total com as regulamenta es relevantes.",
       "items": {
         "1": "Schweizer und internationale Steuerplanung",
         "2": "Unternehmensstrukturierung",
@@ -163,17 +163,17 @@
     },
     "5": {
       "title": "Gesundheitsmanagement",
-      "description": "Wir arbeiten eng mit externen Premium-Gesundheitsdienstleistern zusammen, um erstklassige und prompte Gesundheitsversorgung zu gewährleisten. Bitte kontaktieren Sie uns direkt für Details.",
+      "description": "Disfrute de servicios de salud de primera clase a trav s de nuestras alianzas con proveedores l deres. Coordinamos todo, desde visitas rutinarias hasta tratamientos especializados, para asegurar servicios m dicos de alta calidad y r pidos.",
       "items": {}
     },
     "6": {
       "title": "Immobiliendienstleistungen",
-      "description": "Finden Sie Ihr perfektes Zuhause oder Anlageobjekt mit unseren Immobiliendienstleistungen. Unser Team unterstützt bei der Immobiliensuche, Verhandlungen und reibungslosen Transaktionen, um Ihre Immobilienreise angenehm und effizient zu gestalten.",
+      "description": "Finden Sie Ihr perfektes Zuhause oder Ihre Investitionsimmobilie mit unseren Immobilienexperten. Von der Immobiliensuche und Verhandlungen bis zu reibungslosen Abschlüssen machen wir Ihre Immobilienreise sowohl lohnend als auch effizient.",
       "items": {}
     },
     "7": {
       "title": "Maßgeschneiderte Dienstleistungen",
-      "description": "Auf Ihre individuellen Bedürfnisse zugeschnitten bieten unsere maßgeschneiderten Dienstleistungen einen einzigartigen und personalisierten Ansatz, um Ihre spezifischen Anforderungen zu erfüllen und ein unvergleichliches Maß an Service und Zufriedenheit zu gewährleisten. Sie sind herzlich eingeladen, uns direkt zu kontaktieren.",
+      "description": "Erleben Sie wirklich maßgeschneiderte Lösungen mit unseren exklusiven Bespoke Services. Wir gehen auf Ihre individuellen Anforderungen mit unvergleichlicher Detailgenauigkeit und Serviceexzellenz ein.",
       "items": {}
     },
     "contactUs": "Kontaktieren Sie uns"

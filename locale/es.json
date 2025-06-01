@@ -110,7 +110,7 @@
   "familyService": {
     "1": {
       "title": "Seguros",
-      "description": "Proteja sus activos y seres queridos con nuestras soluciones integrales de seguros. Nuestros asesores expertos realizan revisiones exhaustivas y ofrecen estrategias personalizadas para cubrir todos los aspectos de su vida.",
+      "description": "Proteja sus activos y seres queridos con nuestras soluciones de seguro integrales. Nuestros asesores realizan revisiones exhaustivas y crean estrategias personalizadas, asegurando que todos los aspectos de su vida est n plenamente cubiertos.",
       "items": {
         "1": "Revisión Integral de Seguros",
         "2": "Soluciones de Seguros a Medida",
@@ -123,7 +123,7 @@
     },
     "2": {
       "title": "Servicios de Reubicación",
-      "description": "Transición sin problemas a un nuevo capítulo de su vida con nuestros servicios especializados de reubicación. Desde la investigación del destino hasta el apoyo para establecerse, nos ocupamos de cada detalle para que su mudanza sea fluida y libre de estrés.",
+      "description": "Haga su mudanza sin estrés con nuestros servicios especializados de reubicación. Desde la investigación del destino hasta el apoyo para la adaptación, manejamos cada detalle para una transición suave, sin importar a dónde le lleve la vida.",
       "items": {
         "1": "Planificación de Reubicación Personalizada",
         "2": "Investigación y Análisis de Destino",
@@ -139,7 +139,7 @@
     },
     "3": {
       "title": "Planificación Patrimonial",
-      "description": "Asegure su futuro financiero con nuestros servicios de planificación patrimonial. Nuestro experimentado equipo trabaja estrechamente con usted para desarrollar estrategias personalizadas, asegurando que su patrimonio se alinee con sus objetivos y aspiraciones únicas.",
+      "description": "Asegure su futuro financiero con nuestras soluciones de planificaci n de patrimonio expertas. Desarrollamos estrategias personalizadas que alinean sus activos con sus metas y aspiraciones personales - asegurando crecimiento y estabilidad a largo plazo.",
       "items": {
         "1": "Transferencia Generacional de Patrimonio",
         "2": "Asesoramiento y planificación filantrópica",
@@ -152,7 +152,7 @@
     },
     "4": {
       "title": "Asesoramiento Fiscal y Legal",
-      "description": "Navegue por las complejidades de los paisajes legales y fiscales con confianza. Nuestros asesores proporcionan orientación estratégica para optimizar su posición financiera y garantizar el cumplimiento de las regulaciones relevantes.",
+      "description": "Navegue por los complejos paisajes legales y fiscales con confianza. Nuestros asesores brindan orientaci n estrat gica para optimizar su posici n financiera y garantizar el cumplimiento total de las regulaciones relevantes.",
       "items": {
         "1": "Planificación fiscal suiza e internacional",
         "2": "Estructuración corporativa",
@@ -163,17 +163,17 @@
     },
     "5": {
       "title": "Gestión de Atención Médica",
-      "description": "Colaboramos estrechamente con proveedores externos de atención médica premium para garantizar un servicio de atención médica de primera clase y rápido. Por favor, contáctenos directamente para obtener más detalles.",
+      "description": "Disfrute de atención médica de primera clase a través de nuestras alianzas con proveedores líderes. Coordinamos todo, desde revisiones rutinarias hasta tratamientos especializados, garantizando servicios médicos rápidos y de alta calidad.",
       "items": {}
     },
     "6": {
       "title": "Servicios Inmobiliarios",
-      "description": "Encuentre su hogar o propiedad de inversión perfecta con nuestros servicios inmobiliarios. Nuestro equipo le asiste en la búsqueda de propiedades, negociaciones y transacciones sin problemas, haciendo que su experiencia inmobiliaria sea agradable y eficiente.",
+      "description": "Encuentre su hogar perfecto o propiedad de inversión con nuestros expertos inmobiliarios. Desde búsquedas de propiedades y negociaciones hasta cierres sin problemas, hacemos que su experiencia inmobiliaria sea tanto gratificante como eficiente.",
       "items": {}
     },
     "7": {
       "title": "Servicios a Medida",
-      "description": "Adaptados a sus necesidades individuales, nuestros servicios a medida ofrecen un enfoque único y personalizado para abordar sus requisitos específicos, garantizando un nivel incomparable de servicio y satisfacción. Le invitamos a contactarnos directamente.",
+      "description": "Experimente soluciones verdaderamente personalizadas con nuestros exclusivos Servicios a Medida. Atendemos sus requisitos únicos con una atención al detalle sin igual y excelencia en el servicio.",
       "items": {}
     },
     "contactUs": "Contáctenos"

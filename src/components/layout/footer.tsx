@@ -21,8 +21,8 @@ export default function Footer() {
   }
 
   return (
-    <footer className='bg-gray-900 max-lg:px-4 text-white py-12'>
-      <div className='container mx-auto '>
+    <footer className='bg-[#252525] max-lg:px-4 text-white py-12'>
+      <div className='container mx-auto'>
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
           <div>
             <div className='flex flex-col space-y-2'>
@@ -134,21 +134,30 @@ export default function Footer() {
           <div>
             <h4 className='text-lg font-semibold mb-4'>{t('contact')}</h4>
             <address className='not-italic'>
-              <p className='mb-2 text-gray-400'>{t('address')}</p>
+              {/* <p className='mb-2 text-gray-400'>{t('address')}</p> */}
+
+              <p className='mb-2'>
+                <a
+                  href='mailto:info@slmc.ch'
+                  className='text-gray-400 hover:text-white transition-colors'
+                >
+                  Email: info@slmc.ch
+                </a>
+              </p>
               <p className='mb-2'>
                 <a
                   href='tel:+41788133009'
                   className='text-gray-400 hover:text-white transition-colors'
                 >
-                  {t('phone')}
+                  Phone: +41 78 813 30 93 (Switzerland)
                 </a>
               </p>
               <p>
                 <a
-                  href='mailto:info@slmc.ch'
+                  href='tel:+41788133009'
                   className='text-gray-400 hover:text-white transition-colors'
                 >
-                  {t('email')}
+                  Phone: +86 134 887 98 276 (Beijing, China)
                 </a>
               </p>
             </address>

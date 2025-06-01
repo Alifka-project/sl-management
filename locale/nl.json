@@ -110,7 +110,7 @@
   "familyService": {
     "1": {
       "title": "Verzekeringen",
-      "description": "Bescherm uw bezittingen en dierbaren met onze uitgebreide verzekeringsoplossingen. Onze deskundige adviseurs voeren grondige beoordelingen uit en bieden gepersonaliseerde strategieën om alle aspecten van uw leven te dekken.",
+      "description": "Beschermt uw bezittingen en dierbaren met onze uitgebreide verzekeringsoplossingen. Onze adviseurs voeren diepgaande beoordelingen uit en cre ren persoonlijke strategie n om ervoor te zorgen dat elk aspect van uw leven volledig is verzekerd.",
       "items": {
         "1": "Uitgebreide Verzekeringsbeoordeling",
         "2": "Op Maat Gemaakte Verzekeringsoplossingen",
@@ -123,7 +123,7 @@
     },
     "2": {
       "title": "Relocatiediensten",
-      "description": "Maak naadloos de overgang naar een nieuw hoofdstuk in uw leven met onze gespecialiseerde relocatiediensten. Van bestemmingsonderzoek tot vestigingsondersteuning, we zorgen voor elk detail om uw verhuizing soepel en stressvrij te maken.",
+      "description": "Maak uw verhuizing stressvrij met onze gespecialiseerde relocatiediensten. Van bestemmingenonderzoek tot settling-in-ondersteuning, we regelen elke detail voor een soepele overgang - ongeacht waar het leven u brengt.",
       "items": {
         "1": "Gepersonaliseerde Relocatieplanning",
         "2": "Bestemmingsonderzoek en -analyse",
@@ -139,7 +139,7 @@
     },
     "3": {
       "title": "Vermogensplanning",
-      "description": "Beveilig uw financiële toekomst met onze vermogensplanningsdiensten. Ons ervaren team werkt nauw met u samen om aangepaste strategieën te ontwikkelen, waarbij we ervoor zorgen dat uw vermogen in lijn is met uw unieke doelen en ambities.",
+      "description": "Beveilig uw financi le toekomst met onze deskundige vermogensplanningsoplossingen. Wij ontwikkelen aangepaste strategie n die uw vermogen in lijn brengen met uw persoonlijke doelstellingen en ambities - zodat u langdurige groei en stabiliteit kunt garanderen.",
       "items": {
         "1": "Generationele Vermogensoverdracht",
         "2": "Filantropisch advies & planning",
@@ -152,7 +152,7 @@
     },
     "4": {
       "title": "Fiscaal & Juridisch Advies",
-      "description": "Navigeer met vertrouwen door de complexiteit van juridische en fiscale landschappen. Onze adviseurs bieden strategische begeleiding om uw financiële positie te optimaliseren en naleving van relevante regelgeving te waarborgen.",
+      "description": "Navegue por los complejos paisajes fiscales y legales con confianza. Nuestros asesores brindan orientaci n estrat gica para optimizar su posici n financiera y garantizar el cumplimiento total de las regulaciones relevantes.",
       "items": {
         "1": "Zwitserse en internationale fiscale planning",
         "2": "Bedrijfsstructurering",
@@ -163,17 +163,17 @@
     },
     "5": {
       "title": "Gezondheidszorgbeheer",
-      "description": "We werken nauw samen met externe premium gezondheidszorgaanbieders om eersteklas en snelle gezondheidszorgdiensten te garanderen. Neem rechtstreeks contact met ons op voor details.",
+      "description": "Geniet van eersteklas gezondheidszorg via onze samenwerkingen met toonaangevende aanbieders. Wij coördineren alles van routinecontroles tot gespecialiseerde behandelingen, en zorgen voor snelle en premium medische diensten.",
       "items": {}
     },
     "6": {
       "title": "Vastgoeddiensten",
-      "description": "Vind uw perfecte woning of investeringseigendom met onze vastgoeddiensten. Ons team assisteert bij het zoeken naar eigendom, onderhandelingen, en naadloze transacties, waardoor uw vastgoedtraject plezierig en efficiënt wordt.",
+      "description": "Vind uw perfecte woning of investeringspand met onze vastgoedexperts. Van woningzoektocht en onderhandelingen tot naadloze afronding, wij maken uw vastgoedreis zowel lonend als efficiënt.",
       "items": {}
     },
     "7": {
       "title": "Op Maat Gemaakte Diensten",
-      "description": "Op maat gemaakt voor uw individuele behoeften, bieden onze op maat gemaakte diensten een unieke en gepersonaliseerde aanpak om aan uw specifieke vereisten te voldoen, wat zorgt voor een ongeëvenaard niveau van service en tevredenheid. U bent welkom om rechtstreeks contact met ons op te nemen.",
+      "description": "Ervaar werkelijk op maat gemaakte oplossingen met onze exclusieve Bespoke Services. Wij pakken uw unieke vereisten aan met ongeëvenaarde aandacht voor detail en service-uitmuntendheid.",
       "items": {}
     },
     "contactUs": "Neem Contact Op"

@@ -3,18 +3,9 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
-import { Link } from '@/i18n/routing'
-
-const fadeIn = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: 'easeOut' },
-  },
-}
+import FadeIn from '../animations/fade-in'
+import Link from 'next/link'
 
 // Define the structure of each service
 interface Service {
@@ -27,72 +18,55 @@ interface Service {
 
 // Service card component for each service
 interface ServiceCardProps {
-  sectionName: string
-  number: string
   title: string
   description: string
   image: string
   tags: string[]
-  contactText: string
 }
 
-const ServiceCard = ({
-  sectionName,
-  number,
-  title,
-  description,
-  image,
-  tags,
-  contactText,
-}: ServiceCardProps) => {
+const ServiceCard = ({ title, description, image, tags }: ServiceCardProps) => {
   return (
-    <motion.div
-      initial='hidden'
-      whileInView='visible'
-      viewport={{ once: true }}
-      variants={fadeIn}
-      className='mb-16 max-lg:mb-24'
-      id={sectionName}
-    >
-      <div className='relative w-full h-64 max-lg:h-48 rounded-xl overflow-hidden mb-8'>
-        <Image src={image} alt={title} fill className='object-cover' priority />
-      </div>
-
-      <div className='flex flex-col lg:flex-row gap-6'>
-        <div className='lg:w-1/4'>
-          <h2 className='text-8xl max-lg:text-6xl font-bold text-gray-800 mb-4'>
-            {number}
-          </h2>
+    <FadeIn className='col-span-12 sm:col-span-6 lg:col-span-6'>
+      <div className='bg-white h-full shadow-lg overflow-hidden rounded-lg hover:shadow-xl transition-shadow duration-300'>
+        {/* Image Section */}
+        <div className='relative w-full h-48 sm:h-52 md:h-56 lg:h-60 xl:h-64'>
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className='object-cover hover:scale-105 transition-transform duration-300'
+            priority
+          />
         </div>
 
-        <div className='lg:w-3/4'>
-          <h3 className='text-4xl max-lg:text-3xl font-bold text-gray-800 mb-4 max-lg:mb-3'>
+        {/* Content Section */}
+        <div className='p-4 sm:p-5 md:p-6'>
+          {/* Title */}
+          <h3 className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#252525] mb-3 sm:mb-4 line-clamp-2'>
             {title}
           </h3>
-          <p className='text-lg max-lg:text-base text-gray-700 mb-6 max-lg:mb-4'>
+
+          {/* Description */}
+          <p className='text-[#252525] text-sm sm:text-base leading-relaxed mb-4 sm:mb-5 md:mb-6 line-clamp-3'>
             {description}
           </p>
 
+          {/* Service Buttons/Tags */}
           {tags.length > 0 && (
-            <div className='flex flex-wrap gap-3 mb-6 max-lg:mb-4'>
+            <div className='flex flex-wrap gap-1.5 sm:gap-2'>
               {tags.map((tag, index) => (
                 <span
                   key={index}
-                  className='px-4 py-2 max-lg:px-3 max-lg:py-1.5 rounded-full bg-yellow-100 text-yellow-800 font-medium text-sm max-lg:text-xs border border-yellow-300'
+                  className='px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 rounded-lg bg-[#EABF49] text-[#252525] font-medium text-xs sm:text-sm cursor-pointer hover:bg-[#d4a942] transition-colors duration-200'
                 >
                   {tag}
                 </span>
               ))}
             </div>
           )}
-          <Link href='/contact-us'>
-            <Button className='bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-6 max-lg:px-6 max-lg:py-4 rounded-full'>
-              {contactText}
-            </Button>
-          </Link>
         </div>
       </div>
-    </motion.div>
+    </FadeIn>
   )
 }
 
@@ -104,6 +78,7 @@ export const metadata = {
 // Main component to display all family services
 export default function FamilyServicesPage() {
   const t = useTranslations('familyService')
+  const tt = useTranslations('menu')
 
   // Array of family services - in a real implementation, this would be transformed from translations
   const services: Service[] = [
@@ -173,19 +148,58 @@ export default function FamilyServicesPage() {
   ]
 
   return (
-    <div className='max-w-7xl mx-auto px-6 max-lg:px-4 py-12 max-lg:py-8'>
-      {services.map(service => (
-        <ServiceCard
-          key={service.id}
-          sectionName={service.sectionName}
-          number={service.id.toString().padStart(2, '0')}
-          title={service.title}
-          description={service.description}
-          image={`/images/content-${service.id}.png`}
-          tags={service.items}
-          contactText={t('contactUs')}
-        />
-      ))}
-    </div>
+    <section
+      className='relative px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 bg-white py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 2xl:py-28'
+      id='family-services'
+    >
+      <div className='container mx-auto'>
+        {/* Header Section */}
+        <div className='grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 mb-12 sm:mb-16 md:mb-20 lg:mb-24 items-center'>
+          <FadeIn className='flex flex-col gap-4 sm:gap-5 md:gap-6 lg:col-span-6 text-center lg:text-left order-2 lg:order-1'>
+            <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[80px] font-bold leading-tight'>
+              {t('title')}
+            </h1>
+            <p className='text-[#252525] leading-relaxed text-base sm:text-lg md:text-xl lg:text-2xl max-w-2xl mx-auto lg:mx-0'>
+              {t('description')}
+            </p>
+            <FadeIn direction='up' delay={1.0}>
+              <Link href='/contact-us' className='w-fit mx-auto lg:mx-0'>
+                <Button
+                  variant='default'
+                  className='text-[#252525] px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 lg:px-12 lg:py-6 font-bold rounded-[10px] cursor-pointer text-sm sm:text-base md:text-lg hover:scale-105 transition-transform duration-200'
+                >
+                  {tt('contactUs')}
+                </Button>
+              </Link>
+            </FadeIn>
+          </FadeIn>
+
+          <FadeIn className='lg:col-span-6 order-1 lg:order-2'>
+            <div className='relative aspect-[4/3] sm:aspect-[3/2] w-full rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300'>
+              <Image
+                src='/images/image-services.jpg'
+                alt='SLMC Team Meeting'
+                fill
+                sizes='(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, 50vw'
+                className='object-cover'
+              />
+            </div>
+          </FadeIn>
+        </div>
+
+        {/* Services Grid */}
+        <div className='grid grid-cols-12 gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12'>
+          {services.map(service => (
+            <ServiceCard
+              key={service.id}
+              title={service.title}
+              description={service.description}
+              image={`/images/content-${service.id}.png`}
+              tags={service.items}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }
