@@ -88,12 +88,13 @@
     "title": "Sobre Nosotros",
     "subTitle": "SLMC - Su Experto en Soluciones de Estilo de Vida.",
     "description1": "En S & L Management y Consulting LLC (SLMC), nos enorgullece ser su socio de confianza para soluciones integrales de estilo de vida y servicios de oficina familiar. Nuestro compromiso con la excelencia se basa en un amplio espectro de experiencia en la industria, una dedicación al servicio personalizado y una red global de socios estimados.",
-    "description2": "Con sede en el Cantón de Schwyz, Suiza —un centro innovador para finanzas, blockchain y tecnología de la salud— SLMC también mantiene presencia en Beijing (RPC). Al asociarnos con firmas premium seleccionadas en Suiza y Asia, adaptamos soluciones para individuos y familias que persiguen intereses comerciales o personales en ambas regiones.",
+    "description2": "SLMC tiene su sede en el cantón de Schwyz (Suiza), el cantón central suizo bordeado por el lago de Zúrich y el lago de los Cuatro Cantones, conocido por su clúster de Finanzas, Blockchain y Tecnología de la Salud en Suiza. SLMC también tiene presencia en Beijing (RPC).",
+    "description3": "Colaboramos estrechamente con socios premium seleccionados en Suiza y Asia para crear soluciones de estilo de vida exhaustivas e individualizadas para familias o individuos con intereses comerciales o privados en Suiza y Asia.",
 
     "team": {
-      "title": "Equipo",
-      "description1": "SLMC está impulsado por un equipo diverso centrado en la excelencia y la atención personal. Dirigido por el Prof. Dr. Andreas Svoboda, colaboramos con socios de primer nivel en finanzas, banca, seguros y servicios de oficina familiar para ofrecer soluciones a medida para clientes UHNW con los más altos estándares.",
-      "description2": "Para satisfacer la creciente demanda asiática, SLMC presenta con orgullo su Escritorio de Beijing, dirigido por la Sra. Lingnan Ren, proporcionando soporte especializado en mandarín para una experiencia global sin fisuras.",
+      "title": "Nuestro equipo",
+      "description1": "SLMC es un equipo con diversos antecedentes y perspectivas. Nuestro compromiso con la excelencia se basa en una rica experiencia y dedicación al servicio personalizado. Nuestro equipo suizo está liderado por el Prof. Dr. Andreas Svoboda. Colaboramos estrechamente con socios externos premium seleccionados que se especializan en la complejidad del mundo financiero, incluyendo banca, seguros y servicios de Family Office. Con un profundo entendimiento de los desafíos únicos de los UHNWI, ofrecemos soluciones personalizadas que cumplen con los más altos estándares.",
+      "description2": "SLMC se enorgullece en anunciar la apertura de su oficina en Pekín para satisfacer la creciente demanda de clientes en Asia. Bajo la dirección de la dinámica Sra. Lingnan Ren, nuestro equipo está listo para atenderle en mandarín, garantizando una comunicación fluida y un apoyo incomparable.",
       "teams": {
         "1": {
           "name": "Prof. Dr. Andreas Svoboda",

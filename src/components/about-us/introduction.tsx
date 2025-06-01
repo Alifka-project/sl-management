@@ -2,88 +2,46 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
-
-const fadeIn = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: 'easeOut' },
-  },
-}
-
-const staggerChildren = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.3,
-    },
-  },
-}
+import FadeIn from '../animations/fade-in'
 
 const AboutIntroduction: React.FC = () => {
   const t = useTranslations('aboutUs')
 
   return (
-    <motion.div
-      className='mb-16'
-      initial='hidden'
-      animate='visible'
-      variants={staggerChildren}
+    <section
+      className='relative px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 bg-white py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24'
+      id='about us'
     >
-      <motion.h2
-        className='text-3xl font-bold mb-8 text-gray-800 relative border-b pb-4 flex items-center gap-3'
-        variants={fadeIn}
-      >
-        <span className='text-yellow-500'>
-          <svg
-            width='50'
-            height='50'
-            viewBox='0 0 50 50'
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <path
-              d='M25 0L29.4194 20.5806L50 25L29.4194 29.4194L25 50L20.5806 29.4194L0 25L20.5806 20.5806L25 0Z'
-              fill='#EABF49'
-            />
-          </svg>
-        </span>
-        {t('title')}
-      </motion.h2>
-
-      <motion.h2
-        className='text-xl md:text-2xl font-semibold mb-6 text-gray-800'
-        variants={fadeIn}
-      >
-        {t('subTitle')}
-      </motion.h2>
-
-      <motion.div
-        className='relative h-80 md:h-96 mb-8 rounded-lg overflow-hidden'
-        variants={fadeIn}
-      >
-        <Image
-          src='/images/about-us-content.png'
-          alt='SLMC Team Meeting'
-          fill
-          className='object-cover'
-        />
-      </motion.div>
-
-      <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
-        <motion.div variants={fadeIn}>
-          <p className='text-gray-700 mb-4'>{t('description1')}</p>
-        </motion.div>
-
-        <motion.div variants={fadeIn}>
-          <p className='text-gray-700 mb-4'>{t('description2')}</p>
-        </motion.div>
+      <div className='container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-12.5 w-full items-center'>
+        <FadeIn className='flex flex-col gap-3 sm:gap-4 md:gap-5 lg:col-span-7 text-justify order-2 lg:order-1'>
+          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[80px] font-bold leading-tight text-center sm:text-center lg:text-left'>
+            {t('title')}
+          </h1>
+          <p className='text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-[30px] leading-relaxed text-center sm:text-center lg:text-justify'>
+            {t('subTitle')}
+          </p>
+          <p className='text-[#252525] text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed transform transition-transform duration-200 text-center sm:text-center lg:text-justify'>
+            {t('description1')}
+          </p>
+          <p className='text-[#252525] text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed transform transition-transform duration-200 text-center sm:text-center lg:text-justify'>
+            {t('description2')}
+          </p>
+          <p className='text-[#252525] text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed transform transition-transform duration-200 text-center sm:text-center lg:text-justify'>
+            {t('description3')}
+          </p>
+        </FadeIn>
+        <FadeIn className='relative aspect-square w-full h-auto mb-4 sm:mb-6 md:mb-8 lg:mb-0 rounded-lg overflow-hidden lg:col-span-5 order-1 lg:order-2 transform transition-transform duration-300 hover:scale-105'>
+          <Image
+            src='/images/about-us-content.png'
+            alt='SLMC Team Meeting'
+            fill
+            sizes='(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, 42vw'
+            className='object-cover shadow-lg transition-shadow duration-300 hover:shadow-xl'
+          />
+        </FadeIn>
       </div>
-    </motion.div>
+    </section>
   )
 }
 

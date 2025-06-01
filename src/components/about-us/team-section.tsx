@@ -1,35 +1,14 @@
 'use client'
 
 import React from 'react'
-import { motion } from 'framer-motion'
 import TeamMemberCard from './team-member-card'
 import { useTranslations } from 'next-intl'
-
-const fadeIn = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: 'easeOut' },
-  },
-}
-
-const staggerChildren = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.3,
-    },
-  },
-}
+import FadeIn from '../animations/fade-in'
 
 interface TeamMember {
   name: string
-  title: string
   description: string
   imageSrc: string
-  isReversed?: boolean
 }
 
 const TeamSection: React.FC = () => {
@@ -40,68 +19,54 @@ const TeamSection: React.FC = () => {
   const teamMembers: TeamMember[] = [
     {
       name: 'Prof. Dr. Andreas Svoboda',
-      title: 'Founder & CEO',
       description: teams('1.description'),
       imageSrc: '/images/andreas.png',
     },
     {
       name: 'Ms. Lingnan Ren',
-      title: 'Head of Beijing Desk',
       description: teams('2.description'),
       imageSrc: '/images/lingnan.png',
-      isReversed: true,
     },
   ]
 
   return (
-    <motion.div
-      initial='hidden'
-      whileInView='visible'
-      viewport={{ once: true, margin: '-100px' }}
-      variants={staggerChildren}
+    <section
+      className='relative px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 bg-white py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24'
+      id='about us'
     >
-      <motion.h2
-        className='text-3xl font-bold mb-8 text-gray-800 relative border-b pb-4 flex items-center gap-3'
-        variants={fadeIn}
-      >
-        <span className='text-yellow-500'>
-          <svg
-            width='50'
-            height='50'
-            viewBox='0 0 50 50'
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <path
-              d='M25 0L29.4194 20.5806L50 25L29.4194 29.4194L25 50L20.5806 29.4194L0 25L20.5806 20.5806L25 0Z'
-              fill='#EABF49'
+      <div className='container mx-auto w-full'>
+        <FadeIn
+          direction='right'
+          delay={0.4}
+          className='flex-1 flex flex-col h-full justify-between gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-12.5 text-center lg:text-left xl:mb-12.5 lg:mb-12 md:mb-10 sm:mb-8 mb-6'
+        >
+          <h2 className='text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[50px] font-bold text-[#252525] text-center sm:text-center lg:text-left leading-tight'>
+            {t('title')}
+          </h2>
+          <FadeIn direction='up' delay={0.6}>
+            <p className='text-[#252525] text-base sm:text-lg md:text-2xl leading-relaxed transform transition-transform duration-200'>
+              {t('description1')}
+            </p>
+          </FadeIn>
+          <FadeIn direction='up' delay={0.8}>
+            <p className='text-[#252525] text-base sm:text-lg md:text-2xl leading-relaxed transform transition-transform duration-200'>
+              {t('description2')}
+            </p>
+          </FadeIn>
+        </FadeIn>
+
+        <div className='flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-12.5'>
+          {teamMembers.map((member, index) => (
+            <TeamMemberCard
+              key={index}
+              name={member.name}
+              description={member.description}
+              imageSrc={member.imageSrc}
             />
-          </svg>
-        </span>
-        {t('title')}
-      </motion.h2>
-
-      <motion.p className='text-gray-700 mb-8' variants={fadeIn}>
-        {t('description1')}
-      </motion.p>
-
-      <motion.p className='text-gray-700 mb-12' variants={fadeIn}>
-        {t('description2')}
-      </motion.p>
-
-      <div className='space-y-8 flex flex-row gap-12 max-lg:flex-col max-lg:gap-0'>
-        {teamMembers.map((member, index) => (
-          <TeamMemberCard
-            key={index}
-            name={member.name}
-            title={member.title}
-            description={member.description}
-            imageSrc={member.imageSrc}
-            isReversed={member.isReversed}
-          />
-        ))}
+          ))}
+        </div>
       </div>
-    </motion.div>
+    </section>
   )
 }
 

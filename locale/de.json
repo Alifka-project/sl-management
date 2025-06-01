@@ -88,12 +88,13 @@
     "title": "Über Uns",
     "subTitle": "SLMC - Ihr Lifestyle-Lösungsexperte.",
     "description1": "Bei S & L Management und Consulting LLC (SLMC) sind wir stolz darauf, Ihr vertrauenswürdiger Partner für umfassende Lifestyle-Lösungen und Family Office-Dienstleistungen zu sein. Unser Engagement für Exzellenz gründet sich auf ein breites Spektrum an Branchenerfahrung, ein Bekenntnis zu persönlichem Service und ein globales Netzwerk geschätzter Partner.",
-    "description2": "Mit Hauptsitz im Kanton Schwyz, Schweiz - einem innovativen Zentrum für Finanzen, Blockchain und Gesundheitstechnologie - unterhält SLMC auch eine Präsenz in Peking (VR China). Durch die Zusammenarbeit mit ausgewählten Premium-Unternehmen in der Schweiz und Asien schneiden wir Lösungen für Einzelpersonen und Familien zu, die geschäftliche oder persönliche Interessen in beiden Regionen verfolgen.",
+    "description2": "SLMC est bas  au canton de Schwyz (Suisse), le canton central suisse bord  par le lac de Zurich et le lac des Quatre-Cantons, connu pour son cluster Finance, Blockchain et Health Tech en Suisse. SLMC a galement une pr sence  Beijing (RPC).",
+    "description3": "Nous collaborons  troitement avec des partenaires premium s lectionn s en Suisse et en Asie pour cr er des solutions de style de vie exhaustives et individualis es pour les familles ou les individus ayant des int r ts commerciaux ou priv s en Suisse et en Asie.",
 
     "team": {
-      "title": "Team",
-      "description1": "SLMC wird von einem vielfältigen Team angetrieben, das sich auf Exzellenz und persönliche Aufmerksamkeit konzentriert. Unter der Leitung von Prof. Dr. Andreas Svoboda arbeiten wir mit erstklassigen Partnern in den Bereichen Finanzen, Banking, Versicherungen und Family Office-Dienstleistungen zusammen, um maßgeschneiderte Lösungen für UHNW-Kunden nach höchsten Standards anzubieten.",
-      "description2": "Um der wachsenden asiatischen Nachfrage gerecht zu werden, präsentiert SLMC stolz seinen Peking-Desk unter der Leitung von Frau Lingnan Ren, der spezialisierte Mandarin-Unterstützung für ein nahtloses globales Erlebnis bietet.",
+      "title": "Unser Team",
+      "description1": "SLMC ist ein Team mit vielfältigen Hintergründen und Perspektiven. Unser Engagement für Exzellenz basiert auf einem reichen Erfahrungsschatz und einer Hingabe an personalisierten Service. Unser Schweizer Team wird von Prof. Dr. Andreas Svoboda geleitet. Wir arbeiten eng mit ausgewählten externen Premium-Partnern zusammen, die sich auf die Komplexität der Finanzwelt spezialisiert haben, einschließlich Bankwesen, Versicherungen und Family Office-Dienstleistungen. Mit einem tiefen Verständnis für die einzigartigen Herausforderungen von UHNWI bieten wir maßgeschneiderte Lösungen, die den höchsten Standards entsprechen.",
+      "description2": "SLMC gibt stolz die Eröffnung seines Pekinger Schreibtisches bekannt, um der steigenden Kundennachfrage in Asien gerecht zu werden. Unter der Leitung der dynamischen Frau Lingnan Ren steht unser engagiertes Team bereit, Ihnen auf Mandarin zu dienen und nahtlose Kommunikation sowie unvergleichliche Unterstützung zu gewährleisten.",
       "teams": {
         "1": {
           "name": "Prof. Dr. Andreas Svoboda",

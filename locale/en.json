@@ -88,12 +88,13 @@
     "title": "About Us",
     "subTitle": "SLMC - Your Lifestyle Solutions Expert.",
     "description1": "At S & L Management and Consulting LLC (SLMC), we are proud to be your trusted partner for comprehensive lifestyle solutions and family office services. Our commitment to excellence is grounded in a broad spectrum of industry experience, a dedication to personalized service, and a global network of esteemed partners.",
-    "description2": "Headquartered in Canton Schwyz, Switzerland—an innovative hub for finance, blockchain, and health tech—SLMC also maintains a presence in Beijing (PRC). By partnering with select premium firms in Switzerland and Asia, we tailor solutions for individuals and families pursuing business or personal interests in both regions.",
+    "description2": "SLMC is headquartered in Canton Schwyz (Switzerland), the central Swiss canton bordered by Lake Zürich and Lake Lucerne, known for its Finance, Blockchain and Health Tech Cluster in Switzerland. SLMC has its presence as well in Beijing (PRC).",
+    "description3": "We collaborate closely with selected premium partners in Switzerland and Asia to craft comprehensive and individual lifestyle solutions to families or individuals with business or private interest in Switzerland and Asia.",
 
     "team": {
-      "title": "Team",
-      "description1": "SLMC is powered by a diverse team focused on excellence and personal attention. Led by Prof. Dr. Andreas Svoboda, we collaborate with top-tier partners in finance, banking, insurance, and family office services to offer bespoke solutions for UHNW clients at the highest standards.",
-      "description2": "To meet growing Asian demand, SLMC proudly introduces its Beijing Desk, headed by Ms. Lingnan Ren, providing specialized Mandarin support for a seamless global experience.",
+      "title": "Our Team",
+      "description1": "SLMC is a team with diverse backgrounds and perspectives. Our commitment to excellence is underpinned by a rich tapestry of experience and a dedication to personalized service. Our Swiss Team is leading by Prof. Dr. Andreas Svoboda. We work closely together with premium selected external partners specialize in navigating the complexities of the financial world, including banking, insurance, and family office services. With a keen understanding of the unique challenges faced by UHNWI, we deliver tailored solutions to meet the highest standards.",
+      "description2": "SLMC proudly announces the inauguration of its Beijing Desk in response to growing customer demands across Asia. Spearheaded by the dynamic Ms. Lingnan Ren, our dedicated team stands ready to serve you in Mandarin, ensuring seamless communication and unparalleled assistance.",
       "teams": {
         "1": {
           "name": "Prof. Dr. Andreas Svoboda",
