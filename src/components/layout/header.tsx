@@ -58,7 +58,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className='hidden lg:flex items-center space-x-6'>
+        <nav className='hidden lg:flex items-center space-x-4'>
           {navItems.map(item => {
             const isActive = isActiveLink(item.href, pathname)
 
@@ -66,7 +66,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`font-bold hover:text-[#EABF49] transition-colors text-sm max-w-[130px] break-words ${
+                className={`font-bold hover:text-[#EABF49] transition-colors text-sm max-2xl:max-w-[130px] text-center break-words ${
                   isActive ? 'text-[#EABF49] font-extrabold' : 'text-gray-700'
                 }`}
               >
@@ -78,7 +78,7 @@ export default function Header() {
           <LanguageSwitcher />
 
           <Link href='/contact-us'>
-            <Button className='bg-[#EABF49] hover:bg-yellow-600 text-[#252525] rounded-full font-bold'>
+            <Button className='bg-[#EABF49] cursor-pointer text-[#252525] rounded-full font-bold'>
               {t('contactUs')}
             </Button>
           </Link>

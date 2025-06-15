@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import FadeIn from '../animations/fade-in'
-import Link from 'next/link'
+import { Link } from '@/i18n/routing'
 
 // Define the structure of each service
 interface Service {
@@ -22,19 +22,29 @@ interface ServiceCardProps {
   description: string
   image: string
   tags: string[]
+  sectionName: string
 }
 
-const ServiceCard = ({ title, description, image, tags }: ServiceCardProps) => {
+const ServiceCard = ({
+  title,
+  description,
+  image,
+  tags,
+  sectionName,
+}: ServiceCardProps) => {
   return (
     <FadeIn className='col-span-12 sm:col-span-6 lg:col-span-6'>
-      <div className='bg-white h-full shadow-lg overflow-hidden rounded-lg hover:shadow-xl transition-shadow duration-300'>
+      <div
+        className='bg-white h-full shadow-lg overflow-hidden rounded-lg hover:shadow-xl transition-shadow duration-300'
+        id={sectionName}
+      >
         {/* Image Section */}
         <div className='relative w-full h-48 sm:h-52 md:h-56 lg:h-60 xl:h-64'>
           <Image
             src={image}
             alt={title}
             fill
-            className='object-cover hover:scale-105 transition-transform duration-300'
+            className='object-cover transition-transform duration-300'
             priority
           />
         </div>
@@ -195,6 +205,7 @@ export default function FamilyServicesPage() {
               title={service.title}
               description={service.description}
               image={`/images/content-${service.id}.png`}
+              sectionName={service.sectionName}
               tags={service.items}
             />
           ))}

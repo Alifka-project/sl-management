@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import FadeIn from '@/components/animations/fade-in'
+import { Link } from '@/i18n/routing'
 
 export default function HeroSection() {
   const t = useTranslations('home')
@@ -22,12 +23,14 @@ export default function HeroSection() {
           </p>
         </FadeIn>
         <FadeIn className='mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-12.5'>
-          <Button
-            variant='default'
-            className='text-[#252525] px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-4 lg:px-12 lg:py-5 xl:px-16 xl:py-6 font-bold rounded-[10px] cursor-pointer text-sm sm:text-base md:text-lg'
-          >
-            {t('hero.viewMore')}
-          </Button>
+          <Link href={'/services'}>
+            <Button
+              variant='default'
+              className='text-[#252525] px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-4 lg:px-12 lg:py-5 xl:px-16 xl:py-6 font-bold rounded-[10px] cursor-pointer text-sm sm:text-base md:text-lg'
+            >
+              {t('hero.viewMore')}
+            </Button>
+          </Link>
         </FadeIn>
       </div>
     </section>

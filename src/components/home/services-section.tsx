@@ -78,7 +78,6 @@ const ServiceButtons: React.FC<ServiceButtonsProps> = ({
           key={service}
           variants={buttonVariants}
           whileHover={{
-            scale: 1.05,
             transition: { type: 'spring', stiffness: 400, damping: 10 },
           }}
           whileTap={{ scale: 0.95 }}
@@ -86,11 +85,7 @@ const ServiceButtons: React.FC<ServiceButtonsProps> = ({
           <Button
             variant={'default'}
             onClick={() => handleClick(service)}
-            className={`text-[#252525] px-3 py-2 xs:px-4 xs:py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 lg:px-10 lg:py-4 xl:px-12 xl:py-5 2xl:px-16 2xl:py-6 w-fit font-bold rounded-[10px] cursor-pointer text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl transform transition-all duration-300 hover:shadow-lg hover:bg-gray-100 active:scale-95 whitespace-nowrap ${
-              selected === service
-                ? 'bg-gray-200 shadow-inner scale-95'
-                : 'hover:scale-110'
-            }`}
+            className={`text-[#252525] px-3 py-2 xs:px-4 xs:py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 lg:px-10 lg:py-4 xl:px-12 xl:py-5 2xl:px-16 2xl:py-6 w-fit font-bold rounded-[10px] cursor-pointer text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl whitespace-nowrap`}
           >
             {service}
           </Button>

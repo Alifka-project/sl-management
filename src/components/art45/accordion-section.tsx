@@ -17,7 +17,7 @@ const AccordionItem = ({
   const [isOpen, setIsOpen] = useState(defaultOpen)
 
   return (
-    <div className='border-t border-gray-200'>
+    <div className='border-t-2 border-[#EABF49]'>
       <button
         className='w-full flex items-center justify-between py-4 px-0 text-left focus:outline-none'
         onClick={() => setIsOpen(!isOpen)}
@@ -69,11 +69,11 @@ export default function Art45Page() {
       className='relative px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 bg-white py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24'
       id='art-45'
     >
-      <div className='container mx-auto px-4 py-12'>
+      <div className='container mx-auto px-4'>
         {/* Hero Section */}
-        <FadeIn className='mb-4'>
-          <div className='text-center mt-4'>
-            <h1 className='text-4xl font-bold mt-4'>ART45 VAG</h1>
+        <FadeIn className='mb-10'>
+          <div className='text-center'>
+            <h1 className='text-4xl font-bold'>ART45 VAG</h1>
           </div>
         </FadeIn>
 

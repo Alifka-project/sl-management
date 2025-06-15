@@ -3,6 +3,7 @@
 
 import { useTranslations } from 'next-intl'
 import React, { useState } from 'react'
+import { Button } from '../ui/button'
 
 const ContactUs = () => {
   const t = useTranslations('contactUs')
@@ -213,17 +214,15 @@ const ContactUs = () => {
               </div>
             )}
 
-            <button
+            <Button
               type='submit'
               disabled={status.submitting}
-              className={`w-full font-bold py-3 px-4 rounded transition duration-300 ${
-                status.submitting
-                  ? 'bg-gray-400 cursor-not-allowed'
-                  : 'bg-yellow-500 hover:bg-yellow-600 text-white'
+              className={`w-full font-bold py-3 px-4 rounded transition duration-300 cursor-pointer ${
+                status.submitting && 'bg-gray-400 cursor-not-allowed'
               }`}
             >
               {t('button')}
-            </button>
+            </Button>
           </form>
         )}
       </div>

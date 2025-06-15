@@ -5,7 +5,7 @@
 
     "hero": {
       "title": "Willkommen bei S & L Management",
-      "and": "Und",
+      "and": "and",
       "subtitle": "Consulting GmbH",
       "description": "Bei SLMC bieten wir hochwertige Family Office Dienstleistungen durch einen ganzheitlichen und maßgeschneiderten Ansatz, um Ihnen zu helfen, Ihre einzigartigen Lifestyle-Ziele zu erreichen.",
       "viewMore": "Mehr erfahren"
@@ -108,6 +108,8 @@
     }
   },
   "familyService": {
+    "title": "Unsere Familiendienstleistungen",
+    "description": "Nachfolgend finden Sie eine kurze Übersicht über die spezialisierten Dienstleistungen, die wir anbieten, um sicherzustellen, dass jeder Aspekt Ihres persönlichen, finanziellen und beruflichen Lebens optimal verwaltet wird. Wählen Sie eine der Dienstleistungen aus, um mehr zu erfahren, oder kontaktieren Sie uns direkt für eine persönliche Beratung.",
     "1": {
       "title": "Versicherung",
       "description": "Schützen Sie Ihre Vermögenswerte und Ihre Lieben mit unseren umfassenden Versicherungslösungen. Unsere Berater führen eingehende Überprüfungen durch und erstellen personalisierte Strategien, um sicherzustellen, dass jeder Aspekt Ihres Lebens vollständig abgedeckt ist.",
@@ -267,10 +269,10 @@
   "menu": {
     "home": "Startseite",
     "about": "Über uns",
-    "services": "Familiendienstleistungen",
-    "news": "Neuigkeiten & Veranstaltungen",
+    "services": "Dienstleist.",
+    "news": "Neuigkeiten",
     "contact": "Kontakt",
-    "contactUs": "Kontaktieren Sie uns"
+    "contactUs": "Kontakt"
   },
   "logo": {
     "alt": "S&L Management Logo"

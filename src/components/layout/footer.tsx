@@ -145,20 +145,26 @@ export default function Footer() {
                 </a>
               </p>
               <p className='mb-2'>
-                <a
-                  href='tel:+41788133009'
+                <button
+                  type='button'
                   className='text-gray-400 hover:text-white transition-colors'
+                  onClick={() => navigator.clipboard.writeText('+41788133009')}
                 >
-                  Phone: +41 78 813 30 93 (Switzerland)
-                </a>
+                  Phone: +41 78 728 09 33 (Switzerland)
+                  <span className='sr-only'>Click to copy phone number</span>
+                </button>
               </p>
               <p>
-                <a
-                  href='tel:+41788133009'
+                <button
+                  type='button'
                   className='text-gray-400 hover:text-white transition-colors'
+                  onClick={() =>
+                    navigator.clipboard.writeText('+8613488798276')
+                  }
                 >
                   Phone: +86 134 887 98 276 (Beijing, China)
-                </a>
+                  <span className='sr-only'>Click to copy phone number</span>
+                </button>
               </p>
             </address>
 

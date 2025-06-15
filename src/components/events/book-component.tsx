@@ -4,6 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
+import { Button } from '../ui/button'
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -50,9 +51,9 @@ const NewsEvent = () => {
 
         <div className='mt-4'>
           <a href='https://www.amazon.com/Family-Business-Management-Andreas-Svoboda/dp/B0CN5QJSDJ'>
-            <button className='w-full bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-3 px-4 rounded transition duration-300'>
+            <Button className='w-full cursor-pointer text-white font-bold py-3 px-4 rounded transition duration-300'>
               {t('button')}
-            </button>
+            </Button>
           </a>
         </div>
       </div>

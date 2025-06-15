@@ -4,16 +4,14 @@ import { useTranslations } from 'next-intl'
 import FadeIn from '@/components/animations/fade-in'
 import Image from 'next/image'
 import { Button } from '../ui/button'
+import { Link } from '@/i18n/routing'
 
 export default function AboutSection() {
   const t = useTranslations('home')
   const tt = useTranslations('menu')
 
   return (
-    <section
-      className='relative px-4 sm:px-6 lg:px-8 bg-white py-8 sm:py-12 md:py-16 lg:py-20'
-      id='about'
-    >
+    <section className='relative px-4 sm:px-6 lg:px-8 bg-white' id='about'>
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-14.5 items-center justify-between'>
           <FadeIn
@@ -49,12 +47,14 @@ export default function AboutSection() {
               </p>
             </FadeIn>
             <FadeIn direction='up' delay={1.0}>
-              <Button
-                variant='default'
-                className='text-[#252525] px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-4 w-fit lg:px-12 lg:py-5 xl:px-16 xl:py-6 font-bold rounded-[10px] cursor-pointer text-sm sm:text-base md:text-lg transform transition-all duration-300 hover:scale-110 hover:shadow-lg hover:bg-gray-100 active:scale-95 mx-auto lg:mx-0'
-              >
-                {tt('contactUs')}
-              </Button>
+              <Link href={'/contact-us'}>
+                <Button
+                  variant='default'
+                  className='text-[#252525] px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-4 w-fit lg:px-12 lg:py-5 xl:px-16 xl:py-6 font-bold rounded-[10px] cursor-pointer text-sm sm:text-base md:text-lg mx-auto lg:mx-0'
+                >
+                  {tt('contactUs')}
+                </Button>
+              </Link>
             </FadeIn>
           </FadeIn>
         </div>
