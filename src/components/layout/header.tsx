@@ -41,8 +41,21 @@ export default function Header() {
   ]
 
   return (
-    <header className='bg-white py-4 max-lg:px-4 border-b shadow-sm sticky top-0 z-50 overflow-hidden before:bg-[#252525] before:absolute before:inset-0 before:-z-10 before:w-1/3 before:top-[-150%] before:h-[315px] before:rotate-10 max-xl:before:w-[30%] max-lg:before:hidden'>
-      <div className='container mx-auto flex justify-between items-center gap-3 relative'>
+    <header className='bg-white py-4 max-lg:px-4 border-b shadow-sm sticky top-0 z-50'>
+      {/* Clean diagonal implementation - Desktop only */}
+      <div className='absolute inset-0 z-0'>
+        {/* Desktop diagonal only */}
+        <div
+          className='absolute top-0 left-0 bg-[#2c2c2c] hidden lg:block'
+          style={{
+            width: '30%',
+            height: '115%',
+            clipPath: 'polygon(0 0, 100% 0, calc(100% - 80px) 100%, 0 100%)',
+          }}
+        />
+      </div>
+
+      <div className='container mx-auto flex justify-between items-center gap-3 relative z-10'>
         <div className='flex items-center'>
           <Link href='/' className='flex items-center'>
             <Image
@@ -66,7 +79,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`font-bold hover:text-[#EABF49] transition-colors text-sm max-2xl:max-w-[130px] text-center break-words ${
+                className={`font-bold hover:text-[#EABF49] transition-colors text-base max-2xl:max-w-[150px] text-center break-words ${
                   isActive ? 'text-[#EABF49] font-extrabold' : 'text-gray-700'
                 }`}
               >
@@ -84,27 +97,30 @@ export default function Header() {
           </Link>
         </nav>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button - Fixed visibility */}
         <div className='lg:hidden flex items-center'>
           <LanguageSwitcher />
           <Button
-            variant='ghost'
-            className='ml-2'
+            variant='outline'
+            size='sm'
+            className='ml-2 text-[#2c2c2c] bg-white border-[#2c2c2c] hover:bg-gray-50'
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </Button>
         </div>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile Navigation - Fixed z-index */}
       <AnimatePresence>
         {mobileMenuOpen && (
-          <MobileMenu
-            navItems={navItems}
-            pathname={pathname}
-            onClose={() => setMobileMenuOpen(false)}
-          />
+          <div className='relative z-[60]'>
+            <MobileMenu
+              navItems={navItems}
+              pathname={pathname}
+              onClose={() => setMobileMenuOpen(false)}
+            />
+          </div>
         )}
       </AnimatePresence>
     </header>
