@@ -107,9 +107,11 @@ export default function Header() {
         </div>
 
         {/* Mobile Layout - Flexbox with centered logo */}
-        <div className='flex lg:hidden items-center justify-between'>
-          {/* Left spacer for balance */}
-          <div className='w-[120px]'></div>
+        <div className='flex lg:hidden items-center justify-between w-full px-4'>
+          {/* Left side - Language switcher */}
+          <div className='flex items-center w-[140px]'>
+            <LanguageSwitcher />
+          </div>
           
           {/* Centered Logo */}
           <div className='flex-1 flex justify-center'>
@@ -126,13 +128,12 @@ export default function Header() {
             </Link>
           </div>
           
-          {/* Right side - Language switcher and menu button */}
-          <div className='flex items-center w-[120px] justify-end'>
-            <LanguageSwitcher />
+          {/* Right side - Menu button only */}
+          <div className='flex items-center w-[140px] justify-end'>
             <Button
               variant='outline'
               size='sm'
-              className='ml-2 text-[#2c2c2c] bg-white border-[#2c2c2c] hover:bg-gray-50'
+              className='text-[#2c2c2c] bg-white border-[#2c2c2c] hover:bg-gray-50'
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
