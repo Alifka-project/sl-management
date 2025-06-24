@@ -37,12 +37,12 @@ export default function AboutSection() {
               {t('about.title')}
             </h2>
             <FadeIn direction='up' delay={0.6}>
-              <p className='text-[#252525] text-sm sm:text-lg md:text-xl leading-relaxed transform transition-transform duration-200 text-justify'>
+              <p className='text-[#252525] text-sm sm:text-lg md:text-xl leading-relaxed transform transition-transform duration-200'>
                 {t('about.description1')}
               </p>
             </FadeIn>
             <FadeIn direction='up' delay={0.8}>
-              <p className='text-[#252525] text-sm sm:text-lg md:text-xl leading-relaxed transform transition-transform duration-200 text-justify'>
+              <p className='text-[#252525] text-sm sm:text-lg md:text-xl leading-relaxed transform transition-transform duration-200'>
                 {t('about.description2')}
               </p>
             </FadeIn>
