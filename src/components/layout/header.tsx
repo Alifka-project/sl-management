@@ -122,7 +122,7 @@ export default function Header() {
                 width={0}
                 height={0}
                 sizes='100vw'
-                className='w-auto h-[62px]'
+                className='w-auto h-[80px] sm:h-[62px]'
                 priority
               />
             </Link>
