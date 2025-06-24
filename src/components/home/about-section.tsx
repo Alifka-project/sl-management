@@ -13,7 +13,7 @@ export default function AboutSection() {
   return (
     <section className='relative px-4 sm:px-6 lg:px-8 bg-white' id='about'>
       <div className='container mx-auto'>
-        <div className='flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-14.5 items-center justify-between'>
+        <div className='flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-14.5 items-start justify-between'>
           <FadeIn
             className='w-full sm:w-80 md:w-96 lg:w-[400px] xl:w-[500px] aspect-square rounded-[10px] flex-1 transform transition-transform duration-300 hover:scale-105'
             direction='left'
@@ -31,18 +31,18 @@ export default function AboutSection() {
           <FadeIn
             direction='right'
             delay={0.4}
-            className='flex-1 flex flex-col h-full justify-between gap-4 sm:gap-6 md:gap-8 lg:gap-2 text-center lg:text-left'
+            className='flex-1 flex flex-col justify-start gap-6 sm:gap-6 md:gap-8 lg:gap-6 text-center lg:text-left'
           >
             <h2 className='text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[50px] font-bold text-[#252525] text-center sm:text-center lg:text-left leading-tight'>
               {t('about.title')}
             </h2>
             <FadeIn direction='up' delay={0.6}>
-              <p className='text-[#252525] text-sm sm:text-lg md:text-xl leading-relaxed transform transition-transform duration-200'>
+              <p className='text-[#252525] text-sm sm:text-lg md:text-xl leading-relaxed transform transition-transform duration-200 text-justify'>
                 {t('about.description1')}
               </p>
             </FadeIn>
             <FadeIn direction='up' delay={0.8}>
-              <p className='text-[#252525] text-sm sm:text-lg md:text-xl leading-relaxed transform transition-transform duration-200'>
+              <p className='text-[#252525] text-sm sm:text-lg md:text-xl leading-relaxed transform transition-transform duration-200 text-justify'>
                 {t('about.description2')}
               </p>
             </FadeIn>
