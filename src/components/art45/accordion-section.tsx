@@ -22,7 +22,7 @@ const AccordionItem = ({
         className='w-full flex items-center justify-between py-4 px-0 text-left focus:outline-none'
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className='text-sm font-medium text-gray-900 uppercase'>
+        <span className='text-xl font-medium text-gray-900 uppercase'>
           {title}
         </span>
         <motion.span
@@ -53,7 +53,7 @@ const AccordionItem = ({
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className='overflow-hidden'
           >
-            <div className='pb-4 text-sm text-gray-600'>{children}</div>
+            <div className='pb-4 text-lg text-gray-600 text-justify'>{children}</div>
           </motion.div>
         )}
       </AnimatePresence>

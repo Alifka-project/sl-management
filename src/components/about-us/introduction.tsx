@@ -38,13 +38,13 @@ const AboutIntroduction: React.FC = () => {
             <p className='text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-[30px] leading-relaxed text-center sm:text-center lg:text-justify'>
               {t('subTitle')}
             </p>
-            <p className='text-[#252525] text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed transform transition-transform duration-200 text-center sm:text-center lg:text-justify'>
+            <p className='text-[#252525] text-sm sm:text-base md:text-lg lg:text-xl xl:text-xl leading-relaxed transform transition-transform duration-200 text-center sm:text-center lg:text-justify'>
               {t('description1')}
             </p>
-            <p className='text-[#252525] text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed transform transition-transform duration-200 text-center sm:text-center lg:text-justify'>
+            <p className='text-[#252525] text-sm sm:text-base md:text-lg lg:text-xl xl:text-xl leading-relaxed transform transition-transform duration-200 text-center sm:text-center lg:text-justify'>
               {t('description2')}
             </p>
-            <p className='text-[#252525] text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed transform transition-transform duration-200 text-center sm:text-center lg:text-justify'>
+            <p className='text-[#252525] text-sm sm:text-base md:text-lg lg:text-xl xl:text-xl leading-relaxed transform transition-transform duration-200 text-center sm:text-center lg:text-justify'>
               {t('description3')}
             </p>
           </FadeIn>
@@ -59,10 +59,10 @@ const AboutIntroduction: React.FC = () => {
           </FadeIn>
         </div>
       </section>
-      <div className='bg-[#EABF49] w-full h-[70px] col-span-12 order-3 relative overflow-hidden'>
+      <div className='bg-[#EABF49] w-full h-[80px] col-span-12 order-3 relative overflow-hidden'>
         <div className='absolute inset-0 flex items-center'>
           <motion.div
-            className='flex items-center gap-[19px] whitespace-nowrap'
+            className='flex items-center gap-[25px] whitespace-nowrap'
             animate={{
               x: [0, -(((60 + 19) * logoCount) / 2)], // Move exactly half the width for seamless loop
             }}

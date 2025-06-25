@@ -14,13 +14,15 @@ export default function HeroSection() {
       id='hero'
     >
       <div className='container mx-auto flex flex-col items-center'>
-        <FadeIn className='text-center'>
-          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[80px] font-bold leading-tight'>
+        <FadeIn>
+          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[80px] font-bold leading-tight text-center'>
             {t('hero.title')} {t('hero.and')} {t('hero.subtitle')}
           </h1>
-          <p className='text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-[30px] mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-12.5 max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto leading-relaxed'>
-            {t('hero.description')}
-          </p>
+          <div className='mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-12.5 max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto'>
+            <p className='text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-[30px] leading-relaxed text-center'>
+              {t('hero.description')}
+            </p>
+          </div>
         </FadeIn>
         <FadeIn className='mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-12.5'>
           <Link href={'/services'}>
