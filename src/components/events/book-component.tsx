@@ -42,8 +42,8 @@ const NewsEvent = () => {
 
       {/* Right side with content */}
       <div className='w-full md:w-2/3 p-6'>
-        <h1 className='text-3xl font-bold text-gray-800 mb-2'>{t('title')}</h1>
-        <p className='text-base text-gray-700 mb-4'>{t('subTitle')}</p>
+        <h1 className='text-4xl font-bold text-gray-800 mb-2'>{t('title')}</h1>
+        <p className='text-lg text-gray-700 mb-4'>{t('subTitle')}</p>
 
         <p className='text-xl text-gray-700 mb-4 text-justify'>{t('description1')}</p>
 
