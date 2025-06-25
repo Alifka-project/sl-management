@@ -33,7 +33,10 @@ export default function EnhancedHeader() {
         setIsVisible(true)
       }
       // Hide header when scrolling down (with larger threshold for mobile)
-      else if (currentScrollY > lastScrollY && currentScrollY > (window.innerWidth < 768 ? 80 : 100)) {
+      else if (
+        currentScrollY > lastScrollY &&
+        currentScrollY > (window.innerWidth < 768 ? 80 : 100)
+      ) {
         setIsVisible(false)
         setMobileMenuOpen(false) // Close mobile menu when hiding header
       }
@@ -89,27 +92,26 @@ export default function EnhancedHeader() {
 
   return (
     <>
-      <header 
+      <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
           isVisible ? 'translate-y-0' : '-translate-y-full'
         } ${
-          isScrolled 
-            ? 'bg-white/95 backdrop-blur-md border-b shadow-lg py-1 max-lg:px-4' 
+          isScrolled
+            ? 'bg-white/95 backdrop-blur-md border-b shadow-lg py-1 max-lg:px-4'
             : 'bg-white py-2 max-lg:px-4 border-b shadow-sm'
         }`}
       >
-        
         {/* Clean diagonal implementation - Desktop only */}
         <div className='absolute inset-0 z-0'>
           {/* Desktop diagonal only */}
-          <div 
+          <div
             className={`absolute top-0 left-0 bg-[#2c2c2c] hidden lg:block transition-all duration-300 ${
               isScrolled ? 'opacity-90' : 'opacity-100'
             }`}
             style={{
               width: '30%',
               height: '120%',
-              clipPath: 'polygon(0 0, 100% 0, calc(100% - 80px) 100%, 0 100%)'
+              clipPath: 'polygon(0 0, 100% 0, calc(100% - 80px) 100%, 0 100%)',
             }}
           />
         </div>
@@ -135,7 +137,7 @@ export default function EnhancedHeader() {
                 </Link>
               </div>
             </div>
-            
+
             {/* Navigation in the white area */}
             <div className='flex-1 flex justify-end'>
               <nav className='flex items-center space-x-4'>
@@ -147,10 +149,10 @@ export default function EnhancedHeader() {
                       key={item.href}
                       href={item.href}
                       className={`font-bold hover:text-[#EABF49] transition-all duration-200 text-base max-2xl:max-w-[150px] text-center break-words ${
-                        isActive ? 'text-[#EABF49] font-extrabold' : 'text-gray-700'
-                      } ${
-                        isScrolled ? 'hover:scale-105' : ''
-                      }`}
+                        isActive
+                          ? 'text-[#EABF49] font-extrabold'
+                          : 'text-gray-700'
+                      } ${isScrolled ? 'hover:scale-105' : ''}`}
                     >
                       {item.name}
                     </Link>
@@ -160,9 +162,11 @@ export default function EnhancedHeader() {
                 <LanguageSwitcher />
 
                 <Link href='/contact-us'>
-                  <Button className={`bg-[#EABF49] cursor-pointer text-[#252525] rounded-full font-bold transition-all duration-200 ${
-                    isScrolled ? 'hover:scale-105 shadow-md' : ''
-                  }`}>
+                  <Button
+                    className={`bg-[#EABF49] cursor-pointer text-[#252525] rounded-full font-bold transition-all duration-200 ${
+                      isScrolled ? 'hover:scale-105 shadow-md' : ''
+                    }`}
+                  >
                     {t('contactUs')}
                   </Button>
                 </Link>
@@ -171,12 +175,12 @@ export default function EnhancedHeader() {
           </div>
 
           {/* Mobile Layout - Flexbox with centered logo */}
-          <div className='flex lg:hidden items-center justify-between w-full px-8'>
+          <div className='flex lg:hidden items-center justify-between w-full px-8 gap-4'>
             {/* Left side - Language switcher */}
-            <div className='flex items-center w-[140px]'>
+            <div className='flex items-center'>
               <LanguageSwitcher />
             </div>
-            
+
             {/* Centered Logo */}
             <div className='flex-1 flex justify-center'>
               <Link href='/' className='flex items-center'>
@@ -187,17 +191,17 @@ export default function EnhancedHeader() {
                   height={0}
                   sizes='100vw'
                   className={`w-auto transition-all duration-300 ${
-                    isScrolled 
-                      ? 'h-[70px] sm:h-[54px]' 
-                      : 'h-[80px] sm:h-[62px]'
+                    isScrolled
+                      ? 'h-[70px] sm:min-h-[54px]'
+                      : 'h-[80px] sm:min-h-[62px]'
                   }`}
                   priority
                 />
               </Link>
             </div>
-            
+
             {/* Right side - Menu button only */}
-            <div className='flex items-center w-[140px] justify-end'>
+            <div className='flex items-center justify-end'>
               <Button
                 variant='outline'
                 size='sm'
@@ -215,7 +219,7 @@ export default function EnhancedHeader() {
         {/* Mobile Navigation - Fixed z-index */}
         <AnimatePresence>
           {mobileMenuOpen && (
-            <div className="relative z-[60]">
+            <div className='relative z-[60]'>
               <MobileMenu
                 navItems={navItems}
                 pathname={pathname}
@@ -227,11 +231,13 @@ export default function EnhancedHeader() {
       </header>
 
       {/* Dynamic Header Spacer - Adjusts based on scroll state */}
-      <div className={`transition-all duration-300 ${
-        isScrolled 
-          ? 'h-[78px] lg:h-[78px] sm:h-[76px]' 
-          : 'h-[88px] lg:h-[88px] sm:h-[86px]'
-      }`}></div>
+      <div
+        className={`transition-all duration-300 ${
+          isScrolled
+            ? 'h-[78px] lg:h-[78px] sm:h-[76px]'
+            : 'h-[88px] lg:h-[88px] sm:h-[86px]'
+        }`}
+      ></div>
     </>
   )
 }

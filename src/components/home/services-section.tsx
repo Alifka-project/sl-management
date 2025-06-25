@@ -1,24 +1,19 @@
 'use client'
 
-import React, { useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { Button } from '../ui/button'
+import { useRouter } from '@/i18n/routing'
 
 interface ServiceButtonsProps {
-  onClick?: (service: string) => void
-  activeService?: string | null
   className?: string
 }
 
-const ServiceButtons: React.FC<ServiceButtonsProps> = ({
-  onClick = service => console.log(`Selected: ${service}`),
-  activeService = null,
-  className = '',
-}) => {
+const ServiceButtons: React.FC<ServiceButtonsProps> = ({ className = '' }) => {
+  const router = useRouter()
   const t = useTranslations('home.services.items')
   const viewAll = useTranslations('home.services')('viewAll')
-  const [selected, setSelected] = useState<string | null>(activeService)
 
   // Get all services from translations
   const services = [
@@ -31,9 +26,8 @@ const ServiceButtons: React.FC<ServiceButtonsProps> = ({
     viewAll,
   ]
 
-  const handleClick = (service: string): void => {
-    setSelected(service === selected ? null : service)
-    onClick(service)
+  const handleClick = (service: number): void => {
+    if (services.length === service) router.push('/services')
   }
 
   const containerVariants = {
@@ -84,7 +78,7 @@ const ServiceButtons: React.FC<ServiceButtonsProps> = ({
         >
           <Button
             variant={'default'}
-            onClick={() => handleClick(service)}
+            onClick={() => handleClick(services.length)}
             className={`text-[#252525] px-3 py-2 xs:px-4 xs:py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 lg:px-10 lg:py-4 xl:px-12 xl:py-5 2xl:px-16 2xl:py-6 w-fit font-bold rounded-[10px] cursor-pointer text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl whitespace-nowrap`}
           >
             {service}
@@ -97,11 +91,6 @@ const ServiceButtons: React.FC<ServiceButtonsProps> = ({
 
 const ServicesSection: React.FC = () => {
   const t = useTranslations('home.services')
-
-  const handleServiceClick = (service: string): void => {
-    console.log(`Selected service: ${service}`)
-    // Handle service selection
-  }
 
   return (
     <section className='relative px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 bg-white py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24'>
@@ -143,7 +132,7 @@ const ServicesSection: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <ServiceButtons onClick={handleServiceClick} />
+          <ServiceButtons />
         </motion.div>
       </div>
     </section>
