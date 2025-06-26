@@ -166,7 +166,7 @@ export default function FamilyServicesPage() {
         {/* Header Section */}
         <div className='grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 mb-12 sm:mb-16 md:mb-20 lg:mb-24 items-center'>
           <FadeIn className='flex flex-col gap-4 sm:gap-5 md:gap-6 lg:col-span-6 text-center lg:text-left order-2 lg:order-1'>
-            <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[80px] font-bold leading-tight break-all'>
+            <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[80px] font-bold leading-normal sm:leading-relaxed md:leading-relaxed lg:leading-normal xl:leading-normal 2xl:leading-tight break-words hyphens-auto'>
               {t('title')}
             </h1>
             <p className='text-[#252525] leading-relaxed text-base sm:text-lg md:text-xl lg:text-2xl max-w-2xl mx-auto lg:mx-0'>
