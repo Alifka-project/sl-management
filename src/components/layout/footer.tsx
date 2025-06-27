@@ -191,7 +191,7 @@ export default function Footer() {
           {/* LinkedIn Icon */}
           <div className='mt-4 md:mt-0'>
             <a
-              href='https://linkedin.com/company/slmc'
+              href='https://www.linkedin.com/company/slmc-ch/'
               target='_blank'
               rel='noopener noreferrer'
               className='text-white/80  hover:text-white transition-colors'
