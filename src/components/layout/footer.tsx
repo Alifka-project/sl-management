@@ -171,7 +171,7 @@ export default function Footer() {
                 <span className='text-white'>Email</span> : info@slmc.ch
               </p>
               <p className='text-white/80  text-sm sm:text-base'>
-                <span className='text-white'>Phone</span> : +41 78 813 30 93
+                <span className='text-white'>Phone</span> : +41 78 728 09 33
                 (Switzerland)
               </p>
               <p className='text-white/80  text-sm sm:text-base'>
