@@ -16,7 +16,7 @@
     "framer-motion": "^12.6.2",
     "lucide-react": "^0.485.0",
     "next": "15.2.4",
-    "next-sitemap": "^5.7.1",
+    "next-sitemap": "^4.2.5",
     "next-intl": "^4.0.2",
     "nodemailer": "^6.10.1",
     "react": "^19.0.0",
