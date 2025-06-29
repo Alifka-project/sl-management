@@ -38,7 +38,7 @@ const baseMetadata: Metadata = {
     telephone: true,
   },
   // Fix metadataBase to use URL directly rather than a string
-  metadataBase: new URL('https://slmc.ch'),
+  metadataBase: new URL('https://www.slmc.ch'),
   alternates: {
     canonical: '/',
     languages: {
