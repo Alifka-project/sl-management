@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://slmc.ch/</loc>
+    <loc>https://www.slmc.ch/</loc>
     <lastmod>2025-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://slmc.ch/en</loc>
+    <loc>https://www.slmc.ch/en</loc>
     <lastmod>2025-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
