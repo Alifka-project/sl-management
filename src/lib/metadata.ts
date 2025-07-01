@@ -142,7 +142,7 @@ const baseMetadata: Metadata = {
     'og:image:type': 'image/jpeg',
     'og:image:width': '1200',
     'og:image:height': '630',
-  },
+  } as Record<string, string>,
 }
 
 // Locale-specific image configurations
@@ -255,9 +255,11 @@ export function generateMetadata({ locale }: MetadataParams): Metadata {
       canonical: `/${locale}`,
     },
     other: {
-      ...baseMetadata.other,
       'og:image:secure_url': `https://www.slmc.ch${images.ogImage}`,
-    },
+      'og:image:type': 'image/jpeg',
+      'og:image:width': '1200',
+      'og:image:height': '630',
+    } as Record<string, string>,
   }
 }
 
@@ -304,8 +306,10 @@ export function generatePageMetadata({
       images: pageImage ? [pageImage] : basePageMetadata.twitter?.images,
     },
     other: {
-      ...basePageMetadata.other,
-      'og:image:secure_url': pageImage ? `https://www.slmc.ch${pageImage}` : basePageMetadata.other?.['og:image:secure_url'],
-    },
+      'og:image:secure_url': pageImage ? `https://www.slmc.ch${pageImage}` : 'https://www.slmc.ch/images/og-image-1200x630.jpg',
+      'og:image:type': 'image/jpeg',
+      'og:image:width': '1200',
+      'og:image:height': '630',
+    } as Record<string, string>,
   }
 }
