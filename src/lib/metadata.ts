@@ -16,7 +16,6 @@ const baseMetadata: Metadata = {
   description:
     'Premium Family Office Services delivered through a holistic and tailored approach',
   applicationName: 'S&L Management',
-  // Fix the referrer value to use one of the allowed values
   referrer: 'origin-when-cross-origin',
   keywords: [
     'Family Office',
@@ -37,7 +36,6 @@ const baseMetadata: Metadata = {
     address: true,
     telephone: true,
   },
-  // Fix metadataBase to use URL directly rather than a string
   metadataBase: new URL('https://www.slmc.ch'),
   alternates: {
     canonical: '/',
@@ -53,25 +51,55 @@ const baseMetadata: Metadata = {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
     apple: '/apple-icon.png',
+    other: [
+      {
+        rel: 'apple-touch-icon-precomposed',
+        url: '/apple-touch-icon-precomposed.png',
+      },
+    ],
   },
+  // Enhanced Open Graph with multiple image sizes and better metadata
   openGraph: {
     type: 'website',
     siteName: 'S&L Management and Consulting GmbH',
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: '/images/og-image-1200x630.jpg',
         width: 1200,
         height: 630,
+        alt: 'S&L Management and Consulting GmbH - Premium Family Office Services',
+        type: 'image/jpeg',
+      },
+      {
+        url: '/images/og-image-800x600.jpg',
+        width: 800,
+        height: 600,
+        alt: 'S&L Management and Consulting GmbH - Wealth Management',
+        type: 'image/jpeg',
+      },
+      {
+        url: '/images/og-image-square.jpg',
+        width: 400,
+        height: 400,
         alt: 'S&L Management and Consulting GmbH Logo',
+        type: 'image/jpeg',
       },
     ],
   },
+  // Enhanced Twitter Card metadata
   twitter: {
     card: 'summary_large_image',
+    site: '@slmanagement', // Add your Twitter handle
+    creator: '@slmanagement',
     title: 'S&L Management and Consulting GmbH',
     description:
       'Premium Family Office Services delivered through a holistic and tailored approach',
-    images: ['/images/twitter-image.jpg'],
+    images: [
+      {
+        url: '/images/twitter-image-1200x675.jpg',
+        alt: 'S&L Management and Consulting GmbH - Premium Family Office Services',
+      },
+    ],
   },
   robots: {
     index: true,
@@ -87,6 +115,50 @@ const baseMetadata: Metadata = {
   verification: {
     google: 'google-site-verification-code',
     yandex: 'yandex-verification-code',
+  },
+  // Add other meta tags for additional SEO benefit
+  other: {
+    'og:image:secure_url': 'https://www.slmc.ch/images/og-image-1200x630.jpg',
+    'og:image:type': 'image/jpeg',
+    'og:image:width': '1200',
+    'og:image:height': '630',
+    // Add thumbnail specifically for search engines
+    'thumbnail': '/images/thumbnail-300x200.jpg',
+    // Add image for schema.org
+    'image': '/images/og-image-1200x630.jpg',
+  },
+}
+
+// Locale-specific image configurations
+const localeImages: Record<Locale, {
+  ogImage: string
+  twitterImage: string
+  thumbnail: string
+}> = {
+  en: {
+    ogImage: '/images/og-image-en-1200x630.jpg',
+    twitterImage: '/images/twitter-image-en-1200x675.jpg',
+    thumbnail: '/images/thumbnail-en-300x200.jpg',
+  },
+  de: {
+    ogImage: '/images/og-image-de-1200x630.jpg',
+    twitterImage: '/images/twitter-image-de-1200x675.jpg',
+    thumbnail: '/images/thumbnail-de-300x200.jpg',
+  },
+  zh: {
+    ogImage: '/images/og-image-zh-1200x630.jpg',
+    twitterImage: '/images/twitter-image-zh-1200x675.jpg',
+    thumbnail: '/images/thumbnail-zh-300x200.jpg',
+  },
+  es: {
+    ogImage: '/images/og-image-es-1200x630.jpg',
+    twitterImage: '/images/twitter-image-es-1200x675.jpg',
+    thumbnail: '/images/thumbnail-es-300x200.jpg',
+  },
+  nl: {
+    ogImage: '/images/og-image-nl-1200x630.jpg',
+    twitterImage: '/images/twitter-image-nl-1200x675.jpg',
+    thumbnail: '/images/thumbnail-nl-300x200.jpg',
   },
 }
 
@@ -128,6 +200,8 @@ const translatedMetadata: Record<
 export function generateMetadata({ locale }: MetadataParams): Metadata {
   const { title, description } =
     translatedMetadata[locale] || translatedMetadata[defaultLocale]
+  
+  const images = localeImages[locale] || localeImages[defaultLocale]
 
   return {
     ...baseMetadata,
@@ -140,15 +214,88 @@ export function generateMetadata({ locale }: MetadataParams): Metadata {
       ...baseMetadata.openGraph,
       title: title,
       description: description,
+      images: [
+        {
+          url: images.ogImage,
+          width: 1200,
+          height: 630,
+          alt: `${title} - Premium Family Office Services`,
+          type: 'image/jpeg',
+        },
+        ...(baseMetadata.openGraph?.images || []).slice(1), // Keep additional base images
+      ],
     },
     twitter: {
       ...baseMetadata.twitter,
       title: title,
       description: description,
+      images: [
+        {
+          url: images.twitterImage,
+          alt: `${title} - Premium Family Office Services`,
+        },
+      ],
     },
     alternates: {
       ...baseMetadata.alternates,
       canonical: `/${locale}`,
+    },
+    other: {
+      ...baseMetadata.other,
+      'thumbnail': images.thumbnail,
+      'og:image:secure_url': `https://www.slmc.ch${images.ogImage}`,
+    },
+  }
+}
+
+// Helper function for page-specific metadata with custom images
+export function generatePageMetadata({
+  locale,
+  params,
+  pageTitle,
+  pageDescription,
+  pageImage,
+  pageThumbnail,
+}: MetadataParams & {
+  pageTitle?: string
+  pageDescription?: string
+  pageImage?: string
+  pageThumbnail?: string
+}): Metadata {
+  const basePageMetadata = generateMetadata({ locale, params })
+  
+  if (!pageTitle && !pageDescription && !pageImage) {
+    return basePageMetadata
+  }
+
+  return {
+    ...basePageMetadata,
+    title: pageTitle || basePageMetadata.title,
+    description: pageDescription || basePageMetadata.description,
+    openGraph: {
+      ...basePageMetadata.openGraph,
+      title: pageTitle || basePageMetadata.openGraph?.title,
+      description: pageDescription || basePageMetadata.openGraph?.description,
+      images: pageImage ? [
+        {
+          url: pageImage,
+          width: 1200,
+          height: 630,
+          alt: pageTitle || 'S&L Management and Consulting',
+          type: 'image/jpeg',
+        },
+      ] : basePageMetadata.openGraph?.images,
+    },
+    twitter: {
+      ...basePageMetadata.twitter,
+      title: pageTitle || basePageMetadata.twitter?.title,
+      description: pageDescription || basePageMetadata.twitter?.description,
+      images: pageImage ? [pageImage] : basePageMetadata.twitter?.images,
+    },
+    other: {
+      ...basePageMetadata.other,
+      'thumbnail': pageThumbnail || basePageMetadata.other?.thumbnail,
+      'og:image:secure_url': pageImage ? `https://www.slmc.ch${pageImage}` : basePageMetadata.other?.['og:image:secure_url'],
     },
   }
 }
