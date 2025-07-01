@@ -232,7 +232,11 @@ export function generateMetadata({ locale }: MetadataParams): Metadata {
           alt: `${title} - Premium Family Office Services`,
           type: 'image/jpeg',
         },
-        ...(baseMetadata.openGraph?.images || []).slice(1), // Keep additional base images
+        // Add additional base images if they exist
+        ...(Array.isArray(baseMetadata.openGraph?.images) 
+          ? baseMetadata.openGraph.images.slice(1) 
+          : []
+        ),
       ],
     },
     twitter: {
