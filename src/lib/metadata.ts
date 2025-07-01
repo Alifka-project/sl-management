@@ -48,13 +48,33 @@ const baseMetadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
     shortcut: '/favicon.ico',
-    apple: '/apple-icon.png',
+    apple: [
+      { url: '/apple-touch-icon-180x180.png', sizes: '180x180', type: 'image/png' },
+      { url: '/apple-touch-icon-152x152.png', sizes: '152x152', type: 'image/png' },
+      { url: '/apple-touch-icon-120x120.png', sizes: '120x120', type: 'image/png' },
+    ],
     other: [
       {
         rel: 'apple-touch-icon-precomposed',
-        url: '/apple-touch-icon-precomposed.png',
+        url: '/apple-touch-icon-180x180.png',
+        sizes: '180x180',
+      },
+      {
+        rel: 'icon',
+        url: '/android-chrome-192x192.png',
+        sizes: '192x192',
+        type: 'image/png',
+      },
+      {
+        rel: 'icon',
+        url: '/android-chrome-512x512.png',
+        sizes: '512x512',
+        type: 'image/png',
       },
     ],
   },
@@ -122,10 +142,6 @@ const baseMetadata: Metadata = {
     'og:image:type': 'image/jpeg',
     'og:image:width': '1200',
     'og:image:height': '630',
-    // Add thumbnail specifically for search engines
-    'thumbnail': '/images/thumbnail-300x200.jpg',
-    // Add image for schema.org
-    'image': '/images/og-image-1200x630.jpg',
   },
 }
 
@@ -133,32 +149,26 @@ const baseMetadata: Metadata = {
 const localeImages: Record<Locale, {
   ogImage: string
   twitterImage: string
-  thumbnail: string
 }> = {
   en: {
     ogImage: '/images/og-image-en-1200x630.jpg',
     twitterImage: '/images/twitter-image-en-1200x675.jpg',
-    thumbnail: '/images/thumbnail-en-300x200.jpg',
   },
   de: {
     ogImage: '/images/og-image-de-1200x630.jpg',
     twitterImage: '/images/twitter-image-de-1200x675.jpg',
-    thumbnail: '/images/thumbnail-de-300x200.jpg',
   },
   zh: {
     ogImage: '/images/og-image-zh-1200x630.jpg',
     twitterImage: '/images/twitter-image-zh-1200x675.jpg',
-    thumbnail: '/images/thumbnail-zh-300x200.jpg',
   },
   es: {
     ogImage: '/images/og-image-es-1200x630.jpg',
     twitterImage: '/images/twitter-image-es-1200x675.jpg',
-    thumbnail: '/images/thumbnail-es-300x200.jpg',
   },
   nl: {
     ogImage: '/images/og-image-nl-1200x630.jpg',
     twitterImage: '/images/twitter-image-nl-1200x675.jpg',
-    thumbnail: '/images/thumbnail-nl-300x200.jpg',
   },
 }
 
@@ -242,7 +252,6 @@ export function generateMetadata({ locale }: MetadataParams): Metadata {
     },
     other: {
       ...baseMetadata.other,
-      'thumbnail': images.thumbnail,
       'og:image:secure_url': `https://www.slmc.ch${images.ogImage}`,
     },
   }
@@ -255,12 +264,10 @@ export function generatePageMetadata({
   pageTitle,
   pageDescription,
   pageImage,
-  pageThumbnail,
 }: MetadataParams & {
   pageTitle?: string
   pageDescription?: string
   pageImage?: string
-  pageThumbnail?: string
 }): Metadata {
   const basePageMetadata = generateMetadata({ locale, params })
   
@@ -294,7 +301,6 @@ export function generatePageMetadata({
     },
     other: {
       ...basePageMetadata.other,
-      'thumbnail': pageThumbnail || basePageMetadata.other?.thumbnail,
       'og:image:secure_url': pageImage ? `https://www.slmc.ch${pageImage}` : basePageMetadata.other?.['og:image:secure_url'],
     },
   }
