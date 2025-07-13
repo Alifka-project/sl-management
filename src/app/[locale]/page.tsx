@@ -1,33 +1,18 @@
-import { Metadata } from 'next'
-import { generateMetadata as generateSiteMetadata } from '@/lib/metadata'
-
 import HeroSection from '@/components/home/hero-section'
 import AboutSection from '@/components/home/about-section'
 import WhyChooseSection from '@/components/home/why-choose-section'
-import { Locale } from '../../i18n/locales'
 import ServiceButtons from '../../components/home/services-section'
+import {
+  generatePageMetadataWithStructuredData,
+  type Locale,
+} from '../shared-metadata'
 
-export async function generateMetadata(props: {
+interface PageProps {
   params: Promise<{ locale: string }>
-}): Promise<Metadata> {
-  const params = await props.params
-
-  const { locale } = params
-
-  try {
-    // Type assertion to handle the locale parameter correctly
-    return generateSiteMetadata({
-      locale: locale as Locale,
-      params: { locale },
-    })
-  } catch (error) {
-    console.error('Error generating metadata:', error)
-    // Return basic metadata as fallback
-    return {
-      title: 'S&L Management',
-      description: 'Family Office Services',
-    }
-  }
+}
+export async function generateMetadata({ params }: PageProps) {
+  const locale = (await params).locale as Locale
+  return generatePageMetadataWithStructuredData(locale, 'home')
 }
 
 export default async function Home() {

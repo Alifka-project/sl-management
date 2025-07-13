@@ -1,11 +1,13 @@
 // src/app/[locale]/family-service/page.tsx
+import { generatePageMetadata, type Locale } from '@/app/shared-metadata'
 import Art45Accordion from '@/components/art45/accordion-section'
-import { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'ART45 VAG | SLMC',
-  description:
-    'Premium tailored family services for ultra-high-net-worth individuals and families by S&L Management and Consulting GmbH.',
+interface PageProps {
+  params: Promise<{ locale: string }>
+}
+export async function generateMetadata({ params }: PageProps) {
+  const locale = (await params).locale as Locale
+  return generatePageMetadata(locale, 'art-45')
 }
 
 export default async function ART45VAGPage() {

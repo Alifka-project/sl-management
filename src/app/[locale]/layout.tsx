@@ -1,50 +1,48 @@
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
-import { Locale, locales } from '@/i18n/locales'
+import { locales } from '@/i18n/locales'
 
-import { Metadata } from 'next'
-import { generateMetadata as generateSiteMetadata } from '@/lib/metadata'
 import Header from '@/components/layout/header'
 import Footer from '@/components/layout/footer'
-
-type Props = {
-  children: React.ReactNode
-  params: {
-    locale: string
-  }
-}
+import { generatePageMetadata, type Locale } from '../shared-metadata'
 
 export async function generateStaticParams() {
-  return locales.map(locale => ({ locale }))
+  return locales.map(locale => ({
+    locale: locale,
+  }))
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Props['params']
-}): Promise<Metadata> {
-  try {
-    // Type assertion to handle the locale parameter correctly
-    const { locale } = await params
-    return generateSiteMetadata({
-      locale: locale as Locale,
-      params: { locale },
-    })
-  } catch (error) {
-    console.error('Error generating metadata:', error)
-    // Return basic metadata as fallback
-    return {
-      title: 'S&L Management',
-      description: 'Family Office Services',
-    }
+  params: { locale: string }
+}) {
+  const localeParams = params.locale as Locale
+
+  if (!locales.includes(localeParams)) {
+    return {}
   }
+
+  return generatePageMetadata(
+    localeParams as 'en' | 'es' | 'nl' | 'de' | 'zh',
+    'home',
+  )
 }
 
-export default async function LocaleLayout({ children, params }: Props) {
+interface LocaleLayoutProps {
+  children: React.ReactNode
+  params: { locale: string }
+}
+
+export default async function LocaleLayout({
+  children,
+  params,
+}: LocaleLayoutProps) {
   // Validate that the incoming `locale` parameter is valid
-  const { locale } = await params
-  if (!locales.includes(locale as Locale)) {
+  const locale = params.locale as Locale
+
+  if (!locales.includes(locale)) {
     notFound()
   }
 
