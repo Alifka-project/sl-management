@@ -190,7 +190,7 @@ const FactsheetSection: React.FC = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className='fixed inset-0 z-50 flex items-center justify-center p-4'
+            className='fixed inset-0 z-50 flex items-center justify-center overflow-y-auto p-4 sm:p-6'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -203,7 +203,7 @@ const FactsheetSection: React.FC = () => {
             />
 
             <motion.div
-              className='relative z-10 w-full max-w-md rounded-2xl bg-white p-6 sm:p-8 shadow-2xl'
+              className='relative z-10 my-auto max-h-[calc(100vh-2rem)] w-full max-w-md overflow-y-auto rounded-2xl bg-white p-5 shadow-2xl sm:p-8'
               role='dialog'
               aria-modal='true'
               aria-labelledby='factsheet-modal-title'
@@ -299,7 +299,7 @@ const FactsheetSection: React.FC = () => {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
-                  <div className='flex flex-col gap-1'>
+                  <div className='flex flex-col gap-1 pr-8'>
                     <h3
                       id='factsheet-modal-title'
                       className='text-xl font-bold text-[#252525]'
