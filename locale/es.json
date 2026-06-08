@@ -82,6 +82,34 @@
         "message": "Su Mensaje",
         "submit": "Enviar"
       }
+    },
+
+    "factsheet": {
+      "title": "Descargue Nuestra Ficha Informativa",
+      "description": "Obtenga nuestra ficha informativa sobre la Revisión de Seguros y Pensiones para PYMES: un resumen conciso de cómo ayudamos a las empresas a optimizar sus soluciones de seguros y pensiones. Disponible en inglés y alemán.",
+      "englishLabel": "Inglés",
+      "germanLabel": "Alemán",
+      "downloadButton": "Descargar Ficha Informativa",
+      "modalTitle": "Obtenga Su Ficha Informativa",
+      "modalDescription": "Comparta algunos datos y desbloquearemos las fichas informativas en inglés y alemán para usted.",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "firstNamePlaceholder": "Ingrese su nombre",
+      "lastNamePlaceholder": "Ingrese su apellido",
+      "emailPlaceholder": "Ingrese su correo electrónico",
+      "phonePlaceholder": "Ingrese su número de teléfono",
+      "submit": "Obtener Descargas",
+      "submitting": "Enviando...",
+      "successTitle": "¡Todo listo!",
+      "successMessage": "Gracias. Sus fichas informativas están listas para descargar a continuación.",
+      "downloadEn": "Ficha Informativa en Inglés (PDF)",
+      "downloadDe": "Ficha Informativa en Alemán (PDF)",
+      "close": "Cerrar",
+      "invalidEmail": "Por favor, ingrese una dirección de correo electrónico válida.",
+      "errorMessage": "Algo salió mal. Por favor, inténtelo de nuevo.",
+      "privacyNote": "Respetamos su privacidad. Sus datos solo se utilizan para compartir estos recursos."
     }
   },
   "aboutUs": {

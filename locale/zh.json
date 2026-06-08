@@ -82,6 +82,34 @@
         "message": "您的消息",
         "submit": "提交"
       }
+    },
+
+    "factsheet": {
+      "title": "下载我们的资料概览",
+      "description": "获取我们的中小企业保险与养老金审查资料概览——简明扼要地介绍我们如何帮助企业优化其保险和养老金解决方案。提供英文和德文版本。",
+      "englishLabel": "英文",
+      "germanLabel": "德文",
+      "downloadButton": "下载资料概览",
+      "modalTitle": "获取您的资料概览",
+      "modalDescription": "请提供一些信息，我们将为您解锁英文和德文版资料概览。",
+      "firstName": "名",
+      "lastName": "姓",
+      "email": "电子邮件",
+      "phone": "电话号码",
+      "firstNamePlaceholder": "请输入您的名字",
+      "lastNamePlaceholder": "请输入您的姓氏",
+      "emailPlaceholder": "请输入您的电子邮件",
+      "phonePlaceholder": "请输入您的电话号码",
+      "submit": "获取下载",
+      "submitting": "提交中...",
+      "successTitle": "一切就绪！",
+      "successMessage": "谢谢您。您的资料概览已可在下方下载。",
+      "downloadEn": "英文资料概览 (PDF)",
+      "downloadDe": "德文资料概览 (PDF)",
+      "close": "关闭",
+      "invalidEmail": "请输入有效的电子邮件地址。",
+      "errorMessage": "出现错误，请重试。",
+      "privacyNote": "我们尊重您的隐私。您的信息仅用于分享这些资料。"
     }
   },
   "aboutUs": {

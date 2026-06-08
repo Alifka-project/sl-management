@@ -82,6 +82,34 @@
         "message": "Uw Bericht",
         "submit": "Versturen"
       }
+    },
+
+    "factsheet": {
+      "title": "Download Onze Factsheet",
+      "description": "Ontvang onze factsheet over de Verzekerings- en Pensioenbeoordeling voor het MKB — een beknopt overzicht van hoe wij bedrijven helpen hun verzekerings- en pensioenoplossingen te optimaliseren. Beschikbaar in het Engels en Duits.",
+      "englishLabel": "Engels",
+      "germanLabel": "Duits",
+      "downloadButton": "Factsheet Downloaden",
+      "modalTitle": "Ontvang Uw Factsheet",
+      "modalDescription": "Deel enkele gegevens en wij ontgrendelen zowel de Engelse als de Duitse factsheet voor u.",
+      "firstName": "Voornaam",
+      "lastName": "Achternaam",
+      "email": "E-mail",
+      "phone": "Telefoonnummer",
+      "firstNamePlaceholder": "Voer uw voornaam in",
+      "lastNamePlaceholder": "Voer uw achternaam in",
+      "emailPlaceholder": "Voer uw e-mail in",
+      "phonePlaceholder": "Voer uw telefoonnummer in",
+      "submit": "Downloads Ontvangen",
+      "submitting": "Verzenden...",
+      "successTitle": "Alles is klaar!",
+      "successMessage": "Bedankt. Uw factsheets staan hieronder klaar om te downloaden.",
+      "downloadEn": "Engelse Factsheet (PDF)",
+      "downloadDe": "Duitse Factsheet (PDF)",
+      "close": "Sluiten",
+      "invalidEmail": "Voer een geldig e-mailadres in.",
+      "errorMessage": "Er is iets misgegaan. Probeer het opnieuw.",
+      "privacyNote": "Wij respecteren uw privacy. Uw gegevens worden alleen gebruikt om deze bronnen te delen."
     }
   },
   "aboutUs": {

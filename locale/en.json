@@ -82,6 +82,34 @@
         "message": "Your Message",
         "submit": "Submit"
       }
+    },
+
+    "factsheet": {
+      "title": "Download Our Factsheet",
+      "description": "Get our SME Insurance and Pension Review factsheet — a concise overview of how we help businesses optimize their insurance and pension solutions. Available in English and German.",
+      "englishLabel": "English",
+      "germanLabel": "German",
+      "downloadButton": "Download Factsheet",
+      "modalTitle": "Get Your Factsheet",
+      "modalDescription": "Please share a few details and we will unlock both the English and German factsheets for you.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "firstNamePlaceholder": "Enter your first name",
+      "lastNamePlaceholder": "Enter your last name",
+      "emailPlaceholder": "Enter your email",
+      "phonePlaceholder": "Enter your phone number",
+      "submit": "Get Downloads",
+      "submitting": "Submitting...",
+      "successTitle": "You're all set!",
+      "successMessage": "Thank you. Your factsheets are ready to download below.",
+      "downloadEn": "English Factsheet (PDF)",
+      "downloadDe": "German Factsheet (PDF)",
+      "close": "Close",
+      "invalidEmail": "Please enter a valid email address.",
+      "errorMessage": "Something went wrong. Please try again.",
+      "privacyNote": "We respect your privacy. Your details are only used to share these resources."
     }
   },
   "aboutUs": {

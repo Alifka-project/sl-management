@@ -82,6 +82,34 @@
         "message": "Ihre Nachricht",
         "submit": "Absenden"
       }
+    },
+
+    "factsheet": {
+      "title": "Laden Sie unser Factsheet herunter",
+      "description": "Holen Sie sich unser Factsheet zur KMU-Versicherungs- und Vorsorgeprüfung – ein kompakter Überblick darüber, wie wir Unternehmen bei der Optimierung ihrer Versicherungs- und Vorsorgelösungen unterstützen. Verfügbar auf Englisch und Deutsch.",
+      "englishLabel": "Englisch",
+      "germanLabel": "Deutsch",
+      "downloadButton": "Factsheet herunterladen",
+      "modalTitle": "Erhalten Sie Ihr Factsheet",
+      "modalDescription": "Bitte geben Sie einige Angaben an und wir schalten beide Factsheets in Englisch und Deutsch für Sie frei.",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail",
+      "phone": "Telefonnummer",
+      "firstNamePlaceholder": "Geben Sie Ihren Vornamen ein",
+      "lastNamePlaceholder": "Geben Sie Ihren Nachnamen ein",
+      "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+      "phonePlaceholder": "Geben Sie Ihre Telefonnummer ein",
+      "submit": "Downloads erhalten",
+      "submitting": "Wird gesendet...",
+      "successTitle": "Alles bereit!",
+      "successMessage": "Vielen Dank. Ihre Factsheets stehen unten zum Download bereit.",
+      "downloadEn": "Englisches Factsheet (PDF)",
+      "downloadDe": "Deutsches Factsheet (PDF)",
+      "close": "Schliessen",
+      "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "errorMessage": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+      "privacyNote": "Wir respektieren Ihre Privatsphäre. Ihre Angaben werden nur zur Bereitstellung dieser Ressourcen verwendet."
     }
   },
   "aboutUs": {

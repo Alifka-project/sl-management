@@ -1,6 +1,7 @@
 import HeroSection from '@/components/home/hero-section'
 import AboutSection from '@/components/home/about-section'
 import WhyChooseSection from '@/components/home/why-choose-section'
+import FactsheetSection from '@/components/home/factsheet-section'
 import ServiceButtons from '../../components/home/services-section'
 import {
   generatePageMetadataWithStructuredData,
@@ -22,6 +23,7 @@ export default async function Home() {
       <AboutSection />
       <ServiceButtons />
       <WhyChooseSection />
+      <FactsheetSection />
     </>
   )
 }
