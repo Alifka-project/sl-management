@@ -4,6 +4,7 @@ import React, { useCallback, useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { Button } from '../ui/button'
+import { isValidEmail } from '@/lib/validation'
 
 interface FactsheetFile {
   key: 'en' | 'de'
@@ -37,6 +38,43 @@ const initialForm: FormData = {
   email: '',
   phone: '',
 }
+
+interface FieldProps {
+  name: keyof FormData
+  type: string
+  label: string
+  placeholder: string
+  value: string
+  disabled: boolean
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+}
+
+const Field: React.FC<FieldProps> = ({
+  name,
+  type,
+  label,
+  placeholder,
+  value,
+  disabled,
+  onChange,
+}) => (
+  <div className='flex flex-col gap-1'>
+    <label htmlFor={name} className='text-sm font-medium text-gray-700'>
+      {label}
+    </label>
+    <input
+      id={name}
+      name={name}
+      type={type}
+      value={value}
+      onChange={onChange}
+      placeholder={placeholder}
+      required
+      disabled={disabled}
+      className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#EABF49]'
+    />
+  </div>
+)
 
 const FactsheetSection: React.FC = () => {
   const t = useTranslations('home.factsheet')
@@ -89,8 +127,7 @@ const FactsheetSection: React.FC = () => {
     e.preventDefault()
     setError(null)
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    if (!emailRegex.test(formData.email)) {
+    if (!isValidEmail(formData.email)) {
       setError(t('invalidEmail'))
       return
     }
@@ -312,86 +349,45 @@ const FactsheetSection: React.FC = () => {
                   </div>
 
                   <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
-                    <div className='flex flex-col gap-1'>
-                      <label
-                        htmlFor='firstName'
-                        className='text-sm font-medium text-gray-700'
-                      >
-                        {t('firstName')}
-                      </label>
-                      <input
-                        id='firstName'
-                        name='firstName'
-                        type='text'
-                        value={formData.firstName}
-                        onChange={handleChange}
-                        placeholder={t('firstNamePlaceholder')}
-                        required
-                        disabled={submitting}
-                        className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#EABF49]'
-                      />
-                    </div>
-
-                    <div className='flex flex-col gap-1'>
-                      <label
-                        htmlFor='lastName'
-                        className='text-sm font-medium text-gray-700'
-                      >
-                        {t('lastName')}
-                      </label>
-                      <input
-                        id='lastName'
-                        name='lastName'
-                        type='text'
-                        value={formData.lastName}
-                        onChange={handleChange}
-                        placeholder={t('lastNamePlaceholder')}
-                        required
-                        disabled={submitting}
-                        className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#EABF49]'
-                      />
-                    </div>
-                  </div>
-
-                  <div className='flex flex-col gap-1'>
-                    <label
-                      htmlFor='email'
-                      className='text-sm font-medium text-gray-700'
-                    >
-                      {t('email')}
-                    </label>
-                    <input
-                      id='email'
-                      name='email'
-                      type='email'
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder={t('emailPlaceholder')}
-                      required
+                    <Field
+                      name='firstName'
+                      type='text'
+                      label={t('firstName')}
+                      placeholder={t('firstNamePlaceholder')}
+                      value={formData.firstName}
                       disabled={submitting}
-                      className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#EABF49]'
+                      onChange={handleChange}
+                    />
+                    <Field
+                      name='lastName'
+                      type='text'
+                      label={t('lastName')}
+                      placeholder={t('lastNamePlaceholder')}
+                      value={formData.lastName}
+                      disabled={submitting}
+                      onChange={handleChange}
                     />
                   </div>
 
-                  <div className='flex flex-col gap-1'>
-                    <label
-                      htmlFor='phone'
-                      className='text-sm font-medium text-gray-700'
-                    >
-                      {t('phone')}
-                    </label>
-                    <input
-                      id='phone'
-                      name='phone'
-                      type='tel'
-                      value={formData.phone}
-                      onChange={handleChange}
-                      placeholder={t('phonePlaceholder')}
-                      required
-                      disabled={submitting}
-                      className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#EABF49]'
-                    />
-                  </div>
+                  <Field
+                    name='email'
+                    type='email'
+                    label={t('email')}
+                    placeholder={t('emailPlaceholder')}
+                    value={formData.email}
+                    disabled={submitting}
+                    onChange={handleChange}
+                  />
+
+                  <Field
+                    name='phone'
+                    type='tel'
+                    label={t('phone')}
+                    placeholder={t('phonePlaceholder')}
+                    value={formData.phone}
+                    disabled={submitting}
+                    onChange={handleChange}
+                  />
 
                   {error && (
                     <div className='rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700'>

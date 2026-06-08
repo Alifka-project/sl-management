@@ -1,6 +1,7 @@
 // src/app/api/send-email/route.ts
 import { NextResponse } from 'next/server'
-import nodemailer from 'nodemailer'
+import { createMailTransporter } from '@/lib/mailer'
+import { isValidEmail } from '@/lib/validation'
 
 // Type for the request body
 interface EmailRequest {
@@ -25,25 +26,15 @@ export async function POST(request: Request) {
     }
 
     // Validate email format
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    if (!emailRegex.test(email)) {
+    if (!isValidEmail(email)) {
       return NextResponse.json(
         { error: 'Please provide a valid email address' },
         { status: 400 },
       )
     }
 
-    // Create email transporter
-    // For production, use your actual SMTP credentials
-    const transporter = nodemailer.createTransport({
-      host: process.env.NEXT_PUBLIC_EMAIL_HOST || 'smtp.example.com',
-      port: parseInt(process.env.NEXT_PUBLIC_EMAIL_PORT || '587'),
-      secure: process.env.NEXT_PUBLIC_EMAIL_SECURE === 'true',
-      auth: {
-        user: process.env.NEXT_PUBLIC_EMAIL_USER || 'your-email@example.com',
-        pass: process.env.NEXT_PUBLIC_EMAIL_PASSWORD || 'your-password',
-      },
-    })
+    // Create email transporter (SMTP config is shared across routes)
+    const transporter = createMailTransporter()
 
     // Configure email content
     const mailOptions = {
