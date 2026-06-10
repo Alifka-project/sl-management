@@ -1,6 +1,6 @@
 // src/app/api/factsheet-lead/route.ts
 import { NextResponse } from 'next/server'
-import { createMailTransporter } from '@/lib/mailer'
+import { sendMail } from '@/lib/mailer'
 import { isValidEmail } from '@/lib/validation'
 
 interface FactsheetLeadRequest {
@@ -28,8 +28,6 @@ export async function POST(request: Request) {
         { status: 400 },
       )
     }
-
-    const transporter = createMailTransporter()
 
     const fullName = `${firstName} ${lastName}`
     const mailOptions = {
@@ -71,7 +69,7 @@ Phone: ${phone}
     }
 
     // Send the email (same logic as the contact form route)
-    await transporter.sendMail(mailOptions)
+    await sendMail(mailOptions)
 
     return NextResponse.json({ message: 'Lead captured successfully' })
   } catch (error) {

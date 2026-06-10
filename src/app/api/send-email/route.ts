@@ -1,6 +1,6 @@
 // src/app/api/send-email/route.ts
 import { NextResponse } from 'next/server'
-import { createMailTransporter } from '@/lib/mailer'
+import { sendMail } from '@/lib/mailer'
 import { isValidEmail } from '@/lib/validation'
 
 // Type for the request body
@@ -32,9 +32,6 @@ export async function POST(request: Request) {
         { status: 400 },
       )
     }
-
-    // Create email transporter (SMTP config is shared across routes)
-    const transporter = createMailTransporter()
 
     // Configure email content
     const mailOptions = {
@@ -81,7 +78,7 @@ ${message}
     }
 
     // Send the email
-    await transporter.sendMail(mailOptions)
+    await sendMail(mailOptions)
 
     return NextResponse.json({ message: 'Email sent successfully' })
   } catch (error) {
