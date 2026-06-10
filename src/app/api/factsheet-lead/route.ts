@@ -31,10 +31,14 @@ export async function POST(request: Request) {
 
     const fullName = `${firstName} ${lastName}`
     const mailOptions = {
-      from: `"SLMC Factsheet Download" <${
-        process.env.NEXT_PUBLIC_EMAIL_FROM || 'contact@slmc.ch'
+      // The "from" address MUST be on the Resend-verified domain (slmc.ch).
+      from: `SLMC Factsheet Download <${
+        process.env.EMAIL_FROM || 'noreply@slmc.ch'
       }>`,
-      to: process.env.NEXT_PUBLIC_EMAIL_TO || 'info@slmc.ch',
+      to:
+        process.env.EMAIL_TO ||
+        process.env.NEXT_PUBLIC_EMAIL_TO ||
+        'info@slmc.ch',
       replyTo: email,
       subject: `Factsheet Download Lead: ${fullName}`,
       text: `

@@ -35,10 +35,14 @@ export async function POST(request: Request) {
 
     // Configure email content
     const mailOptions = {
-      from: `"SLMC Contact Form" <${
-        process.env.NEXT_PUBLIC_EMAIL_FROM || 'contact@slmc.ch'
+      // The "from" address MUST be on the Resend-verified domain (slmc.ch).
+      from: `SLMC Contact Form <${
+        process.env.EMAIL_FROM || 'noreply@slmc.ch'
       }>`,
-      to: process.env.NEXT_PUBLIC_EMAIL_TO || 'info@slmc.ch',
+      to:
+        process.env.EMAIL_TO ||
+        process.env.NEXT_PUBLIC_EMAIL_TO ||
+        'info@slmc.ch',
       replyTo: email,
       subject: `Contact Form: ${subject}`,
       text: `
