@@ -76,8 +76,11 @@ Phone: ${phone}
     return NextResponse.json({ message: 'Lead captured successfully' })
   } catch (error) {
     console.error('Error capturing factsheet lead:', error)
+    // Temporary diagnostic: surface the real SMTP error so we can see exactly
+    // why delivery fails in production.
+    const detail = error instanceof Error ? error.message : 'Unknown error'
     return NextResponse.json(
-      { error: 'Failed to send email. Please try again later.' },
+      { error: `Failed to send email: ${detail}` },
       { status: 500 },
     )
   }
