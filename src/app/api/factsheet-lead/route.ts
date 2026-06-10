@@ -59,6 +59,7 @@ Phone: ${phone}
       `,
     }
 
+    // For development or testing, log the email instead of sending it
     if (
       process.env.NODE_ENV === 'development' &&
       process.env.NEXT_PUBLIC_EMAIL_TEST === 'true'
@@ -69,23 +70,14 @@ Phone: ${phone}
       })
     }
 
-    // The lead email is a nice-to-have notification. A mailer outage should
-    // never block the visitor from getting the factsheet they requested, so we
-    // attempt delivery but still return success if it fails.
-    try {
-      await transporter.sendMail(mailOptions)
-    } catch (mailError) {
-      console.error('Factsheet lead email failed to send:', mailError)
-      return NextResponse.json({
-        message: 'Lead recorded; notification email could not be sent.',
-      })
-    }
+    // Send the email (same logic as the contact form route)
+    await transporter.sendMail(mailOptions)
 
     return NextResponse.json({ message: 'Lead captured successfully' })
   } catch (error) {
     console.error('Error capturing factsheet lead:', error)
     return NextResponse.json(
-      { error: 'Failed to process your request. Please try again later.' },
+      { error: 'Failed to send email. Please try again later.' },
       { status: 500 },
     )
   }
