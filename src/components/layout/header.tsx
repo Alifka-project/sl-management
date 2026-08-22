@@ -88,6 +88,7 @@ export default function EnhancedHeader() {
     { name: t('services'), href: '/services' },
     { name: t('news'), href: '/news' },
     { name: 'ART45 VAG', href: '/art-45' },
+    { name: t('downloads'), href: '/downloads' },
   ]
 
   return (

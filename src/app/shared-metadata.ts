@@ -9,6 +9,7 @@ export type PageType =
   | 'about'
   | 'art-45'
   | 'contact-us'
+  | 'downloads'
   | 'news'
   | 'services'
 
@@ -21,6 +22,19 @@ interface PageMetadata {
 
 const pageData: Record<Locale, Record<PageType, PageMetadata>> = {
   en: {
+    downloads: {
+      title: 'Downloads - Forms & Documents | SLMC',
+      description:
+        'Download SLMC broker mandate forms and factsheets in German and English — ready to complete, sign and return.',
+      keywords: [
+        'slmc downloads',
+        'broker mandate',
+        'insurance forms',
+        'factsheet',
+        'switzerland',
+      ],
+      image: '/images/logo_only.svg',
+    },
     home: {
       title: 'SLMC - Professional Services & Solutions',
       description:
@@ -94,6 +108,19 @@ const pageData: Record<Locale, Record<PageType, PageMetadata>> = {
     },
   },
   es: {
+    downloads: {
+      title: 'Descargas - Formularios y Documentos | SLMC',
+      description:
+        'Descargue los formularios de mandato de corretaje y las fichas informativas de SLMC en alemán e inglés, listos para completar, firmar y devolver.',
+      keywords: [
+        'descargas slmc',
+        'mandato de corretaje',
+        'formularios de seguros',
+        'ficha informativa',
+        'suiza',
+      ],
+      image: '/images/logo_only.svg',
+    },
     home: {
       title: 'SLMC - Servicios Profesionales y Soluciones',
       description:
@@ -173,6 +200,19 @@ const pageData: Record<Locale, Record<PageType, PageMetadata>> = {
     },
   },
   nl: {
+    downloads: {
+      title: 'Downloads - Formulieren & Documenten | SLMC',
+      description:
+        'Download de makelaarsmandaatformulieren en factsheets van SLMC in het Duits en Engels — klaar om in te vullen, te ondertekenen en terug te sturen.',
+      keywords: [
+        'slmc downloads',
+        'makelaarsmandaat',
+        'verzekeringsformulieren',
+        'factsheet',
+        'zwitserland',
+      ],
+      image: '/images/logo_only.svg',
+    },
     home: {
       title: 'SLMC - Professionele Diensten & Oplossingen',
       description:
@@ -252,6 +292,19 @@ const pageData: Record<Locale, Record<PageType, PageMetadata>> = {
     },
   },
   de: {
+    downloads: {
+      title: 'Downloads - Formulare & Dokumente | SLMC',
+      description:
+        'Laden Sie die Brokermandate und Factsheets von SLMC auf Deutsch und Englisch herunter — bereit zum Ausfüllen, Unterschreiben und Zurücksenden.',
+      keywords: [
+        'slmc downloads',
+        'brokermandat',
+        'versicherungsformulare',
+        'factsheet',
+        'schweiz',
+      ],
+      image: '/images/logo_only.svg',
+    },
     home: {
       title: 'SLMC - Professionelle Dienstleistungen & Lösungen',
       description:
@@ -331,6 +384,19 @@ const pageData: Record<Locale, Record<PageType, PageMetadata>> = {
     },
   },
   zh: {
+    downloads: {
+      title: '下载中心 - 表格与文件 | SLMC',
+      description:
+        '下载 SLMC 的保险经纪委托表格和资料概览，提供德文和英文版本，可直接填写、签署并回传。',
+      keywords: [
+        'slmc 下载',
+        '经纪委托书',
+        '保险表格',
+        '资料概览',
+        '瑞士',
+      ],
+      image: '/images/logo_only.svg',
+    },
     home: {
       title: 'SLMC - 专业服务与解决方案',
       description: '瑞士领先的专业服务和创新解决方案提供商',

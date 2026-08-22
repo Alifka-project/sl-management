@@ -2,7 +2,6 @@
   "home": {
     "title": "S&L Management and Consulting GmbH",
     "description": "Premium Family Office Services in Switzerland",
-
     "hero": {
       "title": "Welcome to S & L Management",
       "and": "and",
@@ -10,13 +9,11 @@
       "description": "At SLMC, we provide high-end Family Office Services delivered through a holistic and tailored approach to help you achieve your unique lifestyle goals.",
       "viewMore": "View More"
     },
-
     "about": {
       "title": "About SLMC",
       "description1": "Your Trusted Lifestyle Solution Partner S & L Management and Consulting GmbH (SLMC) is a leading Swiss multi-family office, serving ultra-high-net-worth individuals and families from our headquarters in Canton Schwyz, Switzerland. We offer a comprehensive suite of tailor-made advisory services, including wealth management, family succession planning, and private lifestyle solutions.",
       "description2": "By combining in-depth expertise with a personalized approach, we ensure your family's evolving needs are seamlessly taken care of, letting you focus on what truly matters. Experience excellence with SLMC and discover a new standard in family office services."
     },
-
     "services": {
       "title": "Our Core Services",
       "description": "At SLMC, we understand that managing personal and financial matters requires a truly holistic approach. We provide a comprehensive suite of premium services—from insurance and healthcare management to residency planning and wealth planning—designed to offer you peace of mind at every stage.",
@@ -48,7 +45,6 @@
         }
       }
     },
-
     "whyChoose": {
       "title": "Why You Should Choose SLMC",
       "description": "We combine expertise, trust, and a client-first approach to deliver exceptional family office services.",
@@ -67,7 +63,6 @@
         }
       }
     },
-
     "contact": {
       "title": "Get in Touch",
       "description": "Contact our team to learn more about how we can help you achieve your lifestyle and wealth management goals.",
@@ -83,33 +78,13 @@
         "submit": "Submit"
       }
     },
-
     "factsheet": {
       "title": "Download Our Factsheet",
       "description": "Get our SME Insurance and Pension Review factsheet — a concise overview of how we help businesses optimize their insurance and pension solutions. Available in English and German.",
       "englishLabel": "English",
       "germanLabel": "German",
       "downloadButton": "Download Factsheet",
-      "modalTitle": "Get Your Factsheet",
-      "modalDescription": "Please share a few details and we will unlock both the English and German factsheets for you.",
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "phone": "Phone Number",
-      "firstNamePlaceholder": "Enter your first name",
-      "lastNamePlaceholder": "Enter your last name",
-      "emailPlaceholder": "Enter your email",
-      "phonePlaceholder": "Enter your phone number",
-      "submit": "Get Downloads",
-      "submitting": "Submitting...",
-      "successTitle": "You're all set!",
-      "successMessage": "Thank you. Your factsheets are ready to download below.",
-      "downloadEn": "English Factsheet (PDF)",
-      "downloadDe": "German Factsheet (PDF)",
-      "close": "Close",
-      "invalidEmail": "Please enter a valid email address.",
-      "errorMessage": "Something went wrong. Please try again.",
-      "privacyNote": "We respect your privacy. Your details are only used to share these resources."
+      "viewAllDownloads": "View all downloads"
     }
   },
   "aboutUs": {
@@ -118,7 +93,6 @@
     "description1": "At S & L Management and Consulting LLC (SLMC), we are proud to be your trusted partner for comprehensive lifestyle solutions and family office services. Our commitment to excellence is grounded in a broad spectrum of industry experience, a dedication to personalized service, and a global network of esteemed partners.",
     "description2": "SLMC is headquartered in Canton Schwyz (Switzerland), the central Swiss canton bordered by Lake Zürich and Lake Lucerne, known for its Finance, Blockchain and Health Tech Cluster in Switzerland. SLMC has its presence as well in Beijing (PRC).",
     "description3": "We collaborate closely with selected premium partners in Switzerland and Asia to craft comprehensive and individual lifestyle solutions to families or individuals with business or private interest in Switzerland and Asia.",
-
     "team": {
       "title": "Our Team",
       "description1": "SLMC is a team with diverse backgrounds and perspectives. Our commitment to excellence is underpinned by a rich tapestry of experience and a dedication to personalized service. Our Swiss Team is leading by Prof. Dr. Andreas Svoboda. We work closely together with premium selected external partners specialize in navigating the complexities of the financial world, including banking, insurance, and family office services. With a keen understanding of the unique challenges faced by UHNWI, we deliver tailored solutions to meet the highest standards.",
@@ -294,7 +268,8 @@
     "home": "Home",
     "socialLinkedIn": "LinkedIn",
     "getInTouch": "Get In Touch",
-    "copyright": "© {year} S&L Management and Consulting LLC. All rights reserved."
+    "copyright": "© {year} S&L Management and Consulting LLC. All rights reserved.",
+    "downloads": "Downloads"
   },
   "menu": {
     "home": "Home",
@@ -302,9 +277,71 @@
     "services": "Family Services",
     "news": "News & Events",
     "contact": "Contact",
-    "contactUs": "Contact Us"
+    "contactUs": "Contact Us",
+    "downloads": "Downloads"
   },
   "logo": {
     "alt": "S&L Management Logo"
+  },
+  "downloads": {
+    "eyebrow": "Downloads",
+    "title": "Forms & Documents",
+    "description": "All SLMC forms and information sheets in one place, in German and English. Download them, complete them and send them back to us — or simply read up before we meet.",
+    "categories": {
+      "mandates": {
+        "title": "Mandate Forms",
+        "description": "The agreements you can sign to appoint us as your insurance broker. Take the PDF to print and sign, or the Word file if you prefer to fill it in on your computer."
+      },
+      "factsheets": {
+        "title": "Factsheets",
+        "description": "Short overviews of our services and how we work."
+      }
+    },
+    "documents": {
+      "co-broker-mandate": {
+        "title": "Insurance Brokerage Mandate (Co-Broker)",
+        "description": "Appoints S&L Management und Consulting GmbH, together with Strategic Alliances Financial Services AG, to look after your insurance portfolio. Includes the Article 45 ISA/VAG information annexes. Please sign it and return it to us by email or post."
+      },
+      "sme-factsheet": {
+        "title": "SME Insurance and Pension Review",
+        "description": "A concise overview of how we help businesses optimise their insurance and pension solutions."
+      }
+    },
+    "languages": {
+      "de": "German",
+      "en": "English"
+    },
+    "formats": {
+      "pdf": "PDF",
+      "docx": "Word document"
+    },
+    "gatedBadge": "Short form",
+    "gatedHint": "Leave your details and the download links appear straight away.",
+    "unlockButton": "Get the download",
+    "help": {
+      "title": "Not sure which document you need?",
+      "description": "Send us a short message and we will send you the right form — or walk you through it personally.",
+      "cta": "Contact us"
+    },
+    "leadForm": {
+      "modalTitle": "Get Your Download",
+      "modalDescription": "Please share a few details and we will unlock “{document}” for you.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "firstNamePlaceholder": "Enter your first name",
+      "lastNamePlaceholder": "Enter your last name",
+      "emailPlaceholder": "Enter your email",
+      "phonePlaceholder": "Enter your phone number",
+      "submit": "Get Downloads",
+      "submitting": "Submitting...",
+      "successTitle": "You're all set!",
+      "successMessage": "Thank you. Your download is ready below.",
+      "close": "Close",
+      "invalidEmail": "Please enter a valid email address.",
+      "errorMessage": "Something went wrong. Please try again.",
+      "privacyNote": "We respect your privacy. Your details are only used to share these resources."
+    }
   }
 }

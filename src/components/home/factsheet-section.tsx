@@ -1,157 +1,21 @@
 'use client'
 
-import React, { useCallback, useEffect, useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import React, { useState } from 'react'
+import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/routing'
 import { Button } from '../ui/button'
-import { isValidEmail } from '@/lib/validation'
+import LeadGateModal from '../downloads/lead-gate-modal'
+import { DOWNLOAD_DOCUMENTS } from '@/lib/downloads'
 
-interface FactsheetFile {
-  key: 'en' | 'de'
-  href: string
-  fileName: string
-}
-
-const FACTSHEETS: FactsheetFile[] = [
-  {
-    key: 'en',
-    href: '/SLMC_Factsheet_SME_Insurance_and_Pension_Review_EN.pdf',
-    fileName: 'SLMC_Factsheet_SME_Insurance_and_Pension_Review_EN.pdf',
-  },
-  {
-    key: 'de',
-    href: '/SLMC_Factsheet_KMU_Versicherungs_und_Vorsorge_Review_DE.pdf',
-    fileName: 'SLMC_Factsheet_KMU_Versicherungs_und_Vorsorge_Review_DE.pdf',
-  },
-]
-
-interface FormData {
-  firstName: string
-  lastName: string
-  email: string
-  phone: string
-}
-
-const initialForm: FormData = {
-  firstName: '',
-  lastName: '',
-  email: '',
-  phone: '',
-}
-
-interface FieldProps {
-  name: keyof FormData
-  type: string
-  label: string
-  placeholder: string
-  value: string
-  disabled: boolean
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
-}
-
-const Field: React.FC<FieldProps> = ({
-  name,
-  type,
-  label,
-  placeholder,
-  value,
-  disabled,
-  onChange,
-}) => (
-  <div className='flex flex-col gap-1'>
-    <label htmlFor={name} className='text-sm font-medium text-gray-700'>
-      {label}
-    </label>
-    <input
-      id={name}
-      name={name}
-      type={type}
-      value={value}
-      onChange={onChange}
-      placeholder={placeholder}
-      required
-      disabled={disabled}
-      className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#EABF49]'
-    />
-  </div>
-)
+// The factsheet lives in the shared downloads registry; this banner is just a
+// homepage shortcut to it.
+const FACTSHEET = DOWNLOAD_DOCUMENTS.find(doc => doc.id === 'sme-factsheet')
 
 const FactsheetSection: React.FC = () => {
   const t = useTranslations('home.factsheet')
-
+  const tDownloads = useTranslations('downloads')
   const [isOpen, setIsOpen] = useState(false)
-  const [unlocked, setUnlocked] = useState(false)
-  const [formData, setFormData] = useState<FormData>(initialForm)
-  const [submitting, setSubmitting] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-
-  const openModal = () => {
-    setIsOpen(true)
-  }
-
-  const closeModal = useCallback(() => {
-    setIsOpen(false)
-    // Reset back to the form state for the next visitor after the close animation.
-    setTimeout(() => {
-      setUnlocked(false)
-      setFormData(initialForm)
-      setError(null)
-      setSubmitting(false)
-    }, 250)
-  }, [])
-
-  // Lock body scroll and enable Escape-to-close while the modal is open.
-  useEffect(() => {
-    if (!isOpen) return
-
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') closeModal()
-    }
-
-    const originalOverflow = document.body.style.overflow
-    document.body.style.overflow = 'hidden'
-    window.addEventListener('keydown', handleKeyDown)
-
-    return () => {
-      document.body.style.overflow = originalOverflow
-      window.removeEventListener('keydown', handleKeyDown)
-    }
-  }, [isOpen, closeModal])
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target
-    setFormData(prev => ({ ...prev, [name]: value }))
-  }
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setError(null)
-
-    if (!isValidEmail(formData.email)) {
-      setError(t('invalidEmail'))
-      return
-    }
-
-    setSubmitting(true)
-    try {
-      const response = await fetch('/api/factsheet-lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      })
-
-      if (!response.ok) {
-        const data = await response.json().catch(() => ({}))
-        throw new Error(data.error || t('errorMessage'))
-      }
-
-      setUnlocked(true)
-    } catch (err) {
-      setError(err instanceof Error ? err.message : t('errorMessage'))
-    } finally {
-      setSubmitting(false)
-    }
-  }
 
   return (
     <section
@@ -186,13 +50,20 @@ const FactsheetSection: React.FC = () => {
                 </span>
               </div>
 
-              <div className='mt-4 flex justify-center lg:justify-start'>
+              <div className='mt-4 flex flex-wrap items-center justify-center lg:justify-start gap-4'>
                 <Button
-                  onClick={openModal}
+                  onClick={() => setIsOpen(true)}
                   className='text-[#252525] px-8 py-5 md:px-10 md:py-6 w-fit font-bold rounded-[10px] cursor-pointer text-sm sm:text-base md:text-lg'
                 >
                   {t('downloadButton')}
                 </Button>
+
+                <Link
+                  href='/downloads'
+                  className='text-sm sm:text-base font-semibold text-[#EABF49] underline-offset-4 transition-colors hover:text-white hover:underline'
+                >
+                  {t('viewAllDownloads')}
+                </Link>
               </div>
             </div>
 
@@ -224,196 +95,12 @@ const FactsheetSection: React.FC = () => {
         </motion.div>
       </div>
 
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            className='fixed inset-0 z-50 flex items-center justify-center overflow-y-auto p-4 sm:p-6'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-          >
-            <div
-              className='absolute inset-0 bg-black/60 backdrop-blur-sm'
-              onClick={closeModal}
-              aria-hidden='true'
-            />
-
-            <motion.div
-              className='relative z-10 my-auto max-h-[calc(100vh-2rem)] w-full max-w-md overflow-y-auto rounded-2xl bg-white p-5 shadow-2xl sm:p-8'
-              role='dialog'
-              aria-modal='true'
-              aria-labelledby='factsheet-modal-title'
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              transition={{ duration: 0.2, ease: 'easeOut' }}
-            >
-              <button
-                type='button'
-                onClick={closeModal}
-                className='absolute right-4 top-4 text-gray-400 transition-colors hover:text-gray-700 cursor-pointer'
-                aria-label={t('close')}
-              >
-                <svg
-                  className='h-6 w-6'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  stroke='currentColor'
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M6 18L18 6M6 6l12 12'
-                  />
-                </svg>
-              </button>
-
-              {unlocked ? (
-                <div className='flex flex-col gap-5'>
-                  <div className='flex flex-col items-center gap-3 text-center'>
-                    <div className='flex h-14 w-14 items-center justify-center rounded-full bg-green-100'>
-                      <svg
-                        className='h-7 w-7 text-green-600'
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'
-                        strokeWidth={2}
-                      >
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          d='M4.5 12.75l6 6 9-13.5'
-                        />
-                      </svg>
-                    </div>
-                    <h3
-                      id='factsheet-modal-title'
-                      className='text-xl font-bold text-[#252525]'
-                    >
-                      {t('successTitle')}
-                    </h3>
-                    <p className='text-sm text-gray-600'>
-                      {t('successMessage')}
-                    </p>
-                  </div>
-
-                  <div className='flex flex-col gap-3'>
-                    {FACTSHEETS.map(file => (
-                      <a
-                        key={file.key}
-                        href={file.href}
-                        download={file.fileName}
-                        className='flex items-center justify-between gap-3 rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 transition-colors hover:border-[#EABF49] hover:bg-[#EABF49]/10'
-                      >
-                        <span className='flex items-center gap-3'>
-                          <span className='flex h-9 w-9 items-center justify-center rounded-md bg-[#EABF49] text-xs font-bold text-[#252525] uppercase'>
-                            {file.key}
-                          </span>
-                          <span className='text-sm font-medium text-[#252525]'>
-                            {file.key === 'en'
-                              ? t('downloadEn')
-                              : t('downloadDe')}
-                          </span>
-                        </span>
-                        <svg
-                          className='h-5 w-5 text-[#252525]'
-                          fill='none'
-                          viewBox='0 0 24 24'
-                          stroke='currentColor'
-                          strokeWidth={2}
-                        >
-                          <path
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                            d='M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5'
-                          />
-                        </svg>
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
-                  <div className='flex flex-col gap-1 pr-8'>
-                    <h3
-                      id='factsheet-modal-title'
-                      className='text-xl font-bold text-[#252525]'
-                    >
-                      {t('modalTitle')}
-                    </h3>
-                    <p className='text-sm text-gray-600'>
-                      {t('modalDescription')}
-                    </p>
-                  </div>
-
-                  <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
-                    <Field
-                      name='firstName'
-                      type='text'
-                      label={t('firstName')}
-                      placeholder={t('firstNamePlaceholder')}
-                      value={formData.firstName}
-                      disabled={submitting}
-                      onChange={handleChange}
-                    />
-                    <Field
-                      name='lastName'
-                      type='text'
-                      label={t('lastName')}
-                      placeholder={t('lastNamePlaceholder')}
-                      value={formData.lastName}
-                      disabled={submitting}
-                      onChange={handleChange}
-                    />
-                  </div>
-
-                  <Field
-                    name='email'
-                    type='email'
-                    label={t('email')}
-                    placeholder={t('emailPlaceholder')}
-                    value={formData.email}
-                    disabled={submitting}
-                    onChange={handleChange}
-                  />
-
-                  <Field
-                    name='phone'
-                    type='tel'
-                    label={t('phone')}
-                    placeholder={t('phonePlaceholder')}
-                    value={formData.phone}
-                    disabled={submitting}
-                    onChange={handleChange}
-                  />
-
-                  {error && (
-                    <div className='rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700'>
-                      {error}
-                    </div>
-                  )}
-
-                  <Button
-                    type='submit'
-                    disabled={submitting}
-                    className={`w-full font-bold py-5 rounded-[10px] cursor-pointer text-[#252525] ${
-                      submitting ? 'bg-gray-400 cursor-not-allowed' : ''
-                    }`}
-                  >
-                    {submitting ? t('submitting') : t('submit')}
-                  </Button>
-
-                  <p className='text-center text-xs text-gray-400'>
-                    {t('privacyNote')}
-                  </p>
-                </form>
-              )}
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <LeadGateModal
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+        assets={FACTSHEET?.assets ?? []}
+        documentLabel={tDownloads('documents.sme-factsheet.title')}
+      />
     </section>
   )
 }

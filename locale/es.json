@@ -2,7 +2,6 @@
   "home": {
     "title": "S&L Management y Consulting GmbH",
     "description": "Servicios Premium de Family Office en Suiza",
-
     "hero": {
       "title": "Bienvenido a S & L Management",
       "and": "y",
@@ -10,13 +9,11 @@
       "description": "En SLMC, proporcionamos Servicios de Family Office de alta gama entregados a través de un enfoque holístico y personalizado para ayudarle a alcanzar sus objetivos de estilo de vida únicos.",
       "viewMore": "Ver Más"
     },
-
     "about": {
       "title": "Acerca de SLMC",
       "description1": "Su Socio de Confianza para Soluciones de Estilo de Vida S & L Management y Consulting GmbH (SLMC) es una oficina familiar multiservicio suiza líder, que atiende a personas y familias de ultra alto patrimonio neto desde nuestra sede en el Cantón de Schwyz, Suiza. Ofrecemos una amplia gama de servicios de asesoramiento a medida, que incluyen gestión de patrimonio, planificación de la sucesión familiar y soluciones de estilo de vida privado.",
       "description2": "Al combinar una experiencia profunda con un enfoque personalizado, nos aseguramos de que las necesidades en evolución de su familia sean atendidas sin problemas, permitiéndole concentrarse en lo que realmente importa. Experimente la excelencia con SLMC y descubra un nuevo estándar en los servicios de oficina familiar."
     },
-
     "services": {
       "title": "Nuestros Servicios Principales",
       "description": "En SLMC, entendemos que la gestión de asuntos personales y financieros requiere un enfoque verdaderamente holístico. Proporcionamos una completa suite de servicios premium, desde seguros y gestión de atención médica hasta planificación de residencia y planificación patrimonial, diseñados para ofrecerle tranquilidad en cada etapa.",
@@ -48,7 +45,6 @@
         }
       }
     },
-
     "whyChoose": {
       "title": "Por Qué Debería Elegir SLMC",
       "description": "Combinamos experiencia, confianza y un enfoque centrado en el cliente para ofrecer servicios excepcionales de oficina familiar.",
@@ -67,7 +63,6 @@
         }
       }
     },
-
     "contact": {
       "title": "Póngase en Contacto",
       "description": "Contacte a nuestro equipo para obtener más información sobre cómo podemos ayudarle a alcanzar sus objetivos de estilo de vida y gestión de patrimonio.",
@@ -83,33 +78,13 @@
         "submit": "Enviar"
       }
     },
-
     "factsheet": {
       "title": "Descargue Nuestra Ficha Informativa",
       "description": "Obtenga nuestra ficha informativa sobre la Revisión de Seguros y Pensiones para PYMES: un resumen conciso de cómo ayudamos a las empresas a optimizar sus soluciones de seguros y pensiones. Disponible en inglés y alemán.",
       "englishLabel": "Inglés",
       "germanLabel": "Alemán",
       "downloadButton": "Descargar Ficha Informativa",
-      "modalTitle": "Obtenga Su Ficha Informativa",
-      "modalDescription": "Comparta algunos datos y desbloquearemos las fichas informativas en inglés y alemán para usted.",
-      "firstName": "Nombre",
-      "lastName": "Apellido",
-      "email": "Correo Electrónico",
-      "phone": "Número de Teléfono",
-      "firstNamePlaceholder": "Ingrese su nombre",
-      "lastNamePlaceholder": "Ingrese su apellido",
-      "emailPlaceholder": "Ingrese su correo electrónico",
-      "phonePlaceholder": "Ingrese su número de teléfono",
-      "submit": "Obtener Descargas",
-      "submitting": "Enviando...",
-      "successTitle": "¡Todo listo!",
-      "successMessage": "Gracias. Sus fichas informativas están listas para descargar a continuación.",
-      "downloadEn": "Ficha Informativa en Inglés (PDF)",
-      "downloadDe": "Ficha Informativa en Alemán (PDF)",
-      "close": "Cerrar",
-      "invalidEmail": "Por favor, ingrese una dirección de correo electrónico válida.",
-      "errorMessage": "Algo salió mal. Por favor, inténtelo de nuevo.",
-      "privacyNote": "Respetamos su privacidad. Sus datos solo se utilizan para compartir estos recursos."
+      "viewAllDownloads": "Ver todas las descargas"
     }
   },
   "aboutUs": {
@@ -118,7 +93,6 @@
     "description1": "En S & L Management y Consulting LLC (SLMC), nos enorgullece ser su socio de confianza para soluciones integrales de estilo de vida y servicios de oficina familiar. Nuestro compromiso con la excelencia se basa en un amplio espectro de experiencia en la industria, una dedicación al servicio personalizado y una red global de socios estimados.",
     "description2": "SLMC tiene su sede en el cantón de Schwyz (Suiza), el cantón central suizo bordeado por el lago de Zúrich y el lago de los Cuatro Cantones, conocido por su clúster de Finanzas, Blockchain y Tecnología de la Salud en Suiza. SLMC también tiene presencia en Beijing (RPC).",
     "description3": "Colaboramos estrechamente con socios premium seleccionados en Suiza y Asia para crear soluciones de estilo de vida exhaustivas e individualizadas para familias o individuos con intereses comerciales o privados en Suiza y Asia.",
-
     "team": {
       "title": "Nuestro equipo",
       "description1": "SLMC es un equipo con diversos antecedentes y perspectivas. Nuestro compromiso con la excelencia se basa en una rica experiencia y dedicación al servicio personalizado. Nuestro equipo suizo está liderado por el Prof. Dr. Andreas Svoboda. Colaboramos estrechamente con socios externos premium seleccionados que se especializan en la complejidad del mundo financiero, incluyendo banca, seguros y servicios de Family Office. Con un profundo entendimiento de los desafíos únicos de los UHNWI, ofrecemos soluciones personalizadas que cumplen con los más altos estándares.",
@@ -294,7 +268,8 @@
     "getInTouch": "Póngase en Contacto",
     "socialLinkedIn": "LinkedIn",
     "home": "Inicio",
-    "copyright": "© {year} S&L Management y Consulting LLC. Todos los derechos reservados."
+    "copyright": "© {year} S&L Management y Consulting LLC. Todos los derechos reservados.",
+    "downloads": "Descargas"
   },
   "menu": {
     "home": "Inicio",
@@ -302,9 +277,71 @@
     "services": "Servicios Familiares",
     "news": "Noticias y Eventos",
     "contact": "Contacto",
-    "contactUs": "Contáctenos"
+    "contactUs": "Contáctenos",
+    "downloads": "Descargas"
   },
   "logo": {
     "alt": "Logo de S&L Management"
+  },
+  "downloads": {
+    "eyebrow": "Descargas",
+    "title": "Formularios y Documentos",
+    "description": "Todos los formularios y fichas informativas de SLMC en un solo lugar, en alemán e inglés. Descárguelos, complételos y devuélvanoslos, o simplemente léalos antes de nuestra reunión.",
+    "categories": {
+      "mandates": {
+        "title": "Formularios de Mandato",
+        "description": "Los acuerdos con los que puede nombrarnos como su corredor de seguros. Utilice el PDF para imprimir y firmar, o el archivo de Word si prefiere completarlo en su ordenador."
+      },
+      "factsheets": {
+        "title": "Fichas Informativas",
+        "description": "Resúmenes breves de nuestros servicios y de nuestra forma de trabajar."
+      }
+    },
+    "documents": {
+      "co-broker-mandate": {
+        "title": "Mandato de Corretaje de Seguros (Co-Broker)",
+        "description": "Nombra a S&L Management und Consulting GmbH, junto con Strategic Alliances Financial Services AG, para gestionar su cartera de seguros. Incluye los anexos de información según el artículo 45 de la LSA/VAG. Fírmelo y devuélvanoslo por correo electrónico o postal."
+      },
+      "sme-factsheet": {
+        "title": "Revisión de Seguros y Pensiones para PYMES",
+        "description": "Un resumen conciso de cómo ayudamos a las empresas a optimizar sus soluciones de seguros y pensiones."
+      }
+    },
+    "languages": {
+      "de": "Alemán",
+      "en": "Inglés"
+    },
+    "formats": {
+      "pdf": "PDF",
+      "docx": "Documento de Word"
+    },
+    "gatedBadge": "Formulario breve",
+    "gatedHint": "Deje sus datos y los enlaces de descarga aparecerán de inmediato.",
+    "unlockButton": "Obtener la descarga",
+    "help": {
+      "title": "¿No sabe qué documento necesita?",
+      "description": "Envíenos un breve mensaje y le enviaremos el formulario adecuado, o se lo explicaremos personalmente.",
+      "cta": "Contáctenos"
+    },
+    "leadForm": {
+      "modalTitle": "Obtenga Su Descarga",
+      "modalDescription": "Comparta algunos datos y desbloquearemos “{document}” para usted.",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "firstNamePlaceholder": "Ingrese su nombre",
+      "lastNamePlaceholder": "Ingrese su apellido",
+      "emailPlaceholder": "Ingrese su correo electrónico",
+      "phonePlaceholder": "Ingrese su número de teléfono",
+      "submit": "Obtener Descargas",
+      "submitting": "Enviando...",
+      "successTitle": "¡Todo listo!",
+      "successMessage": "Gracias. Su descarga está lista a continuación.",
+      "close": "Cerrar",
+      "invalidEmail": "Por favor, ingrese una dirección de correo electrónico válida.",
+      "errorMessage": "Algo salió mal. Por favor, inténtelo de nuevo.",
+      "privacyNote": "Respetamos su privacidad. Sus datos solo se utilizan para compartir estos recursos."
+    }
   }
 }

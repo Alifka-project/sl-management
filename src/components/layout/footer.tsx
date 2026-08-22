@@ -158,6 +158,14 @@ export default function Footer() {
                   {t('news')}
                 </Link>
               </li>
+              <li>
+                <Link
+                  href='/downloads'
+                  className='text-white/80  hover:text-white transition-colors text-sm sm:text-base'
+                >
+                  {t('downloads')}
+                </Link>
+              </li>
             </ul>
           </div>
 

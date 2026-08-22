@@ -10,6 +10,7 @@ export default function sitemap() {
     { path: 'about', priority: 0.8, changeFrequency: 'yearly' },
     { path: 'art-45', priority: 0.8, changeFrequency: 'yearly' },
     { path: 'contact-us', priority: 0.7, changeFrequency: 'yearly' },
+    { path: 'downloads', priority: 0.8, changeFrequency: 'monthly' },
     { path: 'news', priority: 0.9, changeFrequency: 'weekly' }, // News changes more frequently
     { path: 'services', priority: 0.8, changeFrequency: 'monthly' },
   ]

@@ -2,7 +2,6 @@
   "home": {
     "title": "S&L Management und Consulting GmbH",
     "description": "Premium Family Office Dienstleistungen in der Schweiz",
-
     "hero": {
       "title": "Willkommen bei S & L Management",
       "and": "and",
@@ -10,13 +9,11 @@
       "description": "Bei SLMC bieten wir hochwertige Family Office Dienstleistungen durch einen ganzheitlichen und maßgeschneiderten Ansatz, um Ihnen zu helfen, Ihre einzigartigen Lifestyle-Ziele zu erreichen.",
       "viewMore": "Mehr erfahren"
     },
-
     "about": {
       "title": "Über SLMC",
       "description1": "Ihr vertrauenswürdiger Lifestyle-Lösungspartner S & L Management und Consulting GmbH (SLMC) ist ein führendes Schweizer Multi-Family Office, das vermögende Privatpersonen und Familien von unserem Hauptsitz im Kanton Schwyz, Schweiz, aus betreut. Wir bieten eine umfassende Palette an maßgeschneiderten Beratungsdienstleistungen, einschließlich Vermögensverwaltung, Familiennachfolgeplanung und privaten Lifestyle-Lösungen.",
       "description2": "Durch die Kombination von Fachwissen mit einem personalisierten Ansatz stellen wir sicher, dass die sich entwickelnden Bedürfnisse Ihrer Familie nahtlos berücksichtigt werden, sodass Sie sich auf das konzentrieren können, was wirklich wichtig ist. Erleben Sie Exzellenz mit SLMC und entdecken Sie einen neuen Standard für Family Office Dienstleistungen."
     },
-
     "services": {
       "title": "Unsere Kerndienstleistungen",
       "description": "Bei SLMC verstehen wir, dass die Verwaltung persönlicher und finanzieller Angelegenheiten einen wirklich ganzheitlichen Ansatz erfordert. Wir bieten eine umfassende Suite von Premium-Dienstleistungen - von Versicherungen und Gesundheitsmanagement bis hin zu Aufenthaltsplanung und Vermögensplanung - die darauf ausgelegt sind, Ihnen in jeder Phase Seelenfrieden zu bieten.",
@@ -48,7 +45,6 @@
         }
       }
     },
-
     "whyChoose": {
       "title": "Warum Sie SLMC wählen sollten",
       "description": "Wir kombinieren Fachwissen, Vertrauen und einen kundenorientierten Ansatz, um außergewöhnliche Family Office Dienstleistungen anzubieten.",
@@ -67,7 +63,6 @@
         }
       }
     },
-
     "contact": {
       "title": "Kontakt aufnehmen",
       "description": "Kontaktieren Sie unser Team, um mehr darüber zu erfahren, wie wir Ihnen helfen können, Ihre Lifestyle- und Vermögensverwaltungsziele zu erreichen.",
@@ -83,33 +78,13 @@
         "submit": "Absenden"
       }
     },
-
     "factsheet": {
       "title": "Laden Sie unser Factsheet herunter",
       "description": "Holen Sie sich unser Factsheet zur KMU-Versicherungs- und Vorsorgeprüfung – ein kompakter Überblick darüber, wie wir Unternehmen bei der Optimierung ihrer Versicherungs- und Vorsorgelösungen unterstützen. Verfügbar auf Englisch und Deutsch.",
       "englishLabel": "Englisch",
       "germanLabel": "Deutsch",
       "downloadButton": "Factsheet herunterladen",
-      "modalTitle": "Erhalten Sie Ihr Factsheet",
-      "modalDescription": "Bitte geben Sie einige Angaben an und wir schalten beide Factsheets in Englisch und Deutsch für Sie frei.",
-      "firstName": "Vorname",
-      "lastName": "Nachname",
-      "email": "E-Mail",
-      "phone": "Telefonnummer",
-      "firstNamePlaceholder": "Geben Sie Ihren Vornamen ein",
-      "lastNamePlaceholder": "Geben Sie Ihren Nachnamen ein",
-      "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
-      "phonePlaceholder": "Geben Sie Ihre Telefonnummer ein",
-      "submit": "Downloads erhalten",
-      "submitting": "Wird gesendet...",
-      "successTitle": "Alles bereit!",
-      "successMessage": "Vielen Dank. Ihre Factsheets stehen unten zum Download bereit.",
-      "downloadEn": "Englisches Factsheet (PDF)",
-      "downloadDe": "Deutsches Factsheet (PDF)",
-      "close": "Schliessen",
-      "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
-      "errorMessage": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
-      "privacyNote": "Wir respektieren Ihre Privatsphäre. Ihre Angaben werden nur zur Bereitstellung dieser Ressourcen verwendet."
+      "viewAllDownloads": "Alle Downloads ansehen"
     }
   },
   "aboutUs": {
@@ -118,7 +93,6 @@
     "description1": "Bei S & L Management und Consulting LLC (SLMC) sind wir stolz darauf, Ihr vertrauenswürdiger Partner für umfassende Lifestyle-Lösungen und Family Office-Dienstleistungen zu sein. Unser Engagement für Exzellenz gründet sich auf ein breites Spektrum an Branchenerfahrung, ein Bekenntnis zu persönlichem Service und ein globales Netzwerk geschätzter Partner.",
     "description2": "SLMC est bas  au canton de Schwyz (Suisse), le canton central suisse bord  par le lac de Zurich et le lac des Quatre-Cantons, connu pour son cluster Finance, Blockchain et Health Tech en Suisse. SLMC a galement une pr sence  Beijing (RPC).",
     "description3": "Nous collaborons  troitement avec des partenaires premium s lectionn s en Suisse et en Asie pour cr er des solutions de style de vie exhaustives et individualis es pour les familles ou les individus ayant des int r ts commerciaux ou priv s en Suisse et en Asie.",
-
     "team": {
       "title": "Unser Team",
       "description1": "SLMC ist ein Team mit vielfältigen Hintergründen und Perspektiven. Unser Engagement für Exzellenz basiert auf einem reichen Erfahrungsschatz und einer Hingabe an personalisierten Service. Unser Schweizer Team wird von Prof. Dr. Andreas Svoboda geleitet. Wir arbeiten eng mit ausgewählten externen Premium-Partnern zusammen, die sich auf die Komplexität der Finanzwelt spezialisiert haben, einschließlich Bankwesen, Versicherungen und Family Office-Dienstleistungen. Mit einem tiefen Verständnis für die einzigartigen Herausforderungen von UHNWI bieten wir maßgeschneiderte Lösungen, die den höchsten Standards entsprechen.",
@@ -294,7 +268,8 @@
     "email": "info@slmc.ch",
     "getInTouch": "Kontakt aufnehmen",
     "socialLinkedIn": "LinkedIn",
-    "copyright": "© {year} S&L Management und Consulting LLC. Alle Rechte vorbehalten."
+    "copyright": "© {year} S&L Management und Consulting LLC. Alle Rechte vorbehalten.",
+    "downloads": "Downloads"
   },
   "menu": {
     "home": "Startseite",
@@ -302,9 +277,71 @@
     "services": "Dienstleist.",
     "news": "Neuigkeiten",
     "contact": "Kontakt",
-    "contactUs": "Kontakt"
+    "contactUs": "Kontakt",
+    "downloads": "Downloads"
   },
   "logo": {
     "alt": "S&L Management Logo"
+  },
+  "downloads": {
+    "eyebrow": "Downloads",
+    "title": "Formulare & Dokumente",
+    "description": "Alle Formulare und Informationsblätter von SLMC an einem Ort, auf Deutsch und Englisch. Herunterladen, ausfüllen und an uns zurücksenden – oder einfach vorab nachlesen.",
+    "categories": {
+      "mandates": {
+        "title": "Mandatsformulare",
+        "description": "Die Vereinbarungen, mit denen Sie uns als Ihren Versicherungsbroker beauftragen. Nehmen Sie das PDF zum Ausdrucken und Unterschreiben oder die Word-Datei, wenn Sie sie am Computer ausfüllen möchten."
+      },
+      "factsheets": {
+        "title": "Factsheets",
+        "description": "Kurze Übersichten zu unseren Dienstleistungen und unserer Arbeitsweise."
+      }
+    },
+    "documents": {
+      "co-broker-mandate": {
+        "title": "Versicherungsbroker-Mandat (Co-Broker)",
+        "description": "Beauftragt die S&L Management und Consulting GmbH gemeinsam mit der Strategic Alliances Financial Services AG mit der Betreuung Ihres Versicherungs-Portfolios. Enthält die Informationen nach Art. 45 VAG in Anhang 1–2. Bitte unterschrieben per E-Mail oder Post an uns zurücksenden."
+      },
+      "sme-factsheet": {
+        "title": "KMU-Versicherungs- und Vorsorgeprüfung",
+        "description": "Ein kompakter Überblick darüber, wie wir Unternehmen bei der Optimierung ihrer Versicherungs- und Vorsorgelösungen unterstützen."
+      }
+    },
+    "languages": {
+      "de": "Deutsch",
+      "en": "Englisch"
+    },
+    "formats": {
+      "pdf": "PDF",
+      "docx": "Word-Dokument"
+    },
+    "gatedBadge": "Kurzes Formular",
+    "gatedHint": "Hinterlassen Sie Ihre Angaben – die Download-Links erscheinen sofort.",
+    "unlockButton": "Download erhalten",
+    "help": {
+      "title": "Sie sind unsicher, welches Dokument Sie brauchen?",
+      "description": "Schreiben Sie uns kurz – wir senden Ihnen das passende Formular zu oder gehen es persönlich mit Ihnen durch.",
+      "cta": "Kontakt aufnehmen"
+    },
+    "leadForm": {
+      "modalTitle": "Erhalten Sie Ihren Download",
+      "modalDescription": "Bitte geben Sie einige Angaben an und wir schalten „{document}“ für Sie frei.",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail",
+      "phone": "Telefonnummer",
+      "firstNamePlaceholder": "Geben Sie Ihren Vornamen ein",
+      "lastNamePlaceholder": "Geben Sie Ihren Nachnamen ein",
+      "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+      "phonePlaceholder": "Geben Sie Ihre Telefonnummer ein",
+      "submit": "Downloads erhalten",
+      "submitting": "Wird gesendet...",
+      "successTitle": "Alles bereit!",
+      "successMessage": "Vielen Dank. Ihr Download steht unten bereit.",
+      "close": "Schliessen",
+      "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "errorMessage": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+      "privacyNote": "Wir respektieren Ihre Privatsphäre. Ihre Angaben werden nur zur Bereitstellung dieser Ressourcen verwendet."
+    }
   }
 }

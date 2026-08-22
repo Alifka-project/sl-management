@@ -2,7 +2,6 @@
   "home": {
     "title": "S&L Management en Consulting GmbH",
     "description": "Premium Family Office Diensten in Zwitserland",
-
     "hero": {
       "title": "Welkom bij S & L Management",
       "and": "en",
@@ -10,13 +9,11 @@
       "description": "Bij SLMC bieden we hoogwaardige Family Office Diensten via een holistische en op maat gemaakte aanpak om u te helpen uw unieke levensstijldoelen te bereiken.",
       "viewMore": "Meer Bekijken"
     },
-
     "about": {
       "title": "Over SLMC",
       "description1": "Uw Vertrouwde Levensstijl Oplossingspartner S & L Management en Consulting GmbH (SLMC) is een toonaangevend Zwitsers multi-family office, dat ultravermogende individuen en families bedient vanuit ons hoofdkantoor in Kanton Schwyz, Zwitserland. We bieden een uitgebreid pakket van op maat gemaakte adviesdiensten, waaronder vermogensbeheer, familieopvolgingsplanning en privé levensstijloplossingen.",
       "description2": "Door diepgaande expertise te combineren met een gepersonaliseerde aanpak, zorgen we ervoor dat de evoluerende behoeften van uw familie naadloos worden verzorgd, zodat u zich kunt concentreren op wat echt belangrijk is. Ervaar uitmuntendheid met SLMC en ontdek een nieuwe standaard in family office diensten."
     },
-
     "services": {
       "title": "Onze Kerndiensten",
       "description": "Bij SLMC begrijpen we dat het beheren van persoonlijke en financiële zaken een werkelijk holistische aanpak vereist. We bieden een uitgebreid pakket van premium diensten - van verzekeringen en gezondheidszorgbeheer tot verblijfsplanning en vermogensplanning - ontworpen om u gemoedsrust te bieden in elke fase.",
@@ -48,7 +45,6 @@
         }
       }
     },
-
     "whyChoose": {
       "title": "Waarom U Voor SLMC Zou Moeten Kiezen",
       "description": "We combineren expertise, vertrouwen en een klantgerichte aanpak om uitzonderlijke family office diensten te leveren.",
@@ -67,7 +63,6 @@
         }
       }
     },
-
     "contact": {
       "title": "Neem Contact Op",
       "description": "Neem contact op met ons team om meer te weten te komen over hoe we u kunnen helpen uw levensstijl- en vermogensbeheerdoelen te bereiken.",
@@ -83,33 +78,13 @@
         "submit": "Versturen"
       }
     },
-
     "factsheet": {
       "title": "Download Onze Factsheet",
       "description": "Ontvang onze factsheet over de Verzekerings- en Pensioenbeoordeling voor het MKB — een beknopt overzicht van hoe wij bedrijven helpen hun verzekerings- en pensioenoplossingen te optimaliseren. Beschikbaar in het Engels en Duits.",
       "englishLabel": "Engels",
       "germanLabel": "Duits",
       "downloadButton": "Factsheet Downloaden",
-      "modalTitle": "Ontvang Uw Factsheet",
-      "modalDescription": "Deel enkele gegevens en wij ontgrendelen zowel de Engelse als de Duitse factsheet voor u.",
-      "firstName": "Voornaam",
-      "lastName": "Achternaam",
-      "email": "E-mail",
-      "phone": "Telefoonnummer",
-      "firstNamePlaceholder": "Voer uw voornaam in",
-      "lastNamePlaceholder": "Voer uw achternaam in",
-      "emailPlaceholder": "Voer uw e-mail in",
-      "phonePlaceholder": "Voer uw telefoonnummer in",
-      "submit": "Downloads Ontvangen",
-      "submitting": "Verzenden...",
-      "successTitle": "Alles is klaar!",
-      "successMessage": "Bedankt. Uw factsheets staan hieronder klaar om te downloaden.",
-      "downloadEn": "Engelse Factsheet (PDF)",
-      "downloadDe": "Duitse Factsheet (PDF)",
-      "close": "Sluiten",
-      "invalidEmail": "Voer een geldig e-mailadres in.",
-      "errorMessage": "Er is iets misgegaan. Probeer het opnieuw.",
-      "privacyNote": "Wij respecteren uw privacy. Uw gegevens worden alleen gebruikt om deze bronnen te delen."
+      "viewAllDownloads": "Alle downloads bekijken"
     }
   },
   "aboutUs": {
@@ -118,7 +93,6 @@
     "description1": "Bij S & L Management en Consulting LLC (SLMC) zijn we er trots op uw vertrouwde partner te zijn voor uitgebreide levensstijloplossingen en family office diensten. Onze toewijding aan uitmuntendheid is gebaseerd op een breed spectrum van branche-ervaring, toewijding aan gepersonaliseerde service, en een wereldwijd netwerk van gewaardeerde partners.",
     "description2": "SLMC heeft zijn hoofdkantoor in het kanton Schwyz (Zwitserland), het centrale Zwitserse kanton aan het Meer van Z rich en het Vier Kantonenmeer, bekend om zijn cluster van Financi n, Blockchain en Gezondheidstechnologie in Zwitserland. SLMC heeft ook een vestiging in Beijing (VRC).",
     "description3": "Wij werken nauw samen met geselecteerde premium partners in Zwitserland en Azi  om exhaustieve en individuele levensstijl-oplossingen te cre ren voor families of individuen met zakelijke of particuliere belangen in Zwitserland en Azi .",
-
     "team": {
       "title": "Ons team",
       "description1": "SLMC is een team met diverse achtergronden en perspectieven. Ons engagement voor excellentie is gebaseerd op een rijke ervaring en een toewijding aan persoonlijke dienstverlening. Ons Zwitserse team wordt geleid door Prof. Dr. Andreas Svoboda. We werken nauw samen met externe partners van hoge kwaliteit die gespecialiseerd zijn in de complexiteit van de financiële wereld, waaronder banken, verzekeraars en diensten van Family Office. Met een diep begrip van de unieke uitdagingen van UHNWI, bieden wij op maat gemaakte oplossingen die voldoen aan de hoogste standaarden.",
@@ -294,7 +268,8 @@
     "getInTouch": "Neem Contact Op",
     "home": "Home",
     "socialLinkedIn": "LinkedIn",
-    "copyright": "© {year} S&L Management en Consulting LLC. Alle rechten voorbehouden."
+    "copyright": "© {year} S&L Management en Consulting LLC. Alle rechten voorbehouden.",
+    "downloads": "Downloads"
   },
   "menu": {
     "home": "Home",
@@ -302,9 +277,71 @@
     "services": "Servicios Familiares",
     "news": "Noticias y Eventos",
     "contact": "Contacto",
-    "contactUs": "Contáctenos"
+    "contactUs": "Contáctenos",
+    "downloads": "Downloads"
   },
   "logo": {
     "alt": "S&L Management Logo"
+  },
+  "downloads": {
+    "eyebrow": "Downloads",
+    "title": "Formulieren & Documenten",
+    "description": "Alle formulieren en informatiebladen van SLMC op één plek, in het Duits en Engels. Download ze, vul ze in en stuur ze naar ons terug — of lees ze gewoon vooraf door.",
+    "categories": {
+      "mandates": {
+        "title": "Mandaatformulieren",
+        "description": "De overeenkomsten waarmee u ons aanstelt als uw verzekeringsmakelaar. Neem de PDF om af te drukken en te ondertekenen, of het Word-bestand als u het liever op uw computer invult."
+      },
+      "factsheets": {
+        "title": "Factsheets",
+        "description": "Korte overzichten van onze diensten en onze werkwijze."
+      }
+    },
+    "documents": {
+      "co-broker-mandate": {
+        "title": "Verzekeringsmakelaarsmandaat (Co-Broker)",
+        "description": "Machtigt S&L Management und Consulting GmbH, samen met Strategic Alliances Financial Services AG, om uw verzekeringsportefeuille te beheren. Inclusief de informatiebijlagen volgens artikel 45 ISA/VAG. Onderteken het en stuur het per e-mail of post naar ons terug."
+      },
+      "sme-factsheet": {
+        "title": "Verzekerings- en Pensioenbeoordeling voor het MKB",
+        "description": "Een beknopt overzicht van hoe wij bedrijven helpen hun verzekerings- en pensioenoplossingen te optimaliseren."
+      }
+    },
+    "languages": {
+      "de": "Duits",
+      "en": "Engels"
+    },
+    "formats": {
+      "pdf": "PDF",
+      "docx": "Word-document"
+    },
+    "gatedBadge": "Kort formulier",
+    "gatedHint": "Laat uw gegevens achter en de downloadlinks verschijnen direct.",
+    "unlockButton": "Download ontvangen",
+    "help": {
+      "title": "Weet u niet welk document u nodig heeft?",
+      "description": "Stuur ons een kort bericht en wij sturen u het juiste formulier — of nemen het persoonlijk met u door.",
+      "cta": "Neem contact op"
+    },
+    "leadForm": {
+      "modalTitle": "Ontvang Uw Download",
+      "modalDescription": "Deel enkele gegevens en wij ontgrendelen “{document}” voor u.",
+      "firstName": "Voornaam",
+      "lastName": "Achternaam",
+      "email": "E-mail",
+      "phone": "Telefoonnummer",
+      "firstNamePlaceholder": "Voer uw voornaam in",
+      "lastNamePlaceholder": "Voer uw achternaam in",
+      "emailPlaceholder": "Voer uw e-mail in",
+      "phonePlaceholder": "Voer uw telefoonnummer in",
+      "submit": "Downloads Ontvangen",
+      "submitting": "Verzenden...",
+      "successTitle": "Alles is klaar!",
+      "successMessage": "Bedankt. Uw download staat hieronder klaar.",
+      "close": "Sluiten",
+      "invalidEmail": "Voer een geldig e-mailadres in.",
+      "errorMessage": "Er is iets misgegaan. Probeer het opnieuw.",
+      "privacyNote": "Wij respecteren uw privacy. Uw gegevens worden alleen gebruikt om deze bronnen te delen."
+    }
   }
 }
