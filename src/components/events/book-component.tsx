@@ -16,7 +16,7 @@ const fadeIn = {
 }
 
 const NewsEvent = () => {
-  const t = useTranslations('newsEvent')
+  const t = useTranslations('insights')
 
   return (
     <motion.div
@@ -42,12 +42,19 @@ const NewsEvent = () => {
 
       {/* Right side with content */}
       <div className='w-full md:w-2/3 p-6'>
+        <span className='block text-[#252525]/60 font-bold uppercase tracking-[3px] text-xs sm:text-sm mb-3'>
+          {t('eyebrow')}
+        </span>
         <h1 className='text-4xl font-bold text-gray-800 mb-2'>{t('title')}</h1>
         <p className='text-lg text-gray-700 mb-4'>{t('subTitle')}</p>
 
-        <p className='text-xl text-gray-700 mb-4 text-justify'>{t('description1')}</p>
+        <p className='text-xl text-gray-700 mb-4 text-justify'>
+          {t('description1')}
+        </p>
 
-        <p className='text-xl text-gray-700 mb-6 text-justify'>{t('description2')}</p>
+        <p className='text-xl text-gray-700 mb-6 text-justify'>
+          {t('description2')}
+        </p>
 
         <div className='mt-12'>
           <a href='https://www.amazon.com/Family-Business-Management-Andreas-Svoboda/dp/B0CN5QJSDJ'>

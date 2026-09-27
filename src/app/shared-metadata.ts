@@ -10,8 +10,10 @@ export type PageType =
   | 'art-45'
   | 'contact-us'
   | 'downloads'
-  | 'news'
-  | 'services'
+  | 'insights'
+  | 'insurance-pensions'
+  | 'family-office'
+  | 'international-solutions'
 
 interface PageMetadata {
   title: string
@@ -80,29 +82,55 @@ const pageData: Record<Locale, Record<PageType, PageMetadata>> = {
       ],
       image: '/images/logo_only.svg',
     },
-    news: {
-      title: 'News & Updates - SLMC',
+    insights: {
+      title: 'Insights - SLMC',
       description:
-        'Stay updated with the latest news, announcements, and insights from SLMC',
+        'Commentary, publications and updates from SLMC on insurance, pensions, family business and cross-border planning',
       keywords: [
-        'slmc news',
-        'updates',
-        'announcements',
-        'insights',
+        'slmc insights',
+        'family business management',
+        'publications',
+        'commentary',
         'company news',
       ],
       image: '/images/logo_only.svg',
     },
-    services: {
-      title: 'Professional Services - SLMC',
+    'insurance-pensions': {
+      title: 'Insurance & Pensions - SLMC',
       description:
-        'Discover our comprehensive range of professional services and business solutions',
+        'FINMA-registered insurance broking for Swiss companies and private clients: corporate and private insurance, BVG/LPP pensions, employee benefits and risk management',
       keywords: [
-        'professional services',
-        'business solutions',
-        'consulting',
-        'expertise',
-        'slmc services',
+        'insurance broker switzerland',
+        'bvg lpp pensions',
+        'employee benefits',
+        'risk management',
+        'corporate insurance',
+      ],
+      image: '/images/logo_only.svg',
+    },
+    'family-office': {
+      title: 'Family Office & Private Clients - SLMC',
+      description:
+        'Coordination for families, entrepreneurs and private clients: relocation, wealth and succession planning, tax and legal specialists, healthcare and property',
+      keywords: [
+        'family office switzerland',
+        'private clients',
+        'wealth planning',
+        'succession planning',
+        'relocation services',
+      ],
+      image: '/images/logo_only.svg',
+    },
+    'international-solutions': {
+      title: 'International Solutions - SLMC',
+      description:
+        'Cross-border planning across Switzerland, Europe and Asia, with access to regulated investment providers, banks and specialists',
+      keywords: [
+        'cross-border planning',
+        'regulated investment providers',
+        'global mobility',
+        'expatriates switzerland',
+        'asia desk',
       ],
       image: '/images/logo_only.svg',
     },
@@ -172,29 +200,55 @@ const pageData: Record<Locale, Record<PageType, PageMetadata>> = {
       ],
       image: '/images/logo_only.svg',
     },
-    news: {
-      title: 'Noticias y Actualizaciones - SLMC',
+    insights: {
+      title: 'Insights - SLMC',
       description:
-        'Mantente actualizado con las últimas noticias, anuncios e información de SLMC',
+        'Análisis, publicaciones y novedades de SLMC sobre seguros, pensiones, empresa familiar y planificación transfronteriza',
       keywords: [
-        'noticias slmc',
-        'actualizaciones',
-        'anuncios',
-        'información',
+        'slmc insights',
+        'empresa familiar',
+        'publicaciones',
+        'análisis',
         'noticias empresa',
       ],
       image: '/images/logo_only.svg',
     },
-    services: {
-      title: 'Servicios Profesionales - SLMC',
+    'insurance-pensions': {
+      title: 'Seguros y Pensiones - SLMC',
       description:
-        'Descubre nuestra amplia gama de servicios profesionales y soluciones empresariales',
+        'Corretaje de seguros registrado en la FINMA para empresas suizas y clientes privados: seguros de empresa y privados, previsión BVG/LPP, seguros para empleados y gestión de riesgos',
       keywords: [
-        'servicios profesionales',
-        'soluciones empresariales',
-        'consultoría',
-        'experiencia',
-        'servicios slmc',
+        'corredor de seguros suiza',
+        'pensiones bvg lpp',
+        'seguros para empleados',
+        'gestión de riesgos',
+        'seguros de empresa',
+      ],
+      image: '/images/logo_only.svg',
+    },
+    'family-office': {
+      title: 'Family Office y Clientes Privados - SLMC',
+      description:
+        'Coordinación para familias, empresarios y clientes privados: traslados, planificación patrimonial y sucesoria, especialistas fiscales y jurídicos, salud e inmuebles',
+      keywords: [
+        'family office suiza',
+        'clientes privados',
+        'planificación patrimonial',
+        'planificación sucesoria',
+        'servicios de traslado',
+      ],
+      image: '/images/logo_only.svg',
+    },
+    'international-solutions': {
+      title: 'Soluciones Internacionales - SLMC',
+      description:
+        'Planificación transfronteriza entre Suiza, Europa y Asia, con acceso a proveedores de inversión regulados, bancos y especialistas',
+      keywords: [
+        'planificación transfronteriza',
+        'proveedores de inversión regulados',
+        'movilidad internacional',
+        'expatriados suiza',
+        'mesa de asia',
       ],
       image: '/images/logo_only.svg',
     },
@@ -264,29 +318,55 @@ const pageData: Record<Locale, Record<PageType, PageMetadata>> = {
       ],
       image: '/images/logo_only.svg',
     },
-    news: {
-      title: 'Nieuws & Updates - SLMC',
+    insights: {
+      title: 'Insights - SLMC',
       description:
-        'Blijf op de hoogte van het laatste nieuws, aankondigingen en inzichten van SLMC',
+        'Analyses, publicaties en nieuws van SLMC over verzekeringen, pensioenen, familiebedrijven en grensoverschrijdende planning',
       keywords: [
-        'slmc nieuws',
-        'updates',
-        'aankondigingen',
-        'inzichten',
+        'slmc insights',
+        'familiebedrijf',
+        'publicaties',
+        'analyses',
         'bedrijfsnieuws',
       ],
       image: '/images/logo_only.svg',
     },
-    services: {
-      title: 'Professionele Diensten - SLMC',
+    'insurance-pensions': {
+      title: 'Verzekeringen & Pensioenen - SLMC',
       description:
-        'Ontdek ons uitgebreide aanbod van professionele diensten en zakelijke oplossingen',
+        'Bij de FINMA geregistreerde verzekeringsbemiddeling voor Zwitserse ondernemingen en particuliere cliënten: zakelijke en particuliere verzekeringen, BVG/LPP-pensioenen, personeelsverzekeringen en risicobeheer',
       keywords: [
-        'professionele diensten',
-        'zakelijke oplossingen',
-        'consultancy',
-        'expertise',
-        'slmc diensten',
+        'verzekeringsmakelaar zwitserland',
+        'bvg lpp pensioen',
+        'personeelsverzekeringen',
+        'risicobeheer',
+        'zakelijke verzekeringen',
+      ],
+      image: '/images/logo_only.svg',
+    },
+    'family-office': {
+      title: 'Family Office & Particuliere Cliënten - SLMC',
+      description:
+        'Coördinatie voor families, ondernemers en particuliere cliënten: verhuizing, vermogens- en opvolgingsplanning, fiscale en juridische specialisten, zorg en vastgoed',
+      keywords: [
+        'family office zwitserland',
+        'particuliere cliënten',
+        'vermogensplanning',
+        'opvolgingsplanning',
+        'verhuisdiensten',
+      ],
+      image: '/images/logo_only.svg',
+    },
+    'international-solutions': {
+      title: 'Internationale Oplossingen - SLMC',
+      description:
+        'Grensoverschrijdende planning tussen Zwitserland, Europa en Azië, met toegang tot gereguleerde beleggingsaanbieders, banken en specialisten',
+      keywords: [
+        'grensoverschrijdende planning',
+        'gereguleerde beleggingsaanbieders',
+        'internationale mobiliteit',
+        'expats zwitserland',
+        'azië desk',
       ],
       image: '/images/logo_only.svg',
     },
@@ -356,29 +436,55 @@ const pageData: Record<Locale, Record<PageType, PageMetadata>> = {
       ],
       image: '/images/logo_only.svg',
     },
-    news: {
-      title: 'News & Updates - SLMC',
+    insights: {
+      title: 'Insights - SLMC',
       description:
-        'Bleiben Sie auf dem Laufenden mit den neuesten Nachrichten, Ankündigungen und Einblicken von SLMC',
+        'Beiträge, Publikationen und Neuigkeiten von SLMC zu Versicherungen, Vorsorge, Familienunternehmen und grenzüberschreitender Planung',
       keywords: [
-        'slmc news',
-        'updates',
-        'ankündigungen',
-        'einblicke',
+        'slmc insights',
+        'familienunternehmen',
+        'publikationen',
+        'fachbeiträge',
         'unternehmensnews',
       ],
       image: '/images/logo_only.svg',
     },
-    services: {
-      title: 'Professionelle Dienstleistungen - SLMC',
+    'insurance-pensions': {
+      title: 'Versicherungen & Vorsorge - SLMC',
       description:
-        'Entdecken Sie unser umfassendes Angebot an professionellen Dienstleistungen und Geschäftslösungen',
+        'FINMA-registrierte Versicherungsbrokerdienstleistungen für Schweizer Unternehmen und Privatkunden: Unternehmens- und Privatversicherungen, BVG, Personalversicherungen und Risikomanagement',
       keywords: [
-        'professionelle dienstleistungen',
-        'geschäftslösungen',
-        'beratung',
-        'expertise',
-        'slmc dienstleistungen',
+        'versicherungsbroker schweiz',
+        'bvg vorsorge',
+        'personalversicherungen',
+        'risikomanagement',
+        'unternehmensversicherung',
+      ],
+      image: '/images/logo_only.svg',
+    },
+    'family-office': {
+      title: 'Family Office & Privatkunden - SLMC',
+      description:
+        'Koordination für Familien, Unternehmer und Privatkunden: Umzug, Vermögens- und Nachfolgeplanung, Steuer- und Rechtsspezialisten, Gesundheit und Immobilien',
+      keywords: [
+        'family office schweiz',
+        'privatkunden',
+        'vermögensplanung',
+        'nachfolgeplanung',
+        'relocation schweiz',
+      ],
+      image: '/images/logo_only.svg',
+    },
+    'international-solutions': {
+      title: 'Internationale Lösungen - SLMC',
+      description:
+        'Grenzüberschreitende Planung zwischen der Schweiz, Europa und Asien – mit Zugang zu regulierten Anlageanbietern, Banken und Spezialisten',
+      keywords: [
+        'grenzüberschreitende planung',
+        'regulierte anlageanbieter',
+        'internationale mobilität',
+        'expatriates schweiz',
+        'asien desk',
       ],
       image: '/images/logo_only.svg',
     },
@@ -388,13 +494,7 @@ const pageData: Record<Locale, Record<PageType, PageMetadata>> = {
       title: '下载中心 - 表格与文件 | SLMC',
       description:
         '下载 SLMC 的保险经纪委托表格和资料概览，提供德文和英文版本，可直接填写、签署并回传。',
-      keywords: [
-        'slmc 下载',
-        '经纪委托书',
-        '保险表格',
-        '资料概览',
-        '瑞士',
-      ],
+      keywords: ['slmc 下载', '经纪委托书', '保险表格', '资料概览', '瑞士'],
       image: '/images/logo_only.svg',
     },
     home: {
@@ -421,16 +521,50 @@ const pageData: Record<Locale, Record<PageType, PageMetadata>> = {
       keywords: ['联系slmc', '取得联系', '支持', '咨询', '询问'],
       image: '/images/logo_only.svg',
     },
-    news: {
-      title: '新闻与更新 - SLMC',
-      description: '及时了解SLMC的最新新闻、公告和见解',
-      keywords: ['slmc新闻', '更新', '公告', '见解', '公司新闻'],
+    insights: {
+      title: '洞察 - SLMC',
+      description:
+        'SLMC 关于保险、养老金、家族企业与跨境规划的观点、出版物与动态',
+      keywords: ['slmc洞察', '家族企业', '出版物', '专业观点', '公司新闻'],
       image: '/images/logo_only.svg',
     },
-    services: {
-      title: '专业服务 - SLMC',
-      description: '探索我们全面的专业服务和商业解决方案',
-      keywords: ['专业服务', '商业解决方案', '咨询', '专业知识', 'slmc服务'],
+    'insurance-pensions': {
+      title: '保险与养老金 - SLMC',
+      description:
+        '在 FINMA 注册的保险经纪服务，面向瑞士企业及私人客户：企业与个人保险、BVG/LPP 养老金、员工福利与风险管理',
+      keywords: [
+        '瑞士保险经纪',
+        'bvg lpp养老金',
+        '员工福利',
+        '风险管理',
+        '企业保险',
+      ],
+      image: '/images/logo_only.svg',
+    },
+    'family-office': {
+      title: '家族办公室与私人客户 - SLMC',
+      description:
+        '为家族、企业家与私人客户提供统筹服务：迁居、财富与传承规划、税务与法律专家、医疗及房产',
+      keywords: [
+        '瑞士家族办公室',
+        '私人客户',
+        '财富规划',
+        '传承规划',
+        '迁居服务',
+      ],
+      image: '/images/logo_only.svg',
+    },
+    'international-solutions': {
+      title: '国际解决方案 - SLMC',
+      description:
+        '瑞士、欧洲与亚洲之间的跨境规划，并可对接受监管的投资机构、银行与专业顾问',
+      keywords: [
+        '跨境规划',
+        '受监管投资机构',
+        '国际派遣',
+        '瑞士外派人员',
+        '亚洲业务部',
+      ],
       image: '/images/logo_only.svg',
     },
   },

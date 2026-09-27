@@ -29,9 +29,9 @@ export default function LanguageSwitcher() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant='outline' className='flex items-center'>
-          <span className='mr-2 font-bold'>{languageFlags[locale]}</span>
-          <span className='mr-1 hidden sm:inline font-bold'>
+        <Button variant='outline' className='flex items-center px-2 sm:px-3'>
+          <span className='font-bold'>{languageFlags[locale]}</span>
+          <span className='mx-1 hidden sm:max-lg:inline 2xl:inline font-bold'>
             {languageNames[locale]}
           </span>
           <ChevronDown size={16} />

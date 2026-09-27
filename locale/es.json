@@ -109,23 +109,85 @@
       }
     }
   },
-  "familyService": {
-    "title": "Nuestros Servicios Familiares",
-    "description": "A continuación, encontrará un breve resumen de los servicios especializados que ofrecemos para garantizar que cada aspecto de su vida personal, financiera y profesional esté gestionado de manera óptima. Seleccione uno de los servicios para obtener más información o contáctenos directamente para una consulta personalizada.",
-    "1": {
-      "title": "Seguros",
-      "description": "Proteja sus activos y seres queridos con nuestras soluciones de seguro integrales. Nuestros asesores realizan revisiones exhaustivas y crean estrategias personalizadas, asegurando que todos los aspectos de su vida est n plenamente cubiertos.",
+  "insurancePensions": {
+    "eyebrow": "Actividad Principal Regulada",
+    "title": "Seguros y Pensiones",
+    "description": "Los seguros y la previsión profesional son el núcleo regulado de nuestro trabajo. Como corredor de seguros independiente registrado en la FINMA (registro de intermediarios n.º F01470698), SLMC asesora a empresas suizas y a clientes privados en seguros de empresa y privados, soluciones de previsión BVG/LPP, seguros para empleados y gestión de riesgos, desde el primer análisis hasta la licitación, la colocación y la gestión de siniestros.",
+    "corporate": {
+      "title": "Seguros de Empresa",
+      "description": "Identificamos los riesgos que su empresa asume realmente y diseñamos y colocamos la cobertura que les corresponde. Mantiene un único interlocutor para licitaciones, renovaciones y preguntas del día a día.",
       "items": {
-        "1": "Revisión Integral de Seguros",
-        "2": "Soluciones de Seguros a Medida",
-        "3": "Gestión de Riesgos",
-        "4": "Planificación Estratégica",
-        "5": "Gestión de Reclamaciones",
-        "6": "Revisiones y Ajustes Regulares",
-        "7": "Cumplimiento y Regulación"
+        "1": "Análisis de riesgos y seguros",
+        "2": "Daños materiales y responsabilidad civil",
+        "3": "Interrupción de negocio",
+        "4": "Licitación y colocación",
+        "5": "Administración de pólizas",
+        "6": "Revisión anual de renovación"
       }
     },
-    "2": {
+    "private": {
+      "title": "Seguros Privados",
+      "description": "Una revisión estructurada de todo lo que usted y su familia ya tienen contratado —salud, vida, hogar, responsabilidad civil, automóvil y defensa jurídica— con una recomendación clara sobre qué mantener, modificar o cancelar.",
+      "items": {
+        "1": "Revisión integral de seguros",
+        "2": "Salud y accidentes",
+        "3": "Vida e incapacidad",
+        "4": "Hogar y responsabilidad civil",
+        "5": "Automóvil y defensa jurídica",
+        "6": "Revisiones periódicas"
+      }
+    },
+    "bvg": {
+      "title": "Previsión Profesional (BVG/LPP)",
+      "description": "El plan de pensiones es una de las partidas más importantes de una nómina suiza y una de las prestaciones más valoradas. Comparamos proveedores, calculamos el coste de cada opción y diseñamos un plan que funcione para la empresa y para su personal.",
+      "items": {
+        "1": "Diseño del plan BVG/LPP",
+        "2": "Licitación de fondos de pensiones",
+        "3": "Comparación de fundaciones colectivas",
+        "4": "Planes 1e para directivos",
+        "5": "Análisis de aportaciones y jubilación anticipada",
+        "6": "Certificados de prestaciones"
+      }
+    },
+    "employeeBenefits": {
+      "title": "Seguros para Empleados",
+      "description": "Coberturas de accidentes, subsidio diario por enfermedad y salud complementaria, organizadas como un paquete coherente y explicadas a sus empleados en lenguaje claro.",
+      "items": {
+        "1": "LAA y LAA complementaria",
+        "2": "Subsidio diario por enfermedad",
+        "3": "Salud colectiva y viajes",
+        "4": "Planes para directivos",
+        "5": "Comunicación a los empleados"
+      }
+    },
+    "riskManagement": {
+      "title": "Gestión de Riesgos",
+      "description": "No todos los riesgos corresponden a una aseguradora. Le ayudamos a identificarlos y cuantificarlos y, después, a decidir cuáles retener, reducir o transferir, con el razonamiento documentado.",
+      "items": {
+        "1": "Mapeo y cuantificación de riesgos",
+        "2": "Conceptos de financiación de riesgos",
+        "3": "Estrategia de retención y franquicias",
+        "4": "Revisión de continuidad del negocio",
+        "5": "Cumplimiento y normativa"
+      }
+    },
+    "claims": {
+      "title": "Siniestros y Seguimiento",
+      "description": "Cuando ocurre algo, habla con su asesor y no con un centro de llamadas. Notificamos a la aseguradora, negociamos en su nombre y seguimos el expediente hasta su liquidación.",
+      "items": {
+        "1": "Notificación de siniestros",
+        "2": "Negociación con aseguradoras",
+        "3": "Seguimiento de la liquidación",
+        "4": "Auditoría de contratos y primas",
+        "5": "Asesor personal asignado"
+      }
+    }
+  },
+  "familyOffice": {
+    "eyebrow": "Familias, Empresarios y Clientes Privados",
+    "title": "Family Office y Clientes Privados",
+    "description": "Más allá de los seguros y las pensiones, coordinamos los asuntos cotidianos y de largo plazo que las familias, los empresarios y los clientes privados preferirían no gestionar solos: traslados, planificación patrimonial y sucesoria, especialistas fiscales y jurídicos, salud, inmuebles y lo que traiga el año.",
+    "relocation": {
       "title": "Servicios de Reubicación",
       "description": "Haga su mudanza sin estrés con nuestros servicios especializados de reubicación. Desde la investigación del destino hasta el apoyo para la adaptación, manejamos cada detalle para una transición suave, sin importar a dónde le lleve la vida.",
       "items": {
@@ -141,7 +203,7 @@
         "10": "Comunicación Continua"
       }
     },
-    "3": {
+    "wealthPlanning": {
       "title": "Planificación Patrimonial",
       "description": "Asegure su futuro financiero con nuestras soluciones de planificaci n de patrimonio expertas. Desarrollamos estrategias personalizadas que alinean sus activos con sus metas y aspiraciones personales - asegurando crecimiento y estabilidad a largo plazo.",
       "items": {
@@ -154,7 +216,7 @@
         "7": "Evaluación Financiera Holística"
       }
     },
-    "4": {
+    "taxLegal": {
       "title": "Asesoramiento Fiscal y Legal",
       "description": "Navegue por los complejos paisajes legales y fiscales con confianza. Nuestros asesores brindan orientaci n estrat gica para optimizar su posici n financiera y garantizar el cumplimiento total de las regulaciones relevantes.",
       "items": {
@@ -165,24 +227,90 @@
         "5": "Gestión de fideicomisos"
       }
     },
-    "5": {
+    "healthcare": {
       "title": "Gestión de Atención Médica",
       "description": "Disfrute de atención médica de primera clase a través de nuestras alianzas con proveedores líderes. Coordinamos todo, desde revisiones rutinarias hasta tratamientos especializados, garantizando servicios médicos rápidos y de alta calidad.",
-      "items": {}
+      "items": {
+        "1": "Acceso a la red de proveedores",
+        "2": "Segundas opiniones",
+        "3": "Coordinación de citas y tratamientos",
+        "4": "Apoyo en tratamientos en el extranjero",
+        "5": "Alineación con el seguro de salud"
+      }
     },
-    "6": {
+    "realEstate": {
       "title": "Servicios Inmobiliarios",
       "description": "Encuentre su hogar perfecto o propiedad de inversión con nuestros expertos inmobiliarios. Desde búsquedas de propiedades y negociaciones hasta cierres sin problemas, hacemos que su experiencia inmobiliaria sea tanto gratificante como eficiente.",
-      "items": {}
+      "items": {
+        "1": "Búsqueda de propiedades",
+        "2": "Visitas y negociación",
+        "3": "Apoyo en compra y venta",
+        "4": "Presentaciones de financiación",
+        "5": "Alquiler y gestión de la propiedad"
+      }
     },
-    "7": {
+    "bespoke": {
       "title": "Servicios a Medida",
       "description": "Experimente soluciones verdaderamente personalizadas con nuestros exclusivos Servicios a Medida. Atendemos sus requisitos únicos con una atención al detalle sin igual y excelencia en el servicio.",
-      "items": {}
-    },
-    "contactUs": "Contáctenos"
+      "items": {
+        "1": "Solicitudes de conserjería",
+        "2": "Educación y búsqueda de colegios",
+        "3": "Personal doméstico y administración",
+        "4": "Arte, coleccionables y bienes de lujo",
+        "5": "Organización de eventos y viajes"
+      }
+    }
   },
-  "newsEvent": {
+  "internationalSolutions": {
+    "eyebrow": "Coordinación Transfronteriza",
+    "title": "Soluciones Internacionales",
+    "description": "Las familias y los empresarios rara vez mantienen su vida dentro de una sola frontera. Coordinamos la planificación transfronteriza entre Suiza, Europa y Asia y abrimos el acceso a proveedores de inversión regulados, bancos y especialistas, para que las piezas de cada jurisdicción encajen.",
+    "crossBorder": {
+      "title": "Planificación Transfronteriza",
+      "description": "Dónde vive, dónde trabaja y dónde están sus activos suelen ser tres respuestas distintas. Coordinamos las consecuencias en materia de seguros, previsión y planificación con los especialistas de cada país.",
+      "items": {
+        "1": "Coordinación de residencia y traslado",
+        "2": "Planificación transfronteriza de pensiones",
+        "3": "Coordinación de la seguridad social",
+        "4": "Aspectos de doble imposición",
+        "5": "Cobertura en varias jurisdicciones"
+      }
+    },
+    "investmentProviders": {
+      "title": "Proveedores de Inversión Regulados",
+      "description": "No gestionamos su patrimonio. Le presentamos proveedores suizos e internacionales autorizados, comparamos sus mandatos y comisiones en paralelo y seguimos implicados en la revisión de su desempeño.",
+      "items": {
+        "1": "Selección de proveedores y due diligence",
+        "2": "Acceso a plataformas reguladas",
+        "3": "Presentaciones de custodia y banca",
+        "4": "Comparación de mandatos y comisiones",
+        "5": "Revisión continua del proveedor"
+      }
+    },
+    "globalMobility": {
+      "title": "Movilidad Internacional y Expatriados",
+      "description": "Llegar a Suiza, enviar personal al extranjero o volver a mudarse: cada paso cambia la cobertura que necesita y los derechos que le corresponden. Preparamos esos movimientos antes de que ocurran.",
+      "items": {
+        "1": "Revisiones antes de la salida y a la llegada",
+        "2": "Programas de seguros para expatriados",
+        "3": "Cobertura sanitaria internacional",
+        "4": "Interfaces de expatriación y nómina",
+        "5": "Planificación del retorno"
+      }
+    },
+    "asiaDesk": {
+      "title": "Mesa de Asia",
+      "description": "Nuestra oficina en Pekín atiende en mandarín a clientes con intereses en Suiza y Asia, trabajando con una red de socios locales verificados en ambos lados.",
+      "items": {
+        "1": "Asesoramiento en mandarín",
+        "2": "Coordinación Suiza–Asia",
+        "3": "Red de socios locales",
+        "4": "Apoyo sobre el terreno"
+      }
+    }
+  },
+  "insights": {
+    "eyebrow": "Insights",
     "title": "Gestión de Empresas Familiares",
     "subTitle": "Por el Dr. Andreas Svoboda",
     "description1": "Dirigir una empresa familiar es un acto de equilibrio—combinando tradición con innovación, lazos familiares con responsabilidad financiera. Gestión de Empresas Familiares explora los desafíos y oportunidades únicas de las empresas familiares, ofreciendo perspectivas para el éxito.",
@@ -249,16 +377,8 @@
   },
   "footer": {
     "description": "Guiando su camino con soluciones a medida y apoyo inquebrantable, asegurando su tranquilidad a lo largo de su viaje hacia el éxito.",
-    "services": "Servicios",
-    "insurance": "Seguros",
-    "wealthPlanning": "Planificación Patrimonial",
-    "residencyPlanning": "Planificación de Residencia",
-    "taxAdvice": "Asesoramiento Fiscal y Legal",
-    "realEstate": "Servicios Inmobiliarios",
     "quickLinks": "Enlaces Rápidos",
     "about": "Sobre Nosotros",
-    "familyServices": "Servicios Familiares",
-    "news": "Noticias y Eventos",
     "careers": "Carreras",
     "privacy": "Política de Privacidad",
     "contact": "Contacto",
@@ -269,16 +389,24 @@
     "socialLinkedIn": "LinkedIn",
     "home": "Inicio",
     "copyright": "© {year} S&L Management y Consulting LLC. Todos los derechos reservados.",
-    "downloads": "Descargas"
+    "downloads": "Formularios y Documentos",
+    "solutions": "Soluciones",
+    "insurancePensions": "Seguros y Pensiones",
+    "familyOffice": "Family Office y Clientes Privados",
+    "internationalSolutions": "Soluciones Internacionales",
+    "insights": "Insights",
+    "resources": "Recursos y Normativa",
+    "art45": "ART45 VAG"
   },
   "menu": {
     "home": "Inicio",
+    "insurancePensions": "Seguros y Pensiones",
+    "familyOffice": "Family Office",
+    "internationalSolutions": "Soluciones Internacionales",
     "about": "Sobre Nosotros",
-    "services": "Servicios Familiares",
-    "news": "Noticias y Eventos",
+    "insights": "Insights",
     "contact": "Contacto",
-    "contactUs": "Contáctenos",
-    "downloads": "Descargas"
+    "contactUs": "Contáctenos"
   },
   "logo": {
     "alt": "Logo de S&L Management"

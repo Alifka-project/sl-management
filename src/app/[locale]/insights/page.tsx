@@ -1,4 +1,3 @@
-// src/app/[locale]/family-service/page.tsx
 import { generatePageMetadata, type Locale } from '@/app/shared-metadata'
 import FamilyBusinessCard from '@/components/events/book-component'
 
@@ -8,8 +7,7 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps) {
   const locale = (await params).locale as Locale
-  return generatePageMetadata(locale, 'news', {
-    // News pages might want different robot settings
+  return generatePageMetadata(locale, 'insights', {
     robots: {
       index: true,
       follow: true,
@@ -24,6 +22,6 @@ export async function generateMetadata({ params }: PageProps) {
   })
 }
 
-export default async function NewsEventPage() {
+export default async function InsightsPage() {
   return <FamilyBusinessCard />
 }

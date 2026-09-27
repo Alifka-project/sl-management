@@ -27,7 +27,7 @@ const ServiceButtons: React.FC<ServiceButtonsProps> = ({ className = '' }) => {
   ]
 
   const handleClick = (service: number): void => {
-    if (services.length === service) router.push('/services')
+    if (services.length === service) router.push('/family-office')
   }
 
   const containerVariants = {

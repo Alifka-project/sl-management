@@ -25,7 +25,7 @@ export default function HeroSection() {
           </div>
         </FadeIn>
         <FadeIn className='mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-12.5'>
-          <Link href={'/services'}>
+          <Link href={'/family-office'}>
             <Button
               variant='default'
               className='text-[#252525] px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-4 lg:px-12 lg:py-5 xl:px-16 xl:py-6 font-bold rounded-[10px] cursor-pointer text-sm sm:text-base md:text-lg'

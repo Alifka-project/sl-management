@@ -109,23 +109,85 @@
       }
     }
   },
-  "familyService": {
-    "title": "Our Family Services",
-    "description": "Below is a brief overview of the specialized services we offer to ensure every aspect of your personal, financial, and professional life is optimally managed. Select any of the services to learn more or contact us directly for a personalized consultation.",
-    "1": {
-      "title": "Insurance",
-      "description": "Protect your assets and loved ones with our comprehensive insurance solutions. Our advisors conduct in-depth reviews and craft personalized strategies, ensuring every aspect of your life is fully covered.",
+  "insurancePensions": {
+    "eyebrow": "Regulated Core Business",
+    "title": "Insurance & Pensions",
+    "description": "Insurance and occupational pensions are the regulated core of what we do. As an independent broker registered with FINMA (intermediary register no. F01470698), SLMC advises Swiss companies and private clients on corporate and private insurance, BVG/LPP pension solutions, employee benefits and risk management — from the first analysis through tendering and placement to claims.",
+    "corporate": {
+      "title": "Corporate Insurance",
+      "description": "We map the risks your company actually carries, then design and place the cover that matches them. You keep one point of contact for tenders, renewals and day-to-day policy questions.",
       "items": {
-        "1": "Comprehensive Insurance Review",
-        "2": "Tailored Insurance Solutions",
-        "3": "Risk Management",
-        "4": "Strategic Planning",
-        "5": "Claims Management",
-        "6": "Regular Reviews and Adjustments",
-        "7": "Compliance and Regulation"
+        "1": "Risk & Insurance Analysis",
+        "2": "Property & Liability",
+        "3": "Business Interruption",
+        "4": "Tendering & Placement",
+        "5": "Policy Administration",
+        "6": "Annual Renewal Review"
       }
     },
-    "2": {
+    "private": {
+      "title": "Private Insurance",
+      "description": "A structured review of everything you and your family already hold — health, life, household, liability, motor and legal protection — followed by a clear recommendation on what to keep, change or cancel.",
+      "items": {
+        "1": "Comprehensive Insurance Review",
+        "2": "Health & Accident",
+        "3": "Life & Disability",
+        "4": "Household & Liability",
+        "5": "Motor & Legal Protection",
+        "6": "Regular Reviews"
+      }
+    },
+    "bvg": {
+      "title": "Occupational Pensions (BVG/LPP)",
+      "description": "Your pension plan is one of the largest items on a Swiss payroll and one of the most valued benefits. We compare providers, model the cost of each option and design a plan that works for the company and for its people.",
+      "items": {
+        "1": "BVG/LPP Plan Design",
+        "2": "Pension Fund Tendering",
+        "3": "Collective Foundation Comparison",
+        "4": "1e Plans for Executives",
+        "5": "Buy-in & Early Retirement Analysis",
+        "6": "Benefit Statements"
+      }
+    },
+    "employeeBenefits": {
+      "title": "Employee Benefits",
+      "description": "Accident, daily sickness benefit and supplementary health cover, arranged as one coherent package and explained to your employees in plain language.",
+      "items": {
+        "1": "UVG & Supplementary Accident",
+        "2": "Daily Sickness Benefits (KTG)",
+        "3": "Group Health & Travel",
+        "4": "Executive Benefit Plans",
+        "5": "Employee Communication"
+      }
+    },
+    "riskManagement": {
+      "title": "Risk Management",
+      "description": "Not every risk belongs with an insurer. We help you identify and quantify your exposures, then decide which ones to retain, reduce or transfer — with the reasoning documented.",
+      "items": {
+        "1": "Risk Mapping & Quantification",
+        "2": "Risk Financing Concepts",
+        "3": "Retention & Deductible Strategy",
+        "4": "Business Continuity Review",
+        "5": "Compliance & Regulation"
+      }
+    },
+    "claims": {
+      "title": "Claims & Ongoing Support",
+      "description": "When something happens you speak to your adviser, not a call centre. We notify the insurer, negotiate on your behalf and stay with the file until it is settled.",
+      "items": {
+        "1": "Claims Notification",
+        "2": "Negotiation with Insurers",
+        "3": "Settlement Monitoring",
+        "4": "Contract & Premium Audits",
+        "5": "Dedicated Client Adviser"
+      }
+    }
+  },
+  "familyOffice": {
+    "eyebrow": "Families, Entrepreneurs & Private Clients",
+    "title": "Family Office & Private Clients",
+    "description": "Beyond insurance and pensions, we coordinate the everyday and long-term matters that families, entrepreneurs and private clients would rather not handle alone — relocation, wealth and succession planning, tax and legal specialists, healthcare, property and whatever else the year brings.",
+    "relocation": {
       "title": "Relocation Services",
       "description": "Make your move stress-free with our specialized relocation services. From destination research to settling-in support, we handle every detail for a smooth transition—no matter where life takes you.",
       "items": {
@@ -141,7 +203,7 @@
         "10": "Continuous Communication"
       }
     },
-    "3": {
+    "wealthPlanning": {
       "title": "Wealth Planning",
       "description": "Secure your financial future with our expert wealth planning solutions. We develop customized strategies that align your assets with your personal goals and aspirations—ensuring long-term growth and stability.",
       "items": {
@@ -154,7 +216,7 @@
         "7": "Holistic Financial Assessment"
       }
     },
-    "4": {
+    "taxLegal": {
       "title": "Tax & Legal Advice",
       "description": "Navigate complex tax and legal landscapes with confidence. Our advisors provide strategic guidance to optimize your financial position and ensure full compliance with relevant regulations.",
       "items": {
@@ -165,24 +227,90 @@
         "5": "Trust management"
       }
     },
-    "5": {
+    "healthcare": {
       "title": "Healthcare Management",
       "description": "Enjoy first-class healthcare through our partnerships with leading providers. We coordinate everything from routine check-ups to specialized treatments, ensuring prompt and premium medical services.",
-      "items": {}
+      "items": {
+        "1": "Provider Network Access",
+        "2": "Second Opinions",
+        "3": "Appointment & Treatment Coordination",
+        "4": "Medical Travel Support",
+        "5": "Health Insurance Alignment"
+      }
     },
-    "6": {
+    "realEstate": {
       "title": "Real Estate Services",
       "description": "Find your perfect home or investment property with our real estate experts. From property searches and negotiations to seamless closings, we make your real estate journey both rewarding and efficient.",
-      "items": {}
+      "items": {
+        "1": "Property Search",
+        "2": "Viewings & Negotiation",
+        "3": "Purchase & Sale Support",
+        "4": "Financing Introductions",
+        "5": "Rental & Property Management"
+      }
     },
-    "7": {
+    "bespoke": {
       "title": "Bespoke Services",
       "description": "Experience truly customized solutions with our exclusive Bespoke Services. We address your unique requirements with unparalleled attention to detail and service excellence.",
-      "items": {}
-    },
-    "contactUs": "Contact Us"
+      "items": {
+        "1": "Concierge Requests",
+        "2": "Education & School Search",
+        "3": "Household Staff & Administration",
+        "4": "Art, Collectibles & Luxury Assets",
+        "5": "Event & Travel Coordination"
+      }
+    }
   },
-  "newsEvent": {
+  "internationalSolutions": {
+    "eyebrow": "Cross-Border Coordination",
+    "title": "International Solutions",
+    "description": "Families and entrepreneurs rarely keep their lives inside one border. We coordinate cross-border planning across Switzerland, Europe and Asia, and open the door to regulated investment providers, banks and specialists — so that the pieces in each jurisdiction fit together.",
+    "crossBorder": {
+      "title": "Cross-Border Planning",
+      "description": "Where you live, where you work and where your assets sit are often three different answers. We coordinate the insurance, pension and planning consequences of that with the specialists in each country.",
+      "items": {
+        "1": "Residency & Relocation Coordination",
+        "2": "Cross-Border Pension Planning",
+        "3": "Social Security Coordination",
+        "4": "Double Taxation Considerations",
+        "5": "Multi-Jurisdiction Cover"
+      }
+    },
+    "investmentProviders": {
+      "title": "Regulated Investment Providers",
+      "description": "We do not manage your money. We introduce you to licensed Swiss and international providers, compare their mandates and fees side by side, and stay involved to review how they perform.",
+      "items": {
+        "1": "Provider Selection & Due Diligence",
+        "2": "Regulated Platform Access",
+        "3": "Custody & Banking Introductions",
+        "4": "Mandate & Fee Comparison",
+        "5": "Ongoing Provider Review"
+      }
+    },
+    "globalMobility": {
+      "title": "Global Mobility & Expatriates",
+      "description": "Arriving in Switzerland, sending staff abroad or moving on again — each step changes what cover you need and what you are entitled to. We prepare those moves before they happen.",
+      "items": {
+        "1": "Pre-Departure & Arrival Reviews",
+        "2": "Expatriate Insurance Programmes",
+        "3": "International Health Cover",
+        "4": "Assignment & Payroll Interfaces",
+        "5": "Repatriation Planning"
+      }
+    },
+    "asiaDesk": {
+      "title": "Asia Desk",
+      "description": "Our Beijing desk serves clients with interests in Switzerland and Asia in Mandarin, working with a network of vetted local partners on both sides.",
+      "items": {
+        "1": "Mandarin-Language Advisory",
+        "2": "Switzerland–Asia Coordination",
+        "3": "Local Partner Network",
+        "4": "On-the-Ground Support"
+      }
+    }
+  },
+  "insights": {
+    "eyebrow": "Insights",
     "title": "Family Business Management",
     "subTitle": "By Dr. Andreas Svoboda",
     "description1": "Running a family business is a balancing act—blending tradition with innovation, family ties with financial responsibility. Family Business Management explores the unique challenges and opportunities of family enterprises, offering insights for success.",
@@ -249,16 +377,8 @@
   },
   "footer": {
     "description": "Guiding your path with tailored solutions and unwavering support, ensuring your peace of mind throughout your journey towards success.",
-    "services": "Services",
-    "insurance": "Insurance",
-    "wealthPlanning": "Wealth Planning",
-    "residencyPlanning": "Residency Planning",
-    "taxAdvice": "Tax & Legal Advice",
-    "realEstate": "Real Estate Services",
     "quickLinks": "Quick Links",
     "about": "About Us",
-    "familyServices": "Family Services",
-    "news": "News & Events",
     "careers": "Careers",
     "privacy": "Privacy Policy",
     "contact": "Contact",
@@ -269,16 +389,24 @@
     "socialLinkedIn": "LinkedIn",
     "getInTouch": "Get In Touch",
     "copyright": "© {year} S&L Management and Consulting LLC. All rights reserved.",
-    "downloads": "Downloads"
+    "downloads": "Forms & Documents",
+    "solutions": "Solutions",
+    "insurancePensions": "Insurance & Pensions",
+    "familyOffice": "Family Office & Private Clients",
+    "internationalSolutions": "International Solutions",
+    "insights": "Insights",
+    "resources": "Resources & Regulatory",
+    "art45": "ART45 VAG"
   },
   "menu": {
     "home": "Home",
+    "insurancePensions": "Insurance & Pensions",
+    "familyOffice": "Family Office",
+    "internationalSolutions": "International Solutions",
     "about": "About Us",
-    "services": "Family Services",
-    "news": "News & Events",
+    "insights": "Insights",
     "contact": "Contact",
-    "contactUs": "Contact Us",
-    "downloads": "Downloads"
+    "contactUs": "Contact Us"
   },
   "logo": {
     "alt": "S&L Management Logo"

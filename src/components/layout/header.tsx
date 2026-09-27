@@ -84,11 +84,11 @@ export default function EnhancedHeader() {
   // Define navigation items
   const navItems = [
     { name: t('home'), href: '/' },
+    { name: t('insurancePensions'), href: '/insurance-pensions' },
+    { name: t('familyOffice'), href: '/family-office' },
+    { name: t('internationalSolutions'), href: '/international-solutions' },
     { name: t('about'), href: '/about' },
-    { name: t('services'), href: '/services' },
-    { name: t('news'), href: '/news' },
-    { name: 'ART45 VAG', href: '/art-45' },
-    { name: t('downloads'), href: '/downloads' },
+    { name: t('insights'), href: '/insights' },
   ]
 
   return (
@@ -141,7 +141,7 @@ export default function EnhancedHeader() {
 
             {/* Navigation in the white area */}
             <div className='flex-1 flex justify-end'>
-              <nav className='flex items-center space-x-4'>
+              <nav className='flex items-center gap-x-2 xl:gap-x-3 2xl:gap-x-5'>
                 {navItems.map(item => {
                   const isActive = isActiveLink(item.href, pathname)
 
@@ -149,7 +149,7 @@ export default function EnhancedHeader() {
                     <Link
                       key={item.href}
                       href={item.href}
-                      className={`font-bold hover:text-[#EABF49] transition-all duration-200 text-base max-2xl:max-w-[150px] text-center break-words ${
+                      className={`font-bold hover:text-[#EABF49] transition-all duration-200 text-[13px] xl:text-sm 2xl:text-base max-w-[100px] xl:max-w-[130px] 2xl:max-w-[170px] text-center leading-snug break-words ${
                         isActive
                           ? 'text-[#EABF49] font-extrabold'
                           : 'text-gray-700'
@@ -164,7 +164,7 @@ export default function EnhancedHeader() {
 
                 <Link href='/contact-us'>
                   <Button
-                    className={`bg-[#EABF49] cursor-pointer text-[#252525] rounded-full font-bold transition-all duration-200 ${
+                    className={`bg-[#EABF49] cursor-pointer text-[#252525] rounded-full font-bold transition-all duration-200 text-[13px] xl:text-sm 2xl:text-base px-3 xl:px-4 whitespace-nowrap ${
                       isScrolled ? 'hover:scale-105 shadow-md' : ''
                     }`}
                   >

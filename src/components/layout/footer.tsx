@@ -1,31 +1,36 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
 'use client'
 
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/routing'
-import { useScrollToHash } from '@/lib/utils'
 
 export default function Footer() {
   const t = useTranslations('footer')
-  const { navigateToHash } = useScrollToHash()
 
-  // Handle service section navigation with smooth scrolling
-  const handleServiceClick = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    path: string,
-    hash: string,
-  ) => {
-    e.preventDefault()
-    navigateToHash(path, hash)
-  }
+  const solutionLinks = [
+    { label: t('insurancePensions'), href: '/insurance-pensions' },
+    { label: t('familyOffice'), href: '/family-office' },
+    { label: t('internationalSolutions'), href: '/international-solutions' },
+  ]
+
+  const companyLinks = [
+    { label: t('home'), href: '/' },
+    { label: t('about'), href: '/about' },
+    { label: t('insights'), href: '/insights' },
+    { label: t('contact'), href: '/contact-us' },
+  ]
+
+  const resourceLinks = [
+    { label: t('art45'), href: '/art-45' },
+    { label: t('downloads'), href: '/downloads' },
+  ]
 
   return (
     <footer className='bg-[#252525] max-lg:px-4 text-white py-12'>
       <div className='container mx-auto'>
-        <div className='flex flex-col md:flex-row md:justify-between md:items-start gap-8 md:gap-0'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-6'>
           {/* Logo and Description */}
-          <div className='md:w-[20%] md:mx-4'>
+          <div className='sm:col-span-2 lg:col-span-3'>
             <div className='flex flex-col space-y-2'>
               {/* Fixed logo with responsive sizing and sharp rendering */}
               <div className='flex items-center space-x-2'>
@@ -60,117 +65,65 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Services */}
-          <div className='md:w-[18%] md:mx-6'>
+          {/* Solutions */}
+          <div className='lg:col-span-2'>
             <h4 className='text-lg font-semibold mb-4 text-white uppercase tracking-[2px]'>
-              {t('services')}
+              {t('solutions')}
             </h4>
             <ul className='space-y-2'>
-              <li>
-                <a
-                  href='/services#insurance'
-                  onClick={e => handleServiceClick(e, '/services', 'insurance')}
-                  className='text-white/80  hover:text-white transition-colors cursor-pointer text-sm sm:text-base'
-                >
-                  {t('insurance')}
-                </a>
-              </li>
-              <li>
-                <a
-                  href='/services#relocation'
-                  onClick={e =>
-                    handleServiceClick(e, '/services', 'relocation')
-                  }
-                  className='text-white/80  hover:text-white transition-colors cursor-pointer text-sm sm:text-base'
-                >
-                  {t('wealthPlanning')}
-                </a>
-              </li>
-              <li>
-                <a
-                  href='/services#wealth-planning'
-                  onClick={e =>
-                    handleServiceClick(e, '/services', 'wealth-planning')
-                  }
-                  className='text-white/80  hover:text-white transition-colors cursor-pointer text-sm sm:text-base'
-                >
-                  {t('residencyPlanning')}
-                </a>
-              </li>
-              <li>
-                <a
-                  href='/services#tax-legal'
-                  onClick={e => handleServiceClick(e, '/services', 'tax-legal')}
-                  className='text-white/80  hover:text-white transition-colors cursor-pointer text-sm sm:text-base'
-                >
-                  {t('taxAdvice')}
-                </a>
-              </li>
-              <li>
-                <a
-                  href='/services#real-estate'
-                  onClick={e =>
-                    handleServiceClick(e, '/services', 'real-estate')
-                  }
-                  className='text-white/80  hover:text-white transition-colors cursor-pointer text-sm sm:text-base'
-                >
-                  {t('realEstate')}
-                </a>
-              </li>
+              {solutionLinks.map(link => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className='text-white/80 hover:text-white transition-colors text-sm sm:text-base'
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Quick Links */}
-          <div className='md:w-[20%] md:mx-6'>
+          <div className='lg:col-span-2'>
             <h4 className='text-lg font-semibold mb-4 text-white uppercase tracking-[2px]'>
               {t('quickLinks')}
             </h4>
             <ul className='space-y-2'>
-              <li>
-                <Link
-                  href='/'
-                  className='text-white/80  hover:text-white transition-colors text-sm sm:text-base'
-                >
-                  {t('home')}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/about'
-                  className='text-white/80  hover:text-white transition-colors text-sm sm:text-base'
-                >
-                  {t('about')}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/services'
-                  className='text-white/80  hover:text-white transition-colors text-sm sm:text-base'
-                >
-                  {t('familyServices')}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/news'
-                  className='text-white/80  hover:text-white transition-colors text-sm sm:text-base'
-                >
-                  {t('news')}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/downloads'
-                  className='text-white/80  hover:text-white transition-colors text-sm sm:text-base'
-                >
-                  {t('downloads')}
-                </Link>
-              </li>
+              {companyLinks.map(link => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className='text-white/80 hover:text-white transition-colors text-sm sm:text-base'
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Resources & Regulatory */}
+          <div className='lg:col-span-2'>
+            <h4 className='text-lg font-semibold mb-4 text-white uppercase tracking-[2px]'>
+              {t('resources')}
+            </h4>
+            <ul className='space-y-2'>
+              {resourceLinks.map(link => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className='text-white/80 hover:text-white transition-colors text-sm sm:text-base'
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Get in Touch */}
-          <div className='md:w-[22%] md:mx-6'>
+          <div className='lg:col-span-3'>
             <h4 className='text-lg font-semibold mb-4 text-white uppercase tracking-[2px]'>
               {t('getInTouch')}
             </h4>

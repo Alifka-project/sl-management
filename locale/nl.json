@@ -109,23 +109,85 @@
       }
     }
   },
-  "familyService": {
-    "title": "Onze Familiemogelijkheden",
-    "description": "Hieronder vindt u een kort overzicht van de gespecialiseerde diensten die wij aanbieden om ervoor te zorgen dat elk aspect van uw persoonlijke, financiële en professionele leven optimaal wordt beheerd. Kies een van de diensten om meer te weten te komen of neem direct contact met ons op voor persoonlijk advies.",
-    "1": {
-      "title": "Verzekeringen",
-      "description": "Beschermt uw bezittingen en dierbaren met onze uitgebreide verzekeringsoplossingen. Onze adviseurs voeren diepgaande beoordelingen uit en cre ren persoonlijke strategie n om ervoor te zorgen dat elk aspect van uw leven volledig is verzekerd.",
+  "insurancePensions": {
+    "eyebrow": "Gereguleerde Kernactiviteit",
+    "title": "Verzekeringen & Pensioenen",
+    "description": "Verzekeringen en beroepspensioenen vormen de gereguleerde kern van ons werk. Als onafhankelijke, bij de FINMA geregistreerde verzekeringsmakelaar (bemiddelaarsregister nr. F01470698) adviseert SLMC Zwitserse ondernemingen en particuliere cliënten over zakelijke en particuliere verzekeringen, BVG/LPP-pensioenoplossingen, personeelsverzekeringen en risicobeheer — van de eerste analyse tot aanbesteding, plaatsing en schadebehandeling.",
+    "corporate": {
+      "title": "Zakelijke Verzekeringen",
+      "description": "Wij brengen de risico's in kaart die uw onderneming daadwerkelijk draagt en ontwerpen en plaatsen de dekking die daarbij past. U houdt één aanspreekpunt voor aanbestedingen, verlengingen en dagelijkse vragen.",
       "items": {
-        "1": "Uitgebreide Verzekeringsbeoordeling",
-        "2": "Op Maat Gemaakte Verzekeringsoplossingen",
-        "3": "Risicobeheer",
-        "4": "Strategische Planning",
-        "5": "Claimbeheer",
-        "6": "Regelmatige Beoordelingen en Aanpassingen",
-        "7": "Naleving en Regelgeving"
+        "1": "Risico- en verzekeringsanalyse",
+        "2": "Zaak- en aansprakelijkheidsdekking",
+        "3": "Bedrijfsschade",
+        "4": "Aanbesteding en plaatsing",
+        "5": "Polisadministratie",
+        "6": "Jaarlijkse verlengingsbeoordeling"
       }
     },
-    "2": {
+    "private": {
+      "title": "Particuliere Verzekeringen",
+      "description": "Een gestructureerde beoordeling van alles wat u en uw familie al hebben — ziektekosten, leven, inboedel, aansprakelijkheid, motorrijtuigen en rechtsbijstand — met een helder advies over wat blijft, wijzigt of wordt opgezegd.",
+      "items": {
+        "1": "Volledige verzekeringsbeoordeling",
+        "2": "Ziektekosten en ongevallen",
+        "3": "Leven en arbeidsongeschiktheid",
+        "4": "Inboedel en aansprakelijkheid",
+        "5": "Motorrijtuigen en rechtsbijstand",
+        "6": "Periodieke beoordelingen"
+      }
+    },
+    "bvg": {
+      "title": "Beroepspensioen (BVG/LPP)",
+      "description": "Het pensioenplan is een van de grootste posten op een Zwitserse loonlijst en een van de meest gewaardeerde arbeidsvoorwaarden. Wij vergelijken aanbieders, rekenen de kosten van elke variant door en ontwerpen een plan dat werkt voor het bedrijf en voor de medewerkers.",
+      "items": {
+        "1": "Ontwerp van het BVG/LPP-plan",
+        "2": "Aanbesteding pensioenfondsen",
+        "3": "Vergelijking van collectieve stichtingen",
+        "4": "1e-plannen voor kaderleden",
+        "5": "Analyse van inkoop en vroegpensioen",
+        "6": "Pensioenoverzichten"
+      }
+    },
+    "employeeBenefits": {
+      "title": "Personeelsverzekeringen",
+      "description": "Ongevallen-, ziekengeld- en aanvullende zorgdekking, samengebracht in één samenhangend pakket en in begrijpelijke taal uitgelegd aan uw medewerkers.",
+      "items": {
+        "1": "UVG en aanvullende ongevallendekking",
+        "2": "Ziekengeld (KTG)",
+        "3": "Collectieve zorg en reis",
+        "4": "Kaderregelingen",
+        "5": "Communicatie met medewerkers"
+      }
+    },
+    "riskManagement": {
+      "title": "Risicobeheer",
+      "description": "Niet elk risico hoort bij een verzekeraar. Wij helpen u risico's te identificeren en te kwantificeren en vervolgens te bepalen welke u zelf draagt, beperkt of overdraagt — met de onderbouwing vastgelegd.",
+      "items": {
+        "1": "Risico-inventarisatie en kwantificering",
+        "2": "Concepten voor risicofinanciering",
+        "3": "Strategie voor eigen risico en retentie",
+        "4": "Beoordeling bedrijfscontinuïteit",
+        "5": "Compliance en regelgeving"
+      }
+    },
+    "claims": {
+      "title": "Schade & Doorlopende Begeleiding",
+      "description": "Als er iets gebeurt, spreekt u met uw adviseur en niet met een callcenter. Wij melden de schade, onderhandelen namens u en blijven bij het dossier tot het is afgewikkeld.",
+      "items": {
+        "1": "Schademelding",
+        "2": "Onderhandeling met verzekeraars",
+        "3": "Toezicht op de afwikkeling",
+        "4": "Controle van contracten en premies",
+        "5": "Vaste cliëntadviseur"
+      }
+    }
+  },
+  "familyOffice": {
+    "eyebrow": "Families, Ondernemers en Particuliere Cliënten",
+    "title": "Family Office & Particuliere Cliënten",
+    "description": "Naast verzekeringen en pensioenen coördineren wij de dagelijkse en langetermijnzaken die families, ondernemers en particuliere cliënten liever niet alleen regelen: verhuizing, vermogens- en opvolgingsplanning, fiscale en juridische specialisten, zorg, vastgoed en wat het jaar verder brengt.",
+    "relocation": {
       "title": "Relocatiediensten",
       "description": "Maak uw verhuizing stressvrij met onze gespecialiseerde relocatiediensten. Van bestemmingenonderzoek tot settling-in-ondersteuning, we regelen elke detail voor een soepele overgang - ongeacht waar het leven u brengt.",
       "items": {
@@ -141,7 +203,7 @@
         "10": "Continue Communicatie"
       }
     },
-    "3": {
+    "wealthPlanning": {
       "title": "Vermogensplanning",
       "description": "Beveilig uw financi le toekomst met onze deskundige vermogensplanningsoplossingen. Wij ontwikkelen aangepaste strategie n die uw vermogen in lijn brengen met uw persoonlijke doelstellingen en ambities - zodat u langdurige groei en stabiliteit kunt garanderen.",
       "items": {
@@ -154,7 +216,7 @@
         "7": "Holistische Financiële Beoordeling"
       }
     },
-    "4": {
+    "taxLegal": {
       "title": "Fiscaal & Juridisch Advies",
       "description": "Navegue por los complejos paisajes fiscales y legales con confianza. Nuestros asesores brindan orientaci n estrat gica para optimizar su posici n financiera y garantizar el cumplimiento total de las regulaciones relevantes.",
       "items": {
@@ -165,24 +227,90 @@
         "5": "Trustbeheer"
       }
     },
-    "5": {
+    "healthcare": {
       "title": "Gezondheidszorgbeheer",
       "description": "Geniet van eersteklas gezondheidszorg via onze samenwerkingen met toonaangevende aanbieders. Wij coördineren alles van routinecontroles tot gespecialiseerde behandelingen, en zorgen voor snelle en premium medische diensten.",
-      "items": {}
+      "items": {
+        "1": "Toegang tot het aanbiedersnetwerk",
+        "2": "Second opinions",
+        "3": "Coördinatie van afspraken en behandelingen",
+        "4": "Ondersteuning bij behandeling in het buitenland",
+        "5": "Afstemming met de zorgverzekering"
+      }
     },
-    "6": {
+    "realEstate": {
       "title": "Vastgoeddiensten",
       "description": "Vind uw perfecte woning of investeringspand met onze vastgoedexperts. Van woningzoektocht en onderhandelingen tot naadloze afronding, wij maken uw vastgoedreis zowel lonend als efficiënt.",
-      "items": {}
+      "items": {
+        "1": "Zoeken naar woningen",
+        "2": "Bezichtigingen en onderhandeling",
+        "3": "Begeleiding bij aan- en verkoop",
+        "4": "Introducties voor financiering",
+        "5": "Verhuur en vastgoedbeheer"
+      }
     },
-    "7": {
+    "bespoke": {
       "title": "Op Maat Gemaakte Diensten",
       "description": "Ervaar werkelijk op maat gemaakte oplossingen met onze exclusieve Bespoke Services. Wij pakken uw unieke vereisten aan met ongeëvenaarde aandacht voor detail en service-uitmuntendheid.",
-      "items": {}
-    },
-    "contactUs": "Neem Contact Op"
+      "items": {
+        "1": "Concierge-verzoeken",
+        "2": "Onderwijs en scholenzoektocht",
+        "3": "Huishoudelijk personeel en administratie",
+        "4": "Kunst, collectibles en luxegoederen",
+        "5": "Organisatie van evenementen en reizen"
+      }
+    }
   },
-  "newsEvent": {
+  "internationalSolutions": {
+    "eyebrow": "Grensoverschrijdende Coördinatie",
+    "title": "Internationale Oplossingen",
+    "description": "Families en ondernemers houden hun leven zelden binnen één grens. Wij coördineren grensoverschrijdende planning tussen Zwitserland, Europa en Azië en openen de toegang tot gereguleerde beleggingsaanbieders, banken en specialisten — zodat de onderdelen in elke jurisdictie op elkaar aansluiten.",
+    "crossBorder": {
+      "title": "Grensoverschrijdende Planning",
+      "description": "Waar u woont, waar u werkt en waar uw vermogen staat zijn vaak drie verschillende antwoorden. De gevolgen daarvan voor verzekeringen, pensioen en planning coördineren wij met de specialisten in elk land.",
+      "items": {
+        "1": "Coördinatie van verblijf en verhuizing",
+        "2": "Grensoverschrijdende pensioenplanning",
+        "3": "Coördinatie van sociale zekerheid",
+        "4": "Aspecten van dubbele belasting",
+        "5": "Dekking in meerdere jurisdicties"
+      }
+    },
+    "investmentProviders": {
+      "title": "Gereguleerde Beleggingsaanbieders",
+      "description": "Wij beheren uw vermogen niet. Wij brengen u in contact met erkende Zwitserse en internationale aanbieders, vergelijken hun mandaten en kosten naast elkaar en blijven betrokken bij de beoordeling van hun prestaties.",
+      "items": {
+        "1": "Selectie van aanbieders en due diligence",
+        "2": "Toegang tot gereguleerde platforms",
+        "3": "Introducties bewaarneming en bankieren",
+        "4": "Vergelijking van mandaten en kosten",
+        "5": "Doorlopende beoordeling van aanbieders"
+      }
+    },
+    "globalMobility": {
+      "title": "Internationale Mobiliteit & Expats",
+      "description": "Aankomen in Zwitserland, medewerkers uitzenden of opnieuw verhuizen: elke stap verandert welke dekking u nodig hebt en waarop u recht hebt. Wij bereiden die stappen voor voordat ze plaatsvinden.",
+      "items": {
+        "1": "Beoordeling bij vertrek en aankomst",
+        "2": "Verzekeringsprogramma's voor expats",
+        "3": "Internationale zorgdekking",
+        "4": "Koppeling met uitzending en salarisadministratie",
+        "5": "Planning van repatriëring"
+      }
+    },
+    "asiaDesk": {
+      "title": "Azië-Desk",
+      "description": "Onze desk in Peking staat cliënten met belangen in Zwitserland en Azië in het Mandarijn bij en werkt met een netwerk van gescreende lokale partners aan beide zijden.",
+      "items": {
+        "1": "Advies in het Mandarijn",
+        "2": "Coördinatie Zwitserland–Azië",
+        "3": "Lokaal partnernetwerk",
+        "4": "Ondersteuning ter plaatse"
+      }
+    }
+  },
+  "insights": {
+    "eyebrow": "Insights",
     "title": "Familiebedrijf Management",
     "subTitle": "Door Dr. Andreas Svoboda",
     "description1": "Een familiebedrijf runnen is een balanceeract—traditie combineren met innovatie, familiebanden met financiële verantwoordelijkheid. Familiebedrijf Management verkent de unieke uitdagingen en kansen van familieondernemingen en biedt inzichten voor succes.",
@@ -249,16 +377,8 @@
   },
   "footer": {
     "description": "Uw pad begeleiden met op maat gemaakte oplossingen en onwankelbare ondersteuning, zodat uw gemoedsrust tijdens uw reis naar succes wordt gegarandeerd.",
-    "services": "Diensten",
-    "insurance": "Verzekeringen",
-    "wealthPlanning": "Vermogensplanning",
-    "residencyPlanning": "Verblijfsplanning",
-    "taxAdvice": "Fiscaal & Juridisch Advies",
-    "realEstate": "Vastgoeddiensten",
     "quickLinks": "Snelle Links",
     "about": "Over Ons",
-    "familyServices": "Familiediensten",
-    "news": "Nieuws & Evenementen",
     "careers": "Carrières",
     "privacy": "Privacybeleid",
     "contact": "Contact",
@@ -269,16 +389,24 @@
     "home": "Home",
     "socialLinkedIn": "LinkedIn",
     "copyright": "© {year} S&L Management en Consulting LLC. Alle rechten voorbehouden.",
-    "downloads": "Downloads"
+    "downloads": "Formulieren & Documenten",
+    "solutions": "Oplossingen",
+    "insurancePensions": "Verzekeringen & Pensioenen",
+    "familyOffice": "Family Office & Particuliere Cliënten",
+    "internationalSolutions": "Internationale Oplossingen",
+    "insights": "Insights",
+    "resources": "Resources & Regelgeving",
+    "art45": "ART45 VAG"
   },
   "menu": {
     "home": "Home",
+    "insurancePensions": "Verzekeringen & Pensioenen",
+    "familyOffice": "Family Office",
+    "internationalSolutions": "Internationale Oplossingen",
     "about": "Over Ons",
-    "services": "Servicios Familiares",
-    "news": "Noticias y Eventos",
-    "contact": "Contacto",
-    "contactUs": "Contáctenos",
-    "downloads": "Downloads"
+    "insights": "Insights",
+    "contact": "Contact",
+    "contactUs": "Neem Contact Op"
   },
   "logo": {
     "alt": "S&L Management Logo"

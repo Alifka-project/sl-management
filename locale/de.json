@@ -109,23 +109,85 @@
       }
     }
   },
-  "familyService": {
-    "title": "Unsere Familiendienstleistungen",
-    "description": "Nachfolgend finden Sie eine kurze Übersicht über die spezialisierten Dienstleistungen, die wir anbieten, um sicherzustellen, dass jeder Aspekt Ihres persönlichen, finanziellen und beruflichen Lebens optimal verwaltet wird. Wählen Sie eine der Dienstleistungen aus, um mehr zu erfahren, oder kontaktieren Sie uns direkt für eine persönliche Beratung.",
-    "1": {
-      "title": "Versicherung",
-      "description": "Schützen Sie Ihre Vermögenswerte und Ihre Lieben mit unseren umfassenden Versicherungslösungen. Unsere Berater führen eingehende Überprüfungen durch und erstellen personalisierte Strategien, um sicherzustellen, dass jeder Aspekt Ihres Lebens vollständig abgedeckt ist.",
+  "insurancePensions": {
+    "eyebrow": "Reguliertes Kerngeschäft",
+    "title": "Versicherungen & Vorsorge",
+    "description": "Versicherungen und berufliche Vorsorge sind der regulierte Kern unserer Arbeit. Als unabhängiger, bei der FINMA registrierter Versicherungsbroker (Vermittlerregister-Nr. F01470698) berät SLMC Schweizer Unternehmen und Privatkunden in der Unternehmens- und Privatversicherung, bei BVG-Vorsorgelösungen, Personalversicherungen und im Risikomanagement – von der ersten Analyse über Ausschreibung und Platzierung bis zur Schadenabwicklung.",
+    "corporate": {
+      "title": "Unternehmensversicherungen",
+      "description": "Wir erfassen die Risiken, die Ihr Unternehmen tatsächlich trägt, und gestalten und platzieren den passenden Versicherungsschutz. Für Ausschreibungen, Erneuerungen und alltägliche Fragen bleibt eine Ansprechperson zuständig.",
       "items": {
-        "1": "Umfassende Versicherungsüberprüfung",
-        "2": "Maßgeschneiderte Versicherungslösungen",
-        "3": "Risikomanagement",
-        "4": "Strategische Planung",
-        "5": "Schadensmanagement",
-        "6": "Regelmäßige Überprüfungen und Anpassungen",
-        "7": "Compliance und Regulierung"
+        "1": "Risiko- und Versicherungsanalyse",
+        "2": "Sach- und Haftpflichtversicherung",
+        "3": "Betriebsunterbrechung",
+        "4": "Ausschreibung und Platzierung",
+        "5": "Policenverwaltung",
+        "6": "Jährliche Erneuerungsprüfung"
       }
     },
-    "2": {
+    "private": {
+      "title": "Privatversicherungen",
+      "description": "Eine strukturierte Überprüfung aller bestehenden Deckungen von Ihnen und Ihrer Familie – Kranken-, Lebens-, Hausrat-, Haftpflicht-, Motorfahrzeug- und Rechtsschutzversicherung – mit einer klaren Empfehlung, was bleibt, angepasst oder gekündigt wird.",
+      "items": {
+        "1": "Umfassende Versicherungsüberprüfung",
+        "2": "Kranken- und Unfallversicherung",
+        "3": "Leben und Erwerbsunfähigkeit",
+        "4": "Hausrat und Haftpflicht",
+        "5": "Motorfahrzeug und Rechtsschutz",
+        "6": "Regelmäßige Überprüfungen"
+      }
+    },
+    "bvg": {
+      "title": "Berufliche Vorsorge (BVG)",
+      "description": "Die Pensionskasse ist einer der größten Posten einer Schweizer Lohnabrechnung und eine der am meisten geschätzten Leistungen. Wir vergleichen Anbieter, rechnen die Kosten jeder Variante durch und gestalten einen Plan, der für das Unternehmen und die Mitarbeitenden funktioniert.",
+      "items": {
+        "1": "Gestaltung des BVG-Vorsorgeplans",
+        "2": "Pensionskassen-Ausschreibung",
+        "3": "Vergleich von Sammelstiftungen",
+        "4": "1e-Pläne für Kaderpersonal",
+        "5": "Einkauf und Frühpensionierung",
+        "6": "Vorsorgeausweise"
+      }
+    },
+    "employeeBenefits": {
+      "title": "Personalversicherungen",
+      "description": "Unfall-, Krankentaggeld- und Zusatzversicherungen als ein zusammenhängendes Paket – und in verständlicher Sprache für Ihre Mitarbeitenden erklärt.",
+      "items": {
+        "1": "UVG und UVG-Zusatzversicherung",
+        "2": "Krankentaggeld (KTG)",
+        "3": "Kollektiv-Kranken- und Reiseversicherung",
+        "4": "Kaderlösungen",
+        "5": "Mitarbeiterkommunikation"
+      }
+    },
+    "riskManagement": {
+      "title": "Risikomanagement",
+      "description": "Nicht jedes Risiko gehört zu einem Versicherer. Wir helfen Ihnen, Risiken zu erkennen und zu bewerten und dann zu entscheiden, welche Sie selbst tragen, reduzieren oder übertragen – nachvollziehbar dokumentiert.",
+      "items": {
+        "1": "Risikoerfassung und -bewertung",
+        "2": "Konzepte zur Risikofinanzierung",
+        "3": "Selbstbehalts- und Tragfähigkeitsstrategie",
+        "4": "Prüfung der Betriebskontinuität",
+        "5": "Compliance und Regulierung"
+      }
+    },
+    "claims": {
+      "title": "Schadenfälle & laufende Betreuung",
+      "description": "Wenn etwas passiert, sprechen Sie mit Ihrem Berater und nicht mit einem Callcenter. Wir melden den Schaden, verhandeln in Ihrem Namen und bleiben am Dossier, bis es abgeschlossen ist.",
+      "items": {
+        "1": "Schadenmeldung",
+        "2": "Verhandlung mit Versicherern",
+        "3": "Überwachung der Regulierung",
+        "4": "Vertrags- und Prämienprüfung",
+        "5": "Persönlicher Kundenberater"
+      }
+    }
+  },
+  "familyOffice": {
+    "eyebrow": "Familien, Unternehmer & Privatkunden",
+    "title": "Family Office & Privatkunden",
+    "description": "Über Versicherungen und Vorsorge hinaus koordinieren wir die alltäglichen und langfristigen Angelegenheiten, die Familien, Unternehmer und Privatkunden nicht allein regeln möchten – Umzug, Vermögens- und Nachfolgeplanung, Steuer- und Rechtsspezialisten, Gesundheit, Immobilien und was das Jahr sonst bringt.",
+    "relocation": {
       "title": "Umzugsdienstleistungen",
       "description": "Machen Sie Ihren Umzug stressfrei mit unseren speziell auf Relocation Services ausgerichteten Dienstleistungen. Von der Recherche nach Zielen bis hin zur Unterstützung bei der Eingliederung übernehmen wir jeden Detail, um einen reibungslosen Übergang zu gewährleisten - egal, wohin Sie sich aufmachen.",
       "items": {
@@ -141,9 +203,9 @@
         "10": "Kontinuierliche Kommunikation"
       }
     },
-    "3": {
+    "wealthPlanning": {
       "title": "Vermögensplanung",
-      "description": "Sicherung ihrer finanziellen Zukunft mit unseren Experten-L sungen f r Verm gensplanung. Wir entwickeln ma geschneiderte Strategien, die Ihre Verm genswerte mit Ihren pers nlichen Zielen und Ambitionen in Einklang bringen - und langfristiges Wachstum und Stabilit t gew hrleisten.",
+      "description": "Sichern Sie Ihre finanzielle Zukunft mit unseren Expertenlösungen für die Vermögensplanung. Wir entwickeln maßgeschneiderte Strategien, die Ihre Vermögenswerte mit Ihren persönlichen Zielen und Ambitionen in Einklang bringen – und sorgen so für langfristiges Wachstum und Stabilität.",
       "items": {
         "1": "Generationsübergreifender Vermögenstransfer",
         "2": "Philanthropische Beratung & Planung",
@@ -154,7 +216,7 @@
         "7": "Ganzheitliche Finanzbeurteilung"
       }
     },
-    "4": {
+    "taxLegal": {
       "title": "Steuer- & Rechtsberatung",
       "description": "Navigieren Sie komplexe steuerliche und rechtliche Rahmenbedingungen mit Zuversicht. Unsere Berater bieten strategische Orientierung, um Ihre finanzielle Position zu optimieren und die vollständige Einhaltung der relevanten Vorschriften sicherzustellen.",
       "items": {
@@ -165,24 +227,90 @@
         "5": "Treuhandverwaltung"
       }
     },
-    "5": {
+    "healthcare": {
       "title": "Gesundheitsmanagement",
       "description": "Genießen Sie erstklassige Gesundheitsversorgung durch unsere Partnerschaften mit führenden Anbietern. Wir koordinieren alles – von Routineuntersuchungen bis hin zu spezialisierten Behandlungen – und gewährleisten so schnelle und hochwertige medizinische Leistungen.",
-      "items": {}
+      "items": {
+        "1": "Zugang zum Anbieternetzwerk",
+        "2": "Zweitmeinungen",
+        "3": "Koordination von Terminen und Behandlungen",
+        "4": "Unterstützung bei Behandlungen im Ausland",
+        "5": "Abstimmung mit der Krankenversicherung"
+      }
     },
-    "6": {
+    "realEstate": {
       "title": "Immobiliendienstleistungen",
       "description": "Finden Sie Ihr perfektes Zuhause oder Ihre Investitionsimmobilie mit unseren Immobilienexperten. Von der Immobiliensuche und Verhandlungen bis zu reibungslosen Abschlüssen machen wir Ihre Immobilienreise sowohl lohnend als auch effizient.",
-      "items": {}
+      "items": {
+        "1": "Immobiliensuche",
+        "2": "Besichtigungen und Verhandlung",
+        "3": "Begleitung bei Kauf und Verkauf",
+        "4": "Finanzierungseinführungen",
+        "5": "Vermietung und Objektverwaltung"
+      }
     },
-    "7": {
+    "bespoke": {
       "title": "Maßgeschneiderte Dienstleistungen",
       "description": "Erleben Sie wirklich maßgeschneiderte Lösungen mit unseren exklusiven Bespoke Services. Wir gehen auf Ihre individuellen Anforderungen mit unvergleichlicher Detailgenauigkeit und Serviceexzellenz ein.",
-      "items": {}
-    },
-    "contactUs": "Kontaktieren Sie uns"
+      "items": {
+        "1": "Concierge-Anfragen",
+        "2": "Bildung und Schulsuche",
+        "3": "Hauspersonal und Administration",
+        "4": "Kunst, Sammlerstücke und Luxusgüter",
+        "5": "Organisation von Anlässen und Reisen"
+      }
+    }
   },
-  "newsEvent": {
+  "internationalSolutions": {
+    "eyebrow": "Grenzüberschreitende Koordination",
+    "title": "Internationale Lösungen",
+    "description": "Familien und Unternehmer leben selten innerhalb einer einzigen Landesgrenze. Wir koordinieren die grenzüberschreitende Planung zwischen der Schweiz, Europa und Asien und öffnen den Zugang zu regulierten Anlageanbietern, Banken und Spezialisten – damit die Teile in jeder Jurisdiktion zusammenpassen.",
+    "crossBorder": {
+      "title": "Grenzüberschreitende Planung",
+      "description": "Wo Sie wohnen, wo Sie arbeiten und wo Ihre Vermögenswerte liegen, sind oft drei verschiedene Antworten. Die versicherungs-, vorsorge- und planungsrelevanten Folgen davon koordinieren wir mit den Spezialisten im jeweiligen Land.",
+      "items": {
+        "1": "Koordination von Wohnsitz und Umzug",
+        "2": "Grenzüberschreitende Vorsorgeplanung",
+        "3": "Koordination der Sozialversicherungen",
+        "4": "Aspekte der Doppelbesteuerung",
+        "5": "Deckung über mehrere Länder"
+      }
+    },
+    "investmentProviders": {
+      "title": "Regulierte Anlageanbieter",
+      "description": "Wir verwalten Ihr Vermögen nicht. Wir stellen den Kontakt zu lizenzierten schweizerischen und internationalen Anbietern her, vergleichen Mandate und Gebühren nebeneinander und bleiben bei der Überprüfung der Leistung eingebunden.",
+      "items": {
+        "1": "Anbieterauswahl und Due Diligence",
+        "2": "Zugang zu regulierten Plattformen",
+        "3": "Depot- und Bankeinführungen",
+        "4": "Vergleich von Mandaten und Gebühren",
+        "5": "Laufende Anbieterüberprüfung"
+      }
+    },
+    "globalMobility": {
+      "title": "Internationale Mobilität & Expatriates",
+      "description": "Ankunft in der Schweiz, Entsendung von Mitarbeitenden ins Ausland oder der nächste Wechsel – jeder Schritt verändert den erforderlichen Versicherungsschutz und Ihre Ansprüche. Wir bereiten diese Schritte vor, bevor sie anstehen.",
+      "items": {
+        "1": "Prüfung vor Abreise und bei Ankunft",
+        "2": "Versicherungsprogramme für Expatriates",
+        "3": "Internationale Krankenversicherung",
+        "4": "Schnittstellen zu Entsendung und Lohnbuchhaltung",
+        "5": "Planung der Rückkehr"
+      }
+    },
+    "asiaDesk": {
+      "title": "Asien-Desk",
+      "description": "Unser Desk in Peking betreut Kunden mit Interessen in der Schweiz und in Asien auf Mandarin und arbeitet mit einem Netzwerk geprüfter lokaler Partner auf beiden Seiten.",
+      "items": {
+        "1": "Beratung auf Mandarin",
+        "2": "Koordination Schweiz–Asien",
+        "3": "Lokales Partnernetzwerk",
+        "4": "Unterstützung vor Ort"
+      }
+    }
+  },
+  "insights": {
+    "eyebrow": "Insights",
     "title": "Familienunternehmensmanagement",
     "subTitle": "Von Dr. Andreas Svoboda",
     "description1": "Ein Familienunternehmen zu führen ist ein Balanceakt – Tradition mit Innovation zu verbinden, Familienbande mit finanzieller Verantwortung. Familienunternehmensmanagement untersucht die einzigartigen Herausforderungen und Chancen von Familienunternehmen und bietet Einblicke für den Erfolg.",
@@ -249,16 +377,8 @@
   },
   "footer": {
     "description": "Wir begleiten Ihren Weg mit maßgeschneiderten Lösungen und unerschütterlicher Unterstützung und sorgen für Ihre Gemütsruhe auf Ihrem Weg zum Erfolg.",
-    "services": "Dienstleistungen",
-    "insurance": "Versicherung",
-    "wealthPlanning": "Vermögensplanung",
-    "residencyPlanning": "Aufenthaltsplanung",
-    "taxAdvice": "Steuer- & Rechtsberatung",
-    "realEstate": "Immobiliendienstleistungen",
     "quickLinks": "Schnellzugriff",
     "about": "Über uns",
-    "familyServices": "Familiendienstleistungen",
-    "news": "Neuigkeiten & Veranstaltungen",
     "careers": "Karriere",
     "privacy": "Datenschutzrichtlinie",
     "contact": "Kontakt",
@@ -269,16 +389,24 @@
     "getInTouch": "Kontakt aufnehmen",
     "socialLinkedIn": "LinkedIn",
     "copyright": "© {year} S&L Management und Consulting LLC. Alle Rechte vorbehalten.",
-    "downloads": "Downloads"
+    "downloads": "Formulare & Dokumente",
+    "solutions": "Lösungen",
+    "insurancePensions": "Versicherungen & Vorsorge",
+    "familyOffice": "Family Office & Privatkunden",
+    "internationalSolutions": "Internationale Lösungen",
+    "insights": "Insights",
+    "resources": "Ressourcen & Regulatorisches",
+    "art45": "ART45 VAG"
   },
   "menu": {
     "home": "Startseite",
+    "insurancePensions": "Versicherungen & Vorsorge",
+    "familyOffice": "Family Office",
+    "internationalSolutions": "Internationale Lösungen",
     "about": "Über uns",
-    "services": "Dienstleist.",
-    "news": "Neuigkeiten",
+    "insights": "Insights",
     "contact": "Kontakt",
-    "contactUs": "Kontakt",
-    "downloads": "Downloads"
+    "contactUs": "Kontakt"
   },
   "logo": {
     "alt": "S&L Management Logo"
