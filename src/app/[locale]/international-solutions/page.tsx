@@ -40,9 +40,7 @@ export default function InternationalSolutionsPage() {
     <SolutionsPage
       namespace='internationalSolutions'
       sectionId='international-solutions'
-      heroImage='/images/international-solutions-hero.jpg'
-      heroFrameClassName='aspect-[4/5] w-full max-w-[420px] lg:max-w-none'
-      heroPositionClassName='object-center'
+      heroImage='/images/international-solutions-asia.jpg'
       entries={entries}
     />
   )

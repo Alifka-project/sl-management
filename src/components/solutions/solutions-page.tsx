@@ -24,8 +24,6 @@ interface SolutionsPageProps {
   heroImage: string
   /** Aspect ratio and max width of the hero image frame */
   heroFrameClassName?: string
-  /** Object position of the hero image inside its frame */
-  heroPositionClassName?: string
   entries: SolutionEntry[]
 }
 
@@ -34,7 +32,6 @@ export default function SolutionsPage({
   sectionId,
   heroImage,
   heroFrameClassName = 'aspect-[4/3] sm:aspect-[3/2] w-full',
-  heroPositionClassName = 'object-center',
   entries,
 }: SolutionsPageProps) {
   const t = useTranslations(namespace)
@@ -89,7 +86,7 @@ export default function SolutionsPage({
                 alt={t('title')}
                 fill
                 sizes='(max-width: 1024px) 100vw, 42vw'
-                className={`object-cover ${heroPositionClassName}`}
+                className='object-cover object-center'
                 priority
               />
             </div>

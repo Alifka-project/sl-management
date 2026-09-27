@@ -42,9 +42,8 @@ export default function InsurancePensionsPage() {
     <SolutionsPage
       namespace='insurancePensions'
       sectionId='insurance-pensions'
-      heroImage='/images/insurance-pensions-hero.jpg'
+      heroImage='/images/insurance-pensions-zurich.jpg'
       heroFrameClassName='aspect-[4/5] w-full max-w-[420px] lg:max-w-none'
-      heroPositionClassName='object-top'
       entries={entries}
     />
   )
